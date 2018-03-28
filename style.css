@@ -48,6 +48,15 @@
     url('assets/fonts/Barlow/Barlow-Light.svg#TradeGothicLTBold') format('svg');
 }
 @font-face {
+    font-family: 'Barlow-Bold';
+    src: url('assets/fonts/Barlow/Barlow-Bold.eot');
+    src: url('assets/fonts/Barlow/Barlow-Bold.eot') format('embedded-opentype'),
+    url('assets/fonts/Barlow/Barlow-Bold.woff2') format('woff2'),
+    url('assets/fonts/Barlow/Barlow-Bold.woff') format('woff'),
+    url('assets/fonts/Barlow/Barlow-Bold.ttf') format('truetype'),
+    url('assets/fonts/Barlow/Barlow-Bold.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
     font-family: 'BarlowSemiCondensed-Bold';
     src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot');
     src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot') format('embedded-opentype'),
@@ -74,6 +83,9 @@ body {
 
 h1, h2, h4, h5, h6 {
     font-family: 'Barlow';
+}
+h5{
+    font-family: 'Barlow-Bold';
 }
 p{
     font-family: 'Barlow-Light';
@@ -117,14 +129,14 @@ button:active:focus{
     box-sizing: border-box;
     -webkit-animation: slide-r-to-l 70s infinite linear;
 }
-@-webkit-keyframes slide-r-to-l {
-    from { background-position: 0 0; }
-    to { background-position: -1000px 0; }
-}
-@-webkit-keyframes slide-l-to-r {
-    from { background-position: 0 0; }
-    to { background-position: 1000px 0; }
-}
+/*@-webkit-keyframes slide-r-to-l {*/
+    /*from { background-position: 0 0; }*/
+    /*to { background-position: -1000px 0; }*/
+/*}*/
+/*@-webkit-keyframes slide-l-to-r {*/
+    /*from { background-position: 0 0; }*/
+    /*to { background-position: 1000px 0; }*/
+/*}*/
 #header{
     display: flex !important;
     flex-direction: row;
@@ -142,7 +154,20 @@ button:active:focus{
     background: rgba(0, 0, 0, 0.5);
     padding-top: 40px;
 }
-
+.home_address{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.home_contacts{
+    margin-bottom: 0;
+}
+.home_contacts + .home_contacts{
+    margin-left: 35px;
+}
+.home_contacts .fa{
+    margin-right: 5px;
+}
 header .navbar-inverse {
     background-color: transparent;
     border-color: transparent;
@@ -174,7 +199,9 @@ header .navbar-inverse {
     border-radius: 0;
     border-bottom: 1px solid #fff !important;
 }
-
+.menu_sticky #header{
+    border-bottom: 0;
+}
 header .menu_sticky #myNavbar {
     border-bottom: 0 none;
 }
@@ -212,25 +239,8 @@ header .icons a {
     color: #fff;
 }
 
-header .icons .fa-phone {
-    font-size: 15px;
-}
-
-header .icons .fa-map-marker {
-    font-size: 15px;
-    margin-left: 25px;
-}
-
-header .icons .fa-twitter {
-    margin: 0 20px 0 20px;
-}
-
-header .icons .social:hover {
-    color: #1BA492;
-}
-
 header .btn {
-    margin: 60px 40px 50px 0;
+    margin: 0 40px 50px 0;
     background-color: transparent;
     border: 1px solid;
     border-radius: 20px;
@@ -320,11 +330,32 @@ header .right::before {
 
 .home_bottom_bg .line h5 {
     font-size: 16px;
-    /*font-family: OpenSans;*/
     color: #cccccc;
     line-height: 22px;
 }
-
+.home_socials{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.home_socials li a{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.home_socials .fa{
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.home_socials li a:hover{
+    color: #1BA492;
+    text-decoration: none;
+}
 /* New css */
 .get-started {
     background: #FAFAFA;
@@ -343,7 +374,6 @@ header .right::before {
     color: #141414;
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'Conv_VANTABOL';
 }
 
 .get-started .block3-get p {
@@ -1174,7 +1204,6 @@ header.remote_support_banner .icons {
 .remote_footer .remote_reasons h5 {
     color: #fff;
     font-size: 16px;
-    font-family: 'Conv_VANTABOL';
     font-weight: 600;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -1340,7 +1369,6 @@ header.sharepoint_branding .heading_text {
 
 .sharepoint_branding .home_bottom_bg .line h5 {
     font-size: 16px;
-    font-family: 'Barlow';
     color: #cccccc;
     line-height: 22px;
 }
@@ -1397,7 +1425,7 @@ header.sharepoint_branding .heading_text {
 
 .hr-main-site .responsive-tabs li a {
     color: #141414;
-    font-family: 'Conv_VANTABOL';
+    font-family: 'Barlow';
     font-size: 22px;
     text-transform: uppercase;
     background: transparent;
