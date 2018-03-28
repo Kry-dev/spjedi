@@ -162,6 +162,9 @@ button:active:focus{
 }
 .home_contacts{
     margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .home_contacts + .home_contacts{
     margin-left: 35px;
@@ -2721,6 +2724,8 @@ ul.nav li:hover > ul.dropdown-menu {
         display: block;
         margin-left: 0;
     }
+    .home_address{  flex-direction: column;  }
+    .home_contacts + .home_contacts{  margin-left: 0;  }
 
     .home_bg {
         padding-top: 130px;
@@ -2900,6 +2905,9 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (min-width: 768px) and (max-width: 847px) {
+    p{
+        font-size: 14px;
+    }
     header .header_menu {
         width: 100%;
         float: none;
@@ -3090,33 +3098,23 @@ ul.nav li:hover > ul.dropdown-menu {
     .about_contact .about_detail {
         height: 250px;
     }
-
     .title-check-border .check-title-name {
         width: 90%;
     }
-
     .title-check-border {
         width: 100%;
     }
-
     .cu-block-main .cu-list .cu_list_icon img {
         width: 100%;
     }
-
     header .icons button.btn {
         display: block;
         margin: 20px 0;
     }
 
-    header .icons .fa-map-marker {
-        margin: 10px 0;
-    }
-
     header .icons .fa-phone {
         display: block;
-        margin: 10px 0;
     }
-
     header#Home.mirgration_banne {
         background-size: cover;
     }
