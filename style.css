@@ -247,7 +247,7 @@ header .right::before {
     padding-top: 20px;
     font-size: 20px;
     line-height: 28px;
-    font-family: OpenSans;
+    /*font-family: OpenSans;*/
 }
 
 .home_bg .men_img {
@@ -257,7 +257,7 @@ header .right::before {
 
 .home_bottom_bg .line h5 {
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: OpenSans;*/
     color: #cccccc;
     line-height: 22px;
 }
@@ -288,7 +288,7 @@ header .right::before {
     font-size: 14px;
     margin: 20px auto;
     height: 100px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
 }
 
 .get-started .block3-get a {
@@ -406,7 +406,7 @@ header .right::before {
 .cu-block-title .cu-buss-box p {
     color: #fff;
     font-size: 16px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
     margin: 20px auto;
 }
 
@@ -496,7 +496,7 @@ header .right::before {
 .cu-block-main .cu-list .cu_list_detail p {
     color: #141414;
     font-size: 16px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
 }
 
 .cu-block-main .cu-list {
@@ -545,7 +545,7 @@ header .right::before {
 
 .principles_list p {
     font-size: 16px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
     color: #141414;
 }
 
@@ -566,7 +566,7 @@ header .right::before {
 .about_rating .rating_list p {
     color: #fff;
     font-size: 13px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
     margin-top: 10px;
 }
 
@@ -643,7 +643,7 @@ header .right::before {
 .about_contact .about_detail .about_details p {
     color: #fff;
     font-size: 14px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
     width: 80%;
     margin-bottom: 5px;
 }
@@ -652,7 +652,7 @@ header .right::before {
     color: #fff;
     margin-bottom: 5px;
     font-size: 14px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
     display: block;
 }
 
@@ -683,7 +683,7 @@ footer .footer_copyright span {
 .cu_migration_our .title-check-border .check-title-name p {
     color: #fff;
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
 }
 
 .our_process_list .process_icon {
@@ -700,7 +700,7 @@ footer .footer_copyright span {
 
 .our_process_list .process_detail span {
     color: #1ba492;
-    font-family: Conv_VANTABOL;
+    font-family: 'Conv_VANTABOL';
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -709,14 +709,14 @@ footer .footer_copyright span {
 
 .our_process_list .process_detail p {
     color: #fff;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     font-size: 12px;
 }
 
 .process_before h6 {
     color: #fff;
     font-size: 25px;
-    font-family: TradeGothicLTBold;
+    font-family: 'TradeGothicLTBold';
     position: relative;
     padding-top: 15px;
     text-transform: uppercase;
@@ -724,7 +724,7 @@ footer .footer_copyright span {
 
 .process_before p {
     color: #fff;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     font-size: 11px;
 }
 
@@ -804,7 +804,7 @@ footer .footer_copyright span {
 .cu_migration_serv .migration_serv .migra_serv_title span {
     color: #fff;
     font-size: 12px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     height: 35px;
     display: block;
     width: 55%;
@@ -887,7 +887,7 @@ header#Home.contact_banne .icons {
 .head_info p {
     margin-bottom: 2px;
     color: #141414;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     font-size: 16px;
 }
 
@@ -902,7 +902,7 @@ header#Home.contact_banne .icons {
 .head_info a {
     margin-bottom: 2px;
     color: #141414;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     font-size: 16px;
 }
 
@@ -930,7 +930,7 @@ header#Home.contact_banne .icons {
 .contact_email .email_name_id label {
     color: #141414;
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     width: 30%;
     display: inline-block;
     font-weight: normal;
@@ -954,7 +954,7 @@ header#Home.contact_banne .icons {
 .contact_email .email_sub label {
     color: #141414;
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     width: 15%;
     display: inline-block;
     font-weight: normal;
@@ -975,7 +975,7 @@ header#Home.contact_banne .icons {
 .contact_email .email_msg label {
     color: #141414;
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     width: 15%;
     display: inline-block;
     font-weight: normal;
@@ -1038,12 +1038,12 @@ header#Home.contact_banne .icons {
 
 .contact_banne .migration_banner_text p {
     font-size: 20px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
 }
 
 .contact_banne .icons p, .migration_banner_text p {
     font-size: 16px;
-    font-family: 'OpenSans';
+    /*font-family: 'OpenSans';*/
 }
 
 #Home.remote_support_banner {
@@ -1079,7 +1079,7 @@ header#Home.contact_banne .icons {
 .remote_support_banner .line h3 {
     text-transform: uppercase;
     font-size: 16px;
-    font-family: 'TradeGothicLTBold';
+    /*font-family: 'OpenSans';*/
 }
 
 header.remote_support_banner .icons {
@@ -1096,7 +1096,7 @@ header.remote_support_banner .icons {
 
 .remote_support_banner p {
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
 }
 
 .remote_our_services .title-check-border .check-title-name {
@@ -1106,7 +1106,7 @@ header.remote_support_banner .icons {
 .remote_our_services .title-check-border .check-title-name p {
     font-size: 16px;
     color: #141414;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
 }
 
 .get-started.remote_our_services {
@@ -1153,7 +1153,7 @@ header.remote_support_banner .icons {
 .remote_footer .remote_reasons p {
     color: #fff;
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
 }
 
 .remote_footer .remote_reasons .reasons_icon {
@@ -1228,7 +1228,7 @@ header.remote_support_banner .icons {
     margin-bottom: 0;
     font-size: 14px;
     color: #fff;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
 }
 
 .proj_sitelist {
@@ -1278,7 +1278,7 @@ header.remote_support_banner .icons {
 .share_request_btn a {
     color: #fff;
     font-size: 14px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     border: 1px solid #1BA492;
     width: 250px;
     text-align: center;
@@ -1308,13 +1308,13 @@ header.sharepoint_branding .heading_text {
 
 .sharepoint_branding .home_bottom_bg .line h3 {
     font-size: 20px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     line-height: 28px;
 }
 
 .sharepoint_branding .home_bottom_bg .line h5 {
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     color: #cccccc;
     line-height: 22px;
 }
@@ -1393,7 +1393,7 @@ header.sharepoint_branding .heading_text {
     display: block;
     color: #777;
     font-size: 14px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
 }
 
 .main_bottom_note .btn-primary {
@@ -1613,7 +1613,7 @@ header.sharepoint_branding .heading_text {
 .hr4-head span {
     color: #141414;
     font-size: 16px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
 }
 
 /* Datepicker  */
@@ -2156,7 +2156,6 @@ header.sharepoint_branding .heading_text {
     min-width: 160px;
     list-style: none;
     background-color: #ffffff;
-    border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2180,7 +2179,7 @@ header.sharepoint_branding .heading_text {
 .about_top h2 {
     color: #fff;
     font-size: 60px;
-    font-family: Conv_VANTABOL;
+    font-family: 'Conv_VANTABOL';
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -2195,7 +2194,7 @@ header.sharepoint_branding .heading_text {
 .about_top p {
     color: #fff;
     font-size: 18px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     text-align: center;
     margin-bottom: 40px;
 }
@@ -2222,13 +2221,13 @@ header.sharepoint_branding .heading_text {
     top: -14px;
     width: 100%;
     left: 0;
-    font-family: Conv_VANTABOL;
+    font-family: 'Conv_VANTABOL';
 }
 
 .about_hones .about_hone_detail li {
     color: #fff;
     font-size: 14px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     text-align: left;
 }
 
@@ -2242,9 +2241,8 @@ header.sharepoint_branding .heading_text {
     background: #1ba492;
     padding: 15px;
     color: #fff;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     text-transform: uppercase;
-    width: 200px;
     width: 280px;
     display: block;
     text-align: center;
@@ -2308,7 +2306,7 @@ header.sharepoint_branding .heading_text {
 .jed_header h4 {
     color: #1ba492;
     font-size: 28px;
-    font-family: Conv_VANTABOL;
+    font-family: 'Conv_VANTABOL';
     text-transform: uppercase;
     margin-top: 25px;
 }
@@ -2332,13 +2330,13 @@ header.sharepoint_branding .heading_text {
 .jed_detail span {
     color: #fff;
     font-size: 18px;
-    font-family: Conv_VANTABOL;
+    font-family: 'Conv_VANTABOL';
 }
 
 .jed_detail p {
     color: #fff;
     font-size: 14px;
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     margin-bottom: 0;
 }
 
@@ -2407,13 +2405,13 @@ header.sharepoint_branding .heading_text {
 .servic_list span {
     color: #1ba492;
     font-size: 16px;
-    font-family: Conv_VANTABOL;
+    font-family: 'Conv_VANTABOL';
     margin: 20px auto;
     display: block;
 }
 
 .servic_list p {
-    font-family: OpenSans;
+    /*font-family: 'OpenSans';*/
     font-size: 14px;
     color: #fff;
     margin-bottom: 0;
