@@ -98,6 +98,7 @@ button:active:focus{
     outline: 0;
     box-shadow: none;
     opacity: .9;
+    color: inherit;
 }
 
 
@@ -138,7 +139,7 @@ button:active:focus{
     /*to { background-position: 1000px 0; }*/
 /*}*/
 #header{
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -340,10 +341,15 @@ header .right::before {
     flex-direction: row;
     justify-content: flex-start;
 }
-.home_socials li a{
+.home_socials li{
     display: flex;
     width: 30px;
     height: 30px;
+}
+
+.home_socials li a{
+    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -2685,6 +2691,9 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 991px) {
+    .navbar-brand{
+        max-width: 100px;
+    }
     header .heading_text {
         font-size: 35px;
     }
@@ -2693,9 +2702,6 @@ ul.nav li:hover > ul.dropdown-menu {
         margin-top: 10px;
     }
 
-    #Home .header {
-        width: 100%;
-    }
 
     header .btn_WEBSITES {
         padding-right: 30px;
@@ -2722,7 +2728,7 @@ ul.nav li:hover > ul.dropdown-menu {
 
     /* New css */
     .navbar-inverse .navbar-nav > li > a {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .navbar-inverse .navbar-nav > li > a {
@@ -2882,12 +2888,9 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 847px) {
-    .header .navbar-header {
-        width: 100%;
-    }
 
     .navbar-inverse .navbar-nav > li > a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .sharepoint_branding .proj_management_banner_icon {
@@ -2899,35 +2902,28 @@ ul.nav li:hover > ul.dropdown-menu {
 @media (min-width: 768px) and (max-width: 847px) {
     header .header_menu {
         width: 100%;
-        float: left !important;
+        float: none;
         padding-left: 0;
     }
-
     .navbar-brand > img {
         margin-left: 0;
     }
-
     header #myNavbar {
+        width: 100%;
         padding-left: 0;
+        padding-right: 0;
     }
-    .navbar-inverse .navbar-collapse{
-        background: #333;
-    }
-
     header .icons .fa-map-marker {
         margin-left: 0;
         display: block;
     }
-
     header .btn_MICROSOFT {
         margin-top: 20px;
     }
-
     .home_bg .men_img {
         bottom: -20px;
         height: 10px;
     }
-
     .home_bg .men_img img {
         max-width: 270px;
         right: 0;
@@ -2940,11 +2936,14 @@ ul.nav li:hover > ul.dropdown-menu {
     .navbar-brand > img {
         margin-left:0;
     }
-
     .navbar-toggle {
-        margin-top: 20px;
+        /*margin-top: 20px;*/
     }
-
+    #header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     header .header {
         border-bottom: 1px solid white;
     }
@@ -2958,9 +2957,23 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     .header .navbar-header {
-        width: auto;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
+    #myNavbar.navbar-collapse{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #myNavbar.collapse{
+        display: none;
+    }
+    #myNavbar.collapse.in{
+        display: flex;
+        background: #333333;
+    }
     .home_bg .row {
         position: relative;
     }
