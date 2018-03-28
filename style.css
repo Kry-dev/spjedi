@@ -80,6 +80,16 @@ header .navbar-inverse {
     right: 0;
     z-index: 9;
 }
+.navbar-inverse .navbar-toggle{
+    border-color: white;
+}
+.navbar-inverse .navbar-toggle:hover{
+    background: rgba(0,0,0,0.9);
+
+}
+.navbar-inverse .navbar-toggle:active{
+    background: rgba(0,0,0,0.9);
+}
 
 .home_bg {
     padding-top: 73px;
