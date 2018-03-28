@@ -100,7 +100,9 @@ header .navbar-inverse {
 .navbar-inverse .navbar-toggle:active{
     background: rgba(0,0,0,0.9);
 }
-
+.navbar .dropdown-menu{
+    min-width: 100%;
+}
 .home_bg {
     padding-top: 73px;
 }
