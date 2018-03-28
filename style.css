@@ -61,9 +61,19 @@ button:active:focus{
 
 #Home {
     background-image: url("assets/img/home-bg.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     height: auto;
+    box-sizing: border-box;
+    -webkit-animation: slide-r-to-l 70s infinite linear;
+}
+@-webkit-keyframes slide-r-to-l {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+@-webkit-keyframes slide-l-to-r {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 0; }
 }
 
 .home_bottom_bg {
@@ -542,7 +552,8 @@ header .right::before {
 }
 
 .cu-about {
-    background: url('assets/img/6-screen-bg.jpg') no-repeat center center;
+    background: url('assets/img/6-screen-bg.jpg') repeat-x center center;
+    -webkit-animation: slide 70s infinite linear;
 }
 
 .about_rating .rating_list {
@@ -817,8 +828,9 @@ footer .footer_copyright span {
 }
 
 header#Home.mirgration_banne {
-    background: url('assets/img/top-bg.jpg') no-repeat center center;
+    background: url('assets/img/top-bg.jpg') repeat-x center center;
     padding-bottom: 80px;
+    -webkit-animation: slide-l-to-r 70s infinite linear;
 }
 
 header#Home.mirgration_banne .btn_WEBSITES {
@@ -843,7 +855,8 @@ header#Home.mirgration_banne .migration_banner_text {
 }
 
 #Home.contact_banne {
-    background: url('assets/img/top-contact-bg.jpg') no-repeat center center;
+    background: url('assets/img/top-contact-bg.jpg') repeat-x center center;
+    -webkit-animation: slide-l-to-r 70s infinite linear;
 }
 
 header#Home.contact_banne .icons {
@@ -1032,7 +1045,7 @@ header#Home.contact_banne .icons {
 }
 
 #Home.remote_support_banner {
-    background: url('assets/img/top-remote-bg.jpg') no-repeat center center;
+    background: url('assets/img/top-remote-bg.jpg') repeat-x center center;
 }
 
 .remote_support_icon {
@@ -1146,7 +1159,7 @@ header.remote_support_banner .icons {
 }
 
 #Home.proj_management {
-    background: url('assets/img/BG-top.jpg') no-repeat center center;
+    background: url('assets/img/BG-top.jpg') repeat-x center center;
 }
 
 .cu_proj_management {
@@ -1225,7 +1238,7 @@ header.remote_support_banner .icons {
 }
 
 #Home.sharepoint_branding {
-    background: url('assets/img/1-TOP-BG.jpg') no-repeat center center
+    background: url('assets/img/1-TOP-BG.jpg') repeat-x center center
 }
 
 #Home.sharepoint_branding .row {
@@ -1311,7 +1324,7 @@ header.sharepoint_branding .heading_text {
 }
 
 #Home.hr-assets_banner {
-    background: url('assets/img/hr-bg.jpg') no-repeat center center;
+    background: url('assets/img/hr-bg.jpg') repeat-x center center;
 }
 
 .hr-assets_banner .icons {
@@ -2158,7 +2171,7 @@ header.sharepoint_branding .heading_text {
 }
 
 #Home.contact_banne.aboutus-hr {
-    background: url('assets/img/about-hr-bg.jpg') no-repeat center center;
+    background: url('assets/img/about-hr-bg.jpg') repeat-x center center;
     background-size: cover;
 }
 
@@ -2846,6 +2859,9 @@ ul.nav li:hover > ul.dropdown-menu {
     header #myNavbar {
         padding-left: 0;
     }
+    .navbar-inverse .navbar-collapse{
+        background: #333;
+    }
 
     header .icons .fa-map-marker {
         margin-left: 0;
@@ -3149,7 +3165,7 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     .navbar-nav > li > .dropdown-menu, .navbar-nav .open .dropdown-menu {
-        display: block;
+
         width: 100%;
         background: #252525;
         position: relative;
