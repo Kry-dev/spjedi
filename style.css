@@ -84,6 +84,13 @@ body {
 h1, h2, h4, h5, h6 {
     font-family: 'Barlow';
 }
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 24px;
+    font-family: 'Barlow-Bold';
+}
 h5{
     font-family: 'Barlow-Bold';
 }
@@ -459,17 +466,20 @@ header .right::before {
     float: left;
     margin-left: 5px;
 }
-
-.title-check-border .check-title-name h4 {
-    font-size: 50px;
-    color: #141414;
-    font-family: 'BarlowCondensed-SemiBold';
+.check-title-name h2{
     text-transform: uppercase;
     position: relative;
     padding-top: 20px;
 }
 
-.title-check-border .check-title-name h4:before {
+.title-check-border .check-title-name h2 {
+    font-size: 50px;
+    color: #141414;
+    font-family: 'BarlowCondensed-SemiBold';
+
+}
+
+.title-check-border .check-title-name h2:before {
     display: inline-block;
     content: " ";
     text-shadow: none;
@@ -481,7 +491,7 @@ header .right::before {
     left: 5px;
 }
 
-.cu-white h4 {
+.cu-white h2 {
     color: #fff !important;
 }
 
@@ -631,9 +641,7 @@ header .right::before {
     margin-top: 40px;
 }
 
-.principles_list span {
-    font-size: 24px;
-    font-family: 'Conv_VANTABOL';
+.principles_list h3 {
     color: #141414;
     margin: 30px auto 10px;
     display: block;
@@ -711,16 +719,14 @@ header .right::before {
     padding-left: 10px;
 }
 
-.about_contact .about_detail .about_details h4 {
+.about_contact .about_detail .about_details h2 {
     color: #fff;
-    font-size: 50px;
     font-family: 'BarlowCondensed-SemiBold';
-    text-transform: uppercase;
     position: relative;
     padding-top: 20px;
 }
 
-.about_contact .about_detail .about_details h4:before {
+.about_contact .about_detail .about_details h2:before {
     display: inline-block;
     content: " ";
     text-shadow: none;
@@ -1191,24 +1197,22 @@ header.remote_support_banner .icons {
     width: 150px;
     height: 150px;
     line-height: 150px;
+    margin-bottom: 20px;
 }
-
-.remote_our_services .get_start_detail {
-    margin-bottom: 80px;
+.remote_our_services .get_start_detail {  margin-bottom: 80px;  }
+.block3-get  .get_start_detail h3{
+    color: #141414;
+    min-height: 52px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
-
 .get-started.remote_our_services .block3-get p {
     height: auto;
     color: #141414;
 }
+.remote_footer {  margin: 30px auto 20px;  }
 
-.remote_footer {
-    margin: 30px auto 20px;
-}
-
-.remote_footer .remote_reasons {
-    text-align: center;
-}
+.remote_footer .remote_reasons {  text-align: center;  }
 
 .remote_footer .remote_reasons h5 {
     color: #fff;
@@ -2700,26 +2704,20 @@ ul.nav li:hover > ul.dropdown-menu {
     header .heading_text {
         font-size: 35px;
     }
-
     header .icons {
         margin-top: 10px;
     }
-
-
     header .btn_WEBSITES {
         padding-right: 30px;
         padding-left: 30px;
     }
-
     header .btn {
         margin: 20px 5px 20px 0;
     }
-
     header .btn_MICROSOFT {
         padding-right: 10px;
         padding-left: 10px;
     }
-
     header .icons .fa-map-marker {
         display: block;
         margin-left: 0;
