@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2e329a5e-316c-4fde-873d-8d7d6d678494" name="SPJEDI-stage" url="http://kryportf.ftp.tools">
+        <fileTransfer host="kryportf.ftp.tools" port="21" rootFolder="/kry-dev.pro/www/spjedi">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
