@@ -29,16 +29,55 @@
     url('assets/fonts/site/TradeGothicLTBold.ttf') format('truetype'),
     url('assets/fonts/site/TradeGothicLTBold.svg#TradeGothicLTBold') format('svg');
 }
+@font-face {
+    font-family: 'Barlow';
+    src: url('assets/fonts/Barlow/Barlow-Regular.eot');
+    src: url('assets/fonts/Barlow/Barlow-Regular.eot') format('embedded-opentype'),
+    url('assets/fonts/Barlow/Barlow-Regular.woff2') format('woff2'),
+    url('assets/fonts/Barlow/Barlow-Regular.woff') format('woff'),
+    url('assets/fonts/Barlow/Barlow-Regular.ttf') format('truetype'),
+    url('assets/fonts/Barlow/Barlow-Regular.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'Barlow-Light';
+    src: url('assets/fonts/Barlow/Barlow-Light.eot');
+    src: url('assets/fonts/Barlow/Barlow-Light.eot') format('embedded-opentype'),
+    url('assets/fonts/Barlow/Barlow-Light.woff2') format('woff2'),
+    url('assets/fonts/Barlow/Barlow-Light.woff') format('woff'),
+    url('assets/fonts/Barlow/Barlow-Light.ttf') format('truetype'),
+    url('assets/fonts/Barlow/Barlow-Light.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'BarlowSemiCondensed-Bold';
+    src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot');
+    src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot') format('embedded-opentype'),
+    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff2') format('woff2'),
+    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff') format('woff'),
+    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.ttf') format('truetype'),
+    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'BarlowCondensed-SemiBold';
+    src: url('assets/fonts/Barlow/BarlowCondensed-SemiBold.eot');
+    src: url('assets/fonts/Barlow/BarlowCondensed-SemiBold.eot') format('embedded-opentype'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.woff2') format('woff2'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.woff') format('woff'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.ttf') format('truetype'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.svg#TradeGothicLTBold') format('svg');
+}
 
-@import 'css/OpenSans/OpenSans.css';
 body {
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     color: #222;
     overflow-x: hidden;
 }
 
 h1, h2, h4, h5, h6 {
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
+}
+p{
+    font-family: 'Barlow-Light';
+    font-size: 15px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -58,6 +97,17 @@ button:active:focus{
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #6DC4C3;
 }
+.navbar-brand{
+    display: flex;
+    max-width: 180px;
+    max-height: 50px;
+    padding: 5px;
+}
+.navbar-brand>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 #Home {
     background-image: url("assets/img/home-bg.jpg");
@@ -75,7 +125,19 @@ button:active:focus{
     from { background-position: 0 0; }
     to { background-position: 1000px 0; }
 }
+#header{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+#home .navbar-header{
+    display: flex;
 
+}
 .home_bottom_bg {
     background: rgba(0, 0, 0, 0.5);
     padding-top: 40px;
@@ -118,8 +180,9 @@ header .menu_sticky #myNavbar {
 }
 
 header #myNavbar {
-    border-bottom: 1px solid;
     color: #fff;
+    display: flex;
+    align-content: flex-end;
 }
 
 header .header_menu li a {
@@ -192,7 +255,7 @@ header .btn_MICROSOFT {
 
 header .heading_text {
     font-size: 50px;
-    font-family: 'TradeGothicLTBold';
+    font-family: 'BarlowCondensed-SemiBold';
     text-transform: uppercase;
 }
 
@@ -285,10 +348,8 @@ header .right::before {
 
 .get-started .block3-get p {
     color: #333333;
-    font-size: 14px;
     margin: 20px auto;
     height: 100px;
-    /*font-family: 'OpenSans';*/
 }
 
 .get-started .block3-get a {
@@ -363,7 +424,7 @@ header .right::before {
 .title-check-border .check-title-name h4 {
     font-size: 50px;
     color: #141414;
-    font-family: 'TradeGothicLTBold';
+    font-family: 'BarlowCondensed-SemiBold';
     text-transform: uppercase;
     position: relative;
     padding-top: 20px;
@@ -405,8 +466,6 @@ header .right::before {
 
 .cu-block-title .cu-buss-box p {
     color: #fff;
-    font-size: 16px;
-    /*font-family: 'OpenSans';*/
     margin: 20px auto;
 }
 
@@ -495,8 +554,6 @@ header .right::before {
 
 .cu-block-main .cu-list .cu_list_detail p {
     color: #141414;
-    font-size: 16px;
-    /*font-family: 'OpenSans';*/
 }
 
 .cu-block-main .cu-list {
@@ -514,7 +571,7 @@ header .right::before {
 .cu-block-not .not-sub_text span {
     font-size: 25px;
     color: #fff;
-    font-family: 'TradeGothicLTBold';
+    font-family: 'BarlowCondensed-SemiBold';
     padding: 0 20px;
     text-align: center;
     display: block;
@@ -544,8 +601,6 @@ header .right::before {
 }
 
 .principles_list p {
-    font-size: 16px;
-    /*font-family: 'OpenSans';*/
     color: #141414;
 }
 
@@ -565,8 +620,6 @@ header .right::before {
 
 .about_rating .rating_list p {
     color: #fff;
-    font-size: 13px;
-    /*font-family: 'OpenSans';*/
     margin-top: 10px;
 }
 
@@ -622,7 +675,7 @@ header .right::before {
 .about_contact .about_detail .about_details h4 {
     color: #fff;
     font-size: 50px;
-    font-family: 'TradeGothicLTBold';
+    font-family: 'BarlowCondensed-SemiBold';
     text-transform: uppercase;
     position: relative;
     padding-top: 20px;
@@ -642,8 +695,6 @@ header .right::before {
 
 .about_contact .about_detail .about_details p {
     color: #fff;
-    font-size: 14px;
-    /*font-family: 'OpenSans';*/
     width: 80%;
     margin-bottom: 5px;
 }
@@ -652,7 +703,7 @@ header .right::before {
     color: #fff;
     margin-bottom: 5px;
     font-size: 14px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     display: block;
 }
 
@@ -682,8 +733,6 @@ footer .footer_copyright span {
 
 .cu_migration_our .title-check-border .check-title-name p {
     color: #fff;
-    font-size: 16px;
-    /*font-family: 'OpenSans';*/
 }
 
 .our_process_list .process_icon {
@@ -709,14 +758,12 @@ footer .footer_copyright span {
 
 .our_process_list .process_detail p {
     color: #fff;
-    /*font-family: 'OpenSans';*/
-    font-size: 12px;
 }
 
 .process_before h6 {
     color: #fff;
     font-size: 25px;
-    font-family: 'TradeGothicLTBold';
+    font-family: 'BarlowCondensed-SemiBold';
     position: relative;
     padding-top: 15px;
     text-transform: uppercase;
@@ -724,8 +771,6 @@ footer .footer_copyright span {
 
 .process_before p {
     color: #fff;
-    /*font-family: 'OpenSans';*/
-    font-size: 11px;
 }
 
 .process_before h6:before {
@@ -769,7 +814,7 @@ footer .footer_copyright span {
 .cu-block6 .not-sub_text span {
     color: #141414;
     font-size: 25px;
-    font-family: 'TradeGothicLTBold';
+    font-family: 'BarlowCondensed-SemiBold';
     text-align: center;
     width: 100%;
     display: inline-block;
@@ -804,7 +849,7 @@ footer .footer_copyright span {
 .cu_migration_serv .migration_serv .migra_serv_title span {
     color: #fff;
     font-size: 12px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     height: 35px;
     display: block;
     width: 55%;
@@ -879,7 +924,7 @@ header#Home.contact_banne .icons {
 .head_info h5 {
     font-size: 48px;
     color: #141414;
-    font-family: 'TradeGothicLTBold';
+    font-family: 'BarlowCondensed-SemiBold';
     text-transform: uppercase;
     margin: 40px 0;
 }
@@ -887,8 +932,6 @@ header#Home.contact_banne .icons {
 .head_info p {
     margin-bottom: 2px;
     color: #141414;
-    /*font-family: 'OpenSans';*/
-    font-size: 16px;
 }
 
 .head_info p i {
@@ -902,7 +945,7 @@ header#Home.contact_banne .icons {
 .head_info a {
     margin-bottom: 2px;
     color: #141414;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     font-size: 16px;
 }
 
@@ -930,7 +973,7 @@ header#Home.contact_banne .icons {
 .contact_email .email_name_id label {
     color: #141414;
     font-size: 16px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     width: 30%;
     display: inline-block;
     font-weight: normal;
@@ -954,7 +997,7 @@ header#Home.contact_banne .icons {
 .contact_email .email_sub label {
     color: #141414;
     font-size: 16px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     width: 15%;
     display: inline-block;
     font-weight: normal;
@@ -975,7 +1018,7 @@ header#Home.contact_banne .icons {
 .contact_email .email_msg label {
     color: #141414;
     font-size: 16px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     width: 15%;
     display: inline-block;
     font-weight: normal;
@@ -1038,12 +1081,6 @@ header#Home.contact_banne .icons {
 
 .contact_banne .migration_banner_text p {
     font-size: 20px;
-    /*font-family: 'OpenSans';*/
-}
-
-.contact_banne .icons p, .migration_banner_text p {
-    font-size: 16px;
-    /*font-family: 'OpenSans';*/
 }
 
 #Home.remote_support_banner {
@@ -1079,7 +1116,7 @@ header#Home.contact_banne .icons {
 .remote_support_banner .line h3 {
     text-transform: uppercase;
     font-size: 16px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
 }
 
 header.remote_support_banner .icons {
@@ -1094,19 +1131,12 @@ header.remote_support_banner .icons {
     background: rgba(0, 0, 0, 0.75);
 }
 
-.remote_support_banner p {
-    font-size: 16px;
-    /*font-family: 'OpenSans';*/
-}
-
 .remote_our_services .title-check-border .check-title-name {
     width: 95%;
 }
 
 .remote_our_services .title-check-border .check-title-name p {
-    font-size: 16px;
     color: #141414;
-    /*font-family: 'OpenSans';*/
 }
 
 .get-started.remote_our_services {
@@ -1152,8 +1182,6 @@ header.remote_support_banner .icons {
 
 .remote_footer .remote_reasons p {
     color: #fff;
-    font-size: 16px;
-    /*font-family: 'OpenSans';*/
 }
 
 .remote_footer .remote_reasons .reasons_icon {
@@ -1226,9 +1254,7 @@ header.remote_support_banner .icons {
 
 .proj_sitelist .site_list .site_list_rat .site_list_detail p {
     margin-bottom: 0;
-    font-size: 14px;
     color: #fff;
-    /*font-family: 'OpenSans';*/
 }
 
 .proj_sitelist {
@@ -1278,7 +1304,7 @@ header.remote_support_banner .icons {
 .share_request_btn a {
     color: #fff;
     font-size: 14px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     border: 1px solid #1BA492;
     width: 250px;
     text-align: center;
@@ -1308,13 +1334,13 @@ header.sharepoint_branding .heading_text {
 
 .sharepoint_branding .home_bottom_bg .line h3 {
     font-size: 20px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     line-height: 28px;
 }
 
 .sharepoint_branding .home_bottom_bg .line h5 {
     font-size: 16px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     color: #cccccc;
     line-height: 22px;
 }
@@ -1393,7 +1419,7 @@ header.sharepoint_branding .heading_text {
     display: block;
     color: #777;
     font-size: 14px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
 }
 
 .main_bottom_note .btn-primary {
@@ -1613,7 +1639,7 @@ header.sharepoint_branding .heading_text {
 .hr4-head span {
     color: #141414;
     font-size: 16px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
 }
 
 /* Datepicker  */
@@ -2194,7 +2220,6 @@ header.sharepoint_branding .heading_text {
 .about_top p {
     color: #fff;
     font-size: 18px;
-    /*font-family: 'OpenSans';*/
     text-align: center;
     margin-bottom: 40px;
 }
@@ -2227,7 +2252,7 @@ header.sharepoint_branding .heading_text {
 .about_hones .about_hone_detail li {
     color: #fff;
     font-size: 14px;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     text-align: left;
 }
 
@@ -2241,7 +2266,7 @@ header.sharepoint_branding .heading_text {
     background: #1ba492;
     padding: 15px;
     color: #fff;
-    /*font-family: 'OpenSans';*/
+    font-family: 'Barlow';
     text-transform: uppercase;
     width: 280px;
     display: block;
@@ -2336,7 +2361,6 @@ header.sharepoint_branding .heading_text {
 .jed_detail p {
     color: #fff;
     font-size: 14px;
-    /*font-family: 'OpenSans';*/
     margin-bottom: 0;
 }
 
@@ -2411,7 +2435,6 @@ header.sharepoint_branding .heading_text {
 }
 
 .servic_list p {
-    /*font-family: 'OpenSans';*/
     font-size: 14px;
     color: #fff;
     margin-bottom: 0;
