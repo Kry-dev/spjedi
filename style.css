@@ -373,6 +373,9 @@ header .right::before {
     position: relative;
     bottom: -120px;
 }
+.home_bg .men_img img{
+    width: 110%;
+}
 
 .home_bottom_bg .line h5 {
     font-size: 16px;
