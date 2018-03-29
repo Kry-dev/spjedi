@@ -2393,34 +2393,17 @@ header.sharepoint_branding .heading_text {
 }
 
 .services_our .servi_icon {
-    text-align: center;
     margin-top: -75px;
     margin-bottom: 20px;
     background: url("assets/img/6-angle.svg") no-repeat center;
-    width: 120px;
-    height: 120px;
-    display: block;
-}
-
-.services_our .servi_icon.img-top-20 {
-    margin-top: -90px;
-}
-
-.services_our .servi_icon.img-top-10 {
-    margin-top: -83px;
-}
-
-.services_our .servi_icon.img-top-1 ~ span {
-    margin-top: 60px;
-}
-
-.services_our .servi_icon.img-top-1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 155px;
-    margin: 0 auto;
-    top: 7px;
+    max-width: 120px;
+    max-height: 120px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .servic_list {
@@ -2430,7 +2413,7 @@ header.sharepoint_branding .heading_text {
     border-radius: 10px;
     width: 100%;
     margin-top: 60px;
-    min-heigh: 400px;
+    min-height: 400px;
     display: inline-block;
 }
 
@@ -2447,7 +2430,7 @@ header.sharepoint_branding .heading_text {
 }
 
 .servi_icon img {
-    width: 100%;
+    width: 120%;
 }
 
 .navbar-inverse .navbar-nav > li.dropdown:hover a.dropdown-toggle {
