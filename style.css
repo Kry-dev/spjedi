@@ -152,9 +152,9 @@ button:active:focus{
     background-repeat: repeat-x;
     background-size: cover;
     background-attachment: fixed !important;
-    height: auto;
+    /*height: auto;*/
     box-sizing: border-box;
-    /*-webkit-animation: slide-r-to-l 70s infinite linear;*/
+    height: 100vh;
 }
 @-webkit-keyframes slide-r-to-l {
     from { background-position: 0 0; }
@@ -175,11 +175,17 @@ button:active:focus{
 }
 #home .navbar-header{
     display: flex;
-
+}
+.home_bg .home_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
 }
 .home_bottom_bg {
     background: rgba(0, 0, 0, 0.5);
     padding-top: 40px;
+    height: 27vh;
 }
 .home_address{
     display: flex;
@@ -222,6 +228,13 @@ header .navbar-inverse {
 }
 .home_bg {
     padding-top: 73px;
+    display: flex;
+    flex-direction: column;
+    height: 73vh;
+}
+
+.home_bg .container{
+    height: 100%;
 }
 
 .menu_sticky {
@@ -261,8 +274,13 @@ header .header_menu li ul li a {
 }
 
 header .icons {
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 header .icons a {
@@ -388,6 +406,12 @@ header .right::before {
 .home_socials li a:hover{
     color: #1BA492;
     text-decoration: none;
+}
+.home_buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
 }
 /* New css */
 .get-started {
@@ -729,7 +753,7 @@ header .right::before {
     background-color: #1BA492;
     width: 170px;
     position: absolute;
-    top: 3px;
+    top: -5px;
     left: 5px;
 }
 
@@ -764,7 +788,6 @@ footer .footer_copyright span {
 
 .cu_migrationtit {
     background: url('assets/img/bg-screen-2.jpg') no-repeat center bottom;
-    padding-bottom: 40px;
 }
 
 .cu_migration_our .title-check-border .check-title-name {
@@ -2373,6 +2396,10 @@ header.sharepoint_branding .heading_text {
     text-align: center;
     margin-top: -75px;
     margin-bottom: 20px;
+    background: url("assets/img/6-angle.svg") no-repeat center;
+    width: 120px;
+    height: 120px;
+    display: block;
 }
 
 .services_our .servi_icon.img-top-20 {
