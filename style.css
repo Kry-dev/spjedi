@@ -154,7 +154,7 @@ button:active:focus{
     background-attachment: fixed !important;
     /*height: auto;*/
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
 }
 @-webkit-keyframes slide-r-to-l {
     from { background-position: 0 0; }
@@ -699,8 +699,8 @@ header .right::before {
     width: 100%;
     display: block;
 }
-
-.about_contact {  margin-top: 80px;  }
+.about-servic{  margin-top: 20px;}
+.about_contact{  margin-top: 40px;}
 
 .about_contact .about_detail .about_checkmark {
     display: table-cell;
@@ -1226,7 +1226,7 @@ header.remote_support_banner .icons {
 .proj_management_banner_icon {
     position: absolute;
     bottom: -110px;
-    right: 0%;
+    right: 0;
     z-index: 1;
 }
 
@@ -2207,7 +2207,9 @@ header.sharepoint_branding .heading_text {
     background: url('assets/img/about-hr-bg.jpg') repeat-x center center;
     background-size: cover;
 }
-
+#Home.contact_banne.aboutus-hr .home_bg{
+    height: auto;
+}
 .about_top h2 {
     color: #fff;
     font-size: 60px;
@@ -2393,7 +2395,7 @@ header.sharepoint_branding .heading_text {
 }
 
 .services_our .servi_icon {
-    margin-top: -75px;
+    margin-top: -80px;
     margin-bottom: 20px;
     background: url("assets/img/6-angle.svg") no-repeat center;
     max-width: 120px;
