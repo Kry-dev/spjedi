@@ -100,6 +100,9 @@ h3{
     font-size: 24px;
     font-family: 'Barlow-Bold';
 }
+.h3-medium{
+    font-family: 'Barlow-Medium';
+}
 h5{
     font-family: 'Barlow-Bold';
 }
@@ -339,9 +342,7 @@ header .right::before {
 
 .home_bottom_bg .line h3 {
     padding-top: 20px;
-    font-size: 20px;
     line-height: 28px;
-    font-family: 'Barlow-Medium';
 }
 
 .home_bg .men_img {
@@ -396,9 +397,8 @@ header .right::before {
     width: 100%;
 }
 
-.get-started .block3-get h5 {
+.get-started .block3-get h3 {
     color: #141414;
-    font-size: 15px;
     text-transform: uppercase;
 }
 
@@ -803,10 +803,8 @@ footer .footer_copyright span {
     vertical-align: middle;
 }
 
-.our_process_list .process_detail span {
+.our_process_list .process_detail h3 {
     color: #1ba492;
-    font-family: 'Conv_VANTABOL';
-    font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 5px;
     display: block;
@@ -816,20 +814,17 @@ footer .footer_copyright span {
     color: #fff;
 }
 
-.process_before h6 {
+.process_before h3 {
     color: #fff;
-    font-size: 25px;
-    font-family: 'BarlowCondensed-SemiBold';
     position: relative;
     padding-top: 15px;
-    text-transform: uppercase;
 }
 
 .process_before p {
     color: #fff;
 }
 
-.process_before h6:before {
+.process_before h3:before {
     position: absolute;
     top: 0;
     width: 200px;
@@ -883,9 +878,11 @@ footer .footer_copyright span {
     margin: 0 auto;
 }
 
-.about_top_3 .cu_about_1 span {
+.about_top_3 .cu_about_1 .cu_abou_icon {
+    margin-bottom: 20px;
+}
+.about_top_3 .cu_about_1 p {
     color: #fff;
-    margin-top: 20px;
     display: block;
 }
 
@@ -898,15 +895,19 @@ footer .footer_copyright span {
     display: inline-block;
     text-align: center;
     vertical-align: top;
+    margin-bottom: 20px;
 }
 
-.cu_migration_serv .migration_serv .migra_serv_title span {
+.cu_migration_serv .migration_serv .migra_serv_icon {
+    margin-bottom: 20px;
+}
+.cu_migration_serv .migration_serv .migra_serv_title p {
     color: #fff;
     font-family: 'Barlow';
     height: 35px;
     display: block;
-    width: 55%;
-    margin: 15px auto 0;
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 .cu_migration_serv {
