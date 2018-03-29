@@ -90,7 +90,7 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h4, h5, h6 {
+h1, h2, h4,{
     font-family: 'Barlow';
 }
 h2{
@@ -104,6 +104,9 @@ h3{
     font-family: 'Barlow-Medium';
 }
 h5{
+    font-family: 'Barlow-Bold';
+}
+h6{
     font-family: 'Barlow-Bold';
 }
 p{
@@ -390,7 +393,10 @@ header .right::before {
 .get-started {
     background: #FAFAFA;
 }
-
+.get-started .block_get{
+    background: url('assets/img/bg-screen-2.png') no-repeat center bottom #e5e5e5;
+    padding-bottom: 250px;
+}
 .get-started .block3-get {
     width: 100%;
     text-align: center;
@@ -399,12 +405,6 @@ header .right::before {
 .get-started .block3-get img {
     width: 100%;
 }
-
-.get-started .block3-get h3 {
-    color: #141414;
-    text-transform: uppercase;
-}
-
 .get-started .block3-get p {
     color: #333333;
     margin: 20px auto;
@@ -500,7 +500,7 @@ header .right::before {
     background-color: #1BA492;
     width: 170px;
     position: absolute;
-    top: 3px;
+    top: -5px;
     left: 5px;
 }
 
@@ -630,14 +630,11 @@ header .right::before {
     background-attachment: fixed;
 }
 
-.cu-block-not .not-sub_text span {
-    font-size: 25px;
-    color: #fff;
+.not-sub_text h3 {
     font-family: 'BarlowCondensed-SemiBold';
     padding: 0 20px;
     text-align: center;
     display: block;
-    text-transform: uppercase;
 }
 
 .cu-principles {
@@ -672,24 +669,14 @@ header .right::before {
     margin: 20px auto;
     padding: 0 50px;
 }
-
-.about_rating .rating_list p {
-    color: #fff;
-    margin-top: 10px;
-}
-
-.about_rating .rating_list span {
+.about_rating .rating_list .rating_stars {  margin-bottom: 20px;  }
+.about_rating .rating_list h3 {
     text-align: right;
-    font-size: 20px;
-    color: #fff;
-    font-family: 'Conv_VANTABOL';
     width: 100%;
     display: block;
 }
 
-.about_contact {
-    margin-top: 80px;
-}
+.about_contact {  margin-top: 80px;  }
 
 .about_contact .about_detail .about_checkmark {
     display: table-cell;
@@ -802,13 +789,8 @@ footer .footer_copyright span {
 
 .our_process_list .process_detail h3 {
     color: #1ba492;
-    text-transform: uppercase;
     margin-bottom: 5px;
     display: block;
-}
-
-.our_process_list .process_detail p {
-    color: #fff;
 }
 
 .process_before h3 {
@@ -859,15 +841,6 @@ footer .footer_copyright span {
     padding: 80px 0;
 }
 
-.cu-block6 .not-sub_text span {
-    color: #141414;
-    font-size: 25px;
-    font-family: 'BarlowCondensed-SemiBold';
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-    text-transform: uppercase;
-}
 
 .about_top_3 .cu_about_1 {
     width: 50%;
@@ -878,14 +851,8 @@ footer .footer_copyright span {
 .about_top_3 .cu_about_1 .cu_abou_icon {
     margin-bottom: 20px;
 }
-.about_top_3 .cu_about_1 p {
-    color: #fff;
-    display: block;
-}
-
-.about_top_3 .cu_about_1 img {
-    width: 100%;
-}
+.about_top_3 .cu_about_1 p {  display: block;  }
+.about_top_3 .cu_about_1 img {  width: 100%;  }
 
 .cu_migration_serv .migration_serv {
     width: 24.5%;
@@ -899,9 +866,7 @@ footer .footer_copyright span {
     margin-bottom: 20px;
 }
 .cu_migration_serv .migration_serv .migra_serv_title p {
-    color: #fff;
-    font-family: 'Barlow';
-    height: 35px;
+    min-height: 35px;
     display: block;
     max-width: 150px;
     margin: 0 auto;
@@ -928,20 +893,13 @@ footer .footer_copyright span {
 header#Home.mirgration_banne {
     background: url('assets/img/top-bg.jpg') repeat-x center center;
     padding-bottom: 80px;
-    -webkit-animation: slide-l-to-r 70s infinite linear;
 }
 
-header#Home.mirgration_banne .btn_WEBSITES {
-    text-transform: uppercase;
-}
+header#Home.mirgration_banne .btn_WEBSITES {  text-transform: uppercase;  }
 
-.cu_migrationtit .get_start_icon {
-    margin: 0 auto 15px;
-}
+.cu_migrationtit .get_start_icon {  margin: 0 auto 15px;  }
 
-header#Home.mirgration_banne .migration_banner_text {
-    width: 75%;
-}
+header#Home.mirgration_banne .migration_banner_text {  width: 75%;  }
 
 .header.mirgration_banne .icons {
     margin-top: 130px;
@@ -954,7 +912,6 @@ header#Home.mirgration_banne .migration_banner_text {
 
 #Home.contact_banne {
     background: url('assets/img/top-contact-bg.jpg') repeat-x center center;
-    -webkit-animation: slide-l-to-r 70s infinite linear;
 }
 
 header#Home.contact_banne .icons {
@@ -1375,12 +1332,6 @@ header.sharepoint_branding .heading_text {
     margin-bottom: 30px;
 }
 
-.sharepoint_branding .home_bottom_bg .line h3 {
-    font-size: 20px;
-    font-family: 'Barlow';
-    line-height: 28px;
-}
-
 .sharepoint_branding .home_bottom_bg .line h5 {
     font-size: 16px;
     color: #cccccc;
@@ -1420,10 +1371,6 @@ header.sharepoint_branding .heading_text {
     float: left;
     width: 70%;
     border: 0 none;
-}
-
-.hr-assets_banner .home_bottom_bg .line h3 {
-    font-size: 20px;
 }
 
 .hr-assets_banner .home_bottom_bg .line h5 {
@@ -1641,12 +1588,6 @@ header.sharepoint_branding .heading_text {
     width: 150px;
     margin: 0 auto;
 }
-
-.remote_footer.hr-assets-footer .remote_reasons h5 {
-    font-size: 26px;
-    margin-top: 20px;
-}
-
 .share_reques.remote_footer.hr-assets-footer .remote_reasons p {
     min-height: 90px;
     margin-top: 30px;
@@ -2431,6 +2372,7 @@ header.sharepoint_branding .heading_text {
 .services_our .servi_icon {
     text-align: center;
     margin-top: -75px;
+    margin-bottom: 20px;
 }
 
 .services_our .servi_icon.img-top-20 {
@@ -2461,15 +2403,13 @@ header.sharepoint_branding .heading_text {
     border-radius: 10px;
     width: 100%;
     margin-top: 60px;
-    height: 480px;
+    min-heigh: 400px;
     display: inline-block;
 }
 
-.servic_list span {
+.servic_list h6 {
     color: #1ba492;
-    font-size: 16px;
-    font-family: 'Conv_VANTABOL';
-    margin: 20px auto;
+    margin: 0 auto 20px;
     display: block;
 }
 
