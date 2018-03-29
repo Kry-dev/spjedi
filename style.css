@@ -110,6 +110,9 @@ p{
     font-family: 'Barlow';
     font-size: 15px;
 }
+.c-wh{  color: #ffffff;  }
+.c-bl{  color: #141414;  }
+.tt-up{  text-transform: uppercase;  }
 .btn:focus,
 .btn:active:focus,
 button:focus,
@@ -148,16 +151,16 @@ button:active:focus{
     background-attachment: fixed !important;
     height: auto;
     box-sizing: border-box;
-    -webkit-animation: slide-r-to-l 70s infinite linear;
+    /*-webkit-animation: slide-r-to-l 70s infinite linear;*/
 }
-/*@-webkit-keyframes slide-r-to-l {*/
-    /*from { background-position: 0 0; }*/
-    /*to { background-position: -1000px 0; }*/
-/*}*/
-/*@-webkit-keyframes slide-l-to-r {*/
-    /*from { background-position: 0 0; }*/
-    /*to { background-position: 1000px 0; }*/
-/*}*/
+@-webkit-keyframes slide-r-to-l {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+@-webkit-keyframes slide-l-to-r {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 0; }
+}
 #header{
     display: flex;
     flex-direction: row;
@@ -652,13 +655,8 @@ header .right::before {
 }
 
 .principles_list h3 {
-    color: #141414;
     margin: 30px auto 10px;
     display: block;
-}
-
-.principles_list p {
-    color: #141414;
 }
 
 .principles_list .principles_icon img {
@@ -666,9 +664,8 @@ header .right::before {
 }
 
 .cu-about {
-    background: url('assets/img/6-screen-bg.jpg') repeat-x center center;
-    background-attachment: fixed;
-    /*-webkit-animation: slide 70s infinite linear;*/
+    background: url('assets/img/footer.jpg') repeat-x center center;
+    -webkit-animation: slide-r-to-l 60s infinite linear;
 }
 
 .about_rating .rating_list {
@@ -1210,11 +1207,9 @@ header.remote_support_banner .icons {
 }
 .remote_our_services .get_start_detail {  margin-bottom: 80px;  }
 .block3-get  .get_start_detail h3{
-    color: #141414;
     min-height: 52px;
     margin-top: 0;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 .get-started.remote_our_services .block3-get p {
     height: auto;
@@ -1224,12 +1219,8 @@ header.remote_support_banner .icons {
 
 .remote_footer .remote_reasons {  text-align: center;  }
 
-.remote_footer .remote_reasons h5 {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
+.remote_footer .remote_reasons h3 {
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 .remote_footer .remote_reasons p {
@@ -2379,11 +2370,8 @@ header.sharepoint_branding .heading_text {
     width: 100%;
 }
 
-.jed_header h4 {
+.jed_header h3 {
     color: #1ba492;
-    font-size: 28px;
-    font-family: 'Conv_VANTABOL';
-    text-transform: uppercase;
     margin-top: 25px;
 }
 
