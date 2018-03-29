@@ -142,6 +142,7 @@ button:active:focus{
     background-image: url("assets/img/home-bg.jpg");
     background-repeat: repeat-x;
     background-size: cover;
+    background-attachment: fixed !important;
     height: auto;
     box-sizing: border-box;
     -webkit-animation: slide-r-to-l 70s infinite linear;
@@ -666,7 +667,8 @@ header .right::before {
 
 .cu-about {
     background: url('assets/img/6-screen-bg.jpg') repeat-x center center;
-    -webkit-animation: slide 70s infinite linear;
+    background-attachment: fixed;
+    /*-webkit-animation: slide 70s infinite linear;*/
 }
 
 .about_rating .rating_list {
@@ -883,8 +885,6 @@ footer .footer_copyright span {
 
 .about_top_3 .cu_about_1 span {
     color: #fff;
-    font-size: 16px;
-    font-family: OpenSans;
     margin-top: 20px;
     display: block;
 }
@@ -902,7 +902,6 @@ footer .footer_copyright span {
 
 .cu_migration_serv .migration_serv .migra_serv_title span {
     color: #fff;
-    font-size: 12px;
     font-family: 'Barlow';
     height: 35px;
     display: block;
