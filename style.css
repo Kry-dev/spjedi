@@ -464,8 +464,7 @@ header .right::before {
 }
 
 .get_start_icon {
-    max-width: 250px;
-    height: 200px;
+    max-width: 200px;
     margin: 0 auto;
     line-height: 200px;
 }
@@ -1225,6 +1224,9 @@ header.remote_support_banner .icons {
 
 .remote_footer .remote_reasons .reasons_icon {
     height: 100px;
+}
+.remote_footer .remote_reasons .reasons_icon img{
+    height: 100%;
 }
 
 #Home.proj_management {
