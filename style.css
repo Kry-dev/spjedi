@@ -559,6 +559,10 @@ header .right::before {
     margin: 20px auto;
 }
 
+.cu-buss-box .cu_buss_icon svg{
+    width: 280px;
+    height: 280px;
+}
 .cu-buss-box .cu_buss_icon img {
     width: 100%;
 }
@@ -635,7 +639,10 @@ header .right::before {
     text-align: right;
     vertical-align: middle;
 }
-
+.cu-block-main .cu-list .cu_list_icon img{
+    width: 200px;
+    height: 200px;
+}
 .cu-block-main .cu-list .cu_list_detail {
     display: inline-block;
     width: 60%;
@@ -2905,6 +2912,10 @@ ul.nav li:hover > ul.dropdown-menu {
         display: flex;
         flex-direction: column;
     }
+    header#Home{
+        min-height: 100%;
+        background-attachment: scroll !important;
+    }
     header .header {
         border-bottom: 1px solid white;
     }
@@ -3012,6 +3023,10 @@ ul.nav li:hover > ul.dropdown-menu {
 
     .cu-block-title {
         background-size: cover;
+        background-attachment: inherit ;
+    }
+    .cu_block5{
+        background-position: right top;
     }
 
     .cu-block-title .cu-buss-box .cu_buss_icon {
@@ -3032,7 +3047,8 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     .cu-block-title .cu-buss-box {
-        height: auto;
+        min-height: auto;
+        height: 100%;
         padding: 0;
     }
 
@@ -3057,6 +3073,7 @@ ul.nav li:hover > ul.dropdown-menu {
 
     .cu-about {
         background-size: cover;
+
     }
 
     .about_contact .about_detail .about_details p {
@@ -3221,6 +3238,9 @@ ul.nav li:hover > ul.dropdown-menu {
     #Home.hr-assets_banner {
         background-size: cover;
     }
+    .cu_migration_serv .migration_serv .migra_serv_icon{
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 640px) {
@@ -3238,6 +3258,7 @@ ul.nav li:hover > ul.dropdown-menu {
 
     .cu-block6 {
         background-size: cover;
+        padding: 60px 0;
     }
 
     header.sharepoint_branding .icons {
@@ -3273,15 +3294,15 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 480px) {
+    .home_buttons {
+        width: 60%;
+    }
     header .icons button.btn {
         display: block;
-        width: 200px;
+        width: 100%;
         word-break: break-all;
         white-space: normal;
-    }
-
-    header .icons button.btn.btn_WEBSITES {
-        padding: 15px 10px;
+        font-size: 12px;
     }
 
     .cu-block-title .cu-buss-box p {
