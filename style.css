@@ -861,6 +861,7 @@ footer .footer_copyright span {
 
 .cu_block5 {
     background: url('assets/img/home-bg.jpg') no-repeat center top;
+    background-attachment: fixed;
 }
 
 .cu-block6 {
@@ -2622,7 +2623,7 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     .servic_list {
-        height: 535px;
+        min-height: 535px;
     }
 
     .jed_header h4 {
@@ -2821,7 +2822,7 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     .servic_list {
-        height: 340px;
+        min-height: 280px;
         text-align: center;
         margin-bottom: 60px;
     }
@@ -2914,6 +2915,9 @@ ul.nav li:hover > ul.dropdown-menu {
 
     header .btn {
         margin: 50px 15px 20px 0;
+    }
+    .navbar.navbar-inverse .container{
+        padding: 0;
     }
 
     .header .navbar-header {
@@ -3160,9 +3164,9 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     .servic_list {
-        height: auto;
+        min-height: 180px;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 0;
     }
 
     .about_hones .about_hone_detail {
