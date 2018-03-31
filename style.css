@@ -417,6 +417,21 @@ header .right::before {
     width: 100%;
     justify-content: flex-start;
 }
+/*STARS RATING*/
+.stars {  cursor: pointer;  }
+.stars:hover .star polygon {  fill: #1BA492 !important;  }
+.stars .star {  float: left;  }
+.stars .star polygon {  fill: #d8d8d8;  }
+.stars .star:hover ~ .star polygon {  fill: #d8d8d8 !important;  }
+.stars[data-stars] .star polygon {  fill: #1BA492;  }
+.stars[data-stars="1"] .star:nth-child(1) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="2"] .star:nth-child(2) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="3"] .star:nth-child(3) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="4"] .star:nth-child(4) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="5"] .star:nth-child(5) ~ .star polygon {  fill: #d8d8d8;  }
+
+
+/*end of STARS RATING*/
 /* New css */
 .get-started {
     background: #FAFAFA;
@@ -703,7 +718,14 @@ header .right::before {
     margin: 20px auto;
     padding: 0 50px;
 }
-.about_rating .rating_list .rating_stars {  margin-bottom: 20px;  }
+.about_rating .rating_list .rating_stars {
+    display: block;
+    height: 27px;
+    margin-bottom: 20px;
+}
+.about_rating .rating_list .rating_stars img{
+    height: 100%;
+}
 .about_rating .rating_list h3 {
     text-align: right;
     width: 100%;
