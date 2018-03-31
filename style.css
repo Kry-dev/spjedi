@@ -1,1 +1,3557 @@
-@font-face{font-family:Conv_VANTABOL;src:url(assets/fonts/site/VANTABOL.eot);src:local('☺'),url(assets/fonts/site/VANTABOL.woff) format('woff'),url(assets/fonts/site/VANTABOL.ttf) format('truetype'),url(assets/fonts/site/VANTABOL.svg) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Conv_VANTALIG;src:url(assets/fonts/site/VANTALIG.eot);src:local('☺'),url(assets/fonts/site/VANTALIG.woff) format('woff'),url(assets/fonts/site/VANTALIG.ttf) format('truetype'),url(assets/fonts/site/VANTALIG.svg) format('svg');font-weight:400;font-style:normal}@font-face{font-family:TradeGothicLTBold;src:url(assets/fonts/site/TradeGothicLTBold.eot);src:url(assets/fonts/site/TradeGothicLTBold.eot) format('embedded-opentype'),url(assets/fonts/site/TradeGothicLTBold.woff2) format('woff2'),url(assets/fonts/site/TradeGothicLTBold.woff) format('woff'),url(assets/fonts/site/TradeGothicLTBold.ttf) format('truetype'),url(assets/fonts/site/TradeGothicLTBold.svg#TradeGothicLTBold) format('svg')}@font-face{font-family:Barlow;src:url(assets/fonts/Barlow/Barlow-Regular.eot);src:url(assets/fonts/Barlow/Barlow-Regular.eot) format('embedded-opentype'),url(assets/fonts/Barlow/Barlow-Regular.ttf) format('truetype'),url(assets/fonts/Barlow/Barlow-Regular.svg#TradeGothicLTBold) format('svg')}@font-face{font-family:Barlow-Light;src:url(assets/fonts/Barlow/Barlow-Light.eot);src:url(assets/fonts/Barlow/Barlow-Light.eot) format('embedded-opentype'),url(assets/fonts/Barlow/Barlow-Light.ttf) format('truetype'),url(assets/fonts/Barlow/Barlow-Light.svg#TradeGothicLTBold) format('svg')}@font-face{font-family:Barlow-Bold;src:url(assets/fonts/Barlow/Barlow-Bold.eot);src:url(assets/fonts/Barlow/Barlow-Bold.eot) format('embedded-opentype'),url(assets/fonts/Barlow/Barlow-Bold.woff) format('woff'),url(assets/fonts/Barlow/Barlow-Bold.ttf) format('truetype'),url(assets/fonts/Barlow/Barlow-Bold.svg#TradeGothicLTBold) format('svg')}@font-face{font-family:Barlow-Medium;src:url(assets/fonts/Barlow-Medium.eot);src:url(assets/fonts/Barlow/Barlow-Medium.eot) format('embedded-opentype'),url(assets/fonts/Barlow/Barlow-Medium.woff2) format('woff2'),url(assets/fonts/Barlow/Barlow-Medium.ttf) format('truetype'),url(assets/fonts/Barlow/Barlow-Medium.svg#TradeGothicLTBold) format('svg')}@font-face{font-family:BarlowSemiCondensed-Bold;src:url(assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot);src:url(assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot) format('embedded-opentype'),url(assets/fonts/Barlow/BarlowSemiCondensed-Bold.ttf) format('truetype'),url(assets/fonts/Barlow/BarlowSemiCondensed-Bold.svg#TradeGothicLTBold) format('svg')}@font-face{font-family:BarlowCondensed-SemiBold;src:url(assets/fonts/Barlow/BarlowCondensed-SemiBold.eot);src:url(assets/fonts/Barlow/BarlowCondensed-SemiBold.eot) format('embedded-opentype'),url(assets/fonts/Barlow/BarlowCondensed-SemiBold.woff2) format('woff2'),url(assets/fonts/Barlow/BarlowCondensed-SemiBold.woff) format('woff'),url(assets/fonts/Barlow/BarlowCondensed-SemiBold.ttf) format('truetype'),url(assets/fonts/Barlow/BarlowCondensed-SemiBold.svg#TradeGothicLTBold) format('svg')}body{font-family:Barlow;color:#222;overflow-x:hidden},h1,h2,h4{font-family:Barlow}h2{font-size:50px}h3{font-size:24px;font-family:Barlow-Bold}.h3-medium{font-family:Barlow-Medium}h5,h6{font-family:Barlow-Bold}h5{font-size:18px}p{font-family:Barlow;font-size:16px}.not-sub_text h3,.title-check-border .check-title-name h2,header .heading_text{font-family:BarlowCondensed-SemiBold}.c-wh{color:#fff}.c-bl{color:#141414}.tt-up{text-transform:uppercase}.btn:active:focus,.btn:focus,button:active:focus,button:focus{outline:0;box-shadow:none;opacity:.9;color:inherit}.navbar-inverse .navbar-nav>li>a{color:#fff;font-size:14px}.navbar-inverse .navbar-nav>li>a:hover{color:#6DC4C3}.navbar-brand{display:flex;max-width:180px;max-height:50px;padding:5px}.navbar-brand>img{display:block;width:100%;height:100%}#header,#home .navbar-header,.home_address,.home_bg,.home_contacts,header #myNavbar,header .icons{display:flex}#Home{background-image:url(assets/img/home-bg.jpg);background-repeat:repeat-x;background-size:cover;background-attachment:fixed!important;box-sizing:border-box;min-height:100vh}@-webkit-keyframes slide-r-to-l{from{background-position:0 0}to{background-position:-1000px 0}}@-webkit-keyframes slide-l-to-r{from{background-position:0 0}to{background-position:1000px 0}}#header{flex-direction:row;justify-content:space-between;flex-wrap:nowrap;align-items:center;border-bottom:1px solid #fff;width:100%}.home_bg .home_row{display:flex;flex-direction:row;align-items:center;height:100%}.home_bottom_bg{background:rgba(0,0,0,.5);padding-top:40px;height:27vh}.home_address{flex-direction:row;justify-content:flex-start}.home_contacts{margin-bottom:0;flex-direction:row;align-items:center}.home_contacts+.home_contacts{margin-left:35px}.home_contacts .fa{margin-right:5px}header .navbar-inverse{background-color:transparent;border-color:transparent;position:fixed;top:0;left:0;right:0;z-index:9}.navbar-inverse .navbar-toggle{border-color:#fff}.navbar-inverse .navbar-toggle:active,.navbar-inverse .navbar-toggle:hover{background:rgba(0,0,0,.9)}.navbar .dropdown-menu{min-width:100%}.home_bg{padding-top:73px;flex-direction:column;height:73vh}.home_bg .container{height:100%}.menu_sticky{background:rgba(0,0,0,.7)!important;border-radius:0;border-bottom:1px solid #fff!important}.menu_sticky #header{border-bottom:0}header .menu_sticky #myNavbar{border-bottom:0 none}header #myNavbar{color:#fff;align-content:flex-end}header .header_menu li a{padding-top:25px;padding-bottom:25px}header .header_menu li ul li a{color:#fff;padding:10px 12px 10px 11px}.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover{background:#1BA492;color:#fff}header .icons{color:#fff;height:100%;flex-direction:column;align-items:flex-start;justify-content:center}header .icons a{color:#fff}header .btn{margin:70px 40px 50px 0;background-color:transparent;border:1px solid;border-radius:20px;text-transform:uppercase}header .btn:hover{background-color:#1BA492;color:#fff;border-color:#1BA492}header .btn_WEBSITES{padding-right:70px;padding-left:70px}header .btn_MICROSOFT{padding-right:25px;padding-left:25px}header .heading_text{font-size:52px;text-transform:uppercase}header .contant{color:#fff;padding-bottom:40px}header .line h3:before{display:inline-block;margin:0 -170px 30px 0;height:1px;content:" ";text-shadow:none;background-color:#1BA492;width:170px;position:absolute;top:14px}header .right .fa{color:#000;border-radius:50%;background-color:#1BA492;width:30px;height:30px;text-align:center;line-height:30px;font-size:20px}header .right::before{top:0;bottom:0;position:absolute;content:"";width:1px;background-color:#ccc;left:18px;margin-left:-1.5px;margin-top:-40px;margin-bottom:31px}.home_bottom_bg .right{float:left;width:30px;position:relative}.home_bottom_bg .line h3{padding-top:20px;line-height:28px}.home_bg .men_img{position:relative;bottom:-120px}.home_bg .men_img img{width:110%}.home_bottom_bg .line h5{font-size:16px;color:#ccc;line-height:22px}.home_socials{list-style:none;padding:0;display:flex;flex-direction:row;justify-content:flex-start}.home_socials li{display:flex;width:30px;height:30px}.home_socials li a{display:flex;width:100%;justify-content:center;align-items:center}.home_socials .fa{font-size:16px;display:block;margin:0 auto}.home_socials li a:hover{color:#1BA492;text-decoration:none}.home_buttons{display:flex;flex-direction:row;width:100%;justify-content:flex-start}.stars{cursor:pointer}.stars:hover .star polygon{fill:#1BA492!important}.stars .star{float:left}.stars .star polygon{fill:#d8d8d8}.stars .star:hover~.star polygon{fill:#d8d8d8!important}.stars[data-stars] .star polygon{fill:#1BA492}.stars[data-stars="1"] .star:nth-child(1)~.star polygon,.stars[data-stars="2"] .star:nth-child(2)~.star polygon,.stars[data-stars="3"] .star:nth-child(3)~.star polygon,.stars[data-stars="4"] .star:nth-child(4)~.star polygon,.stars[data-stars="5"] .star:nth-child(5)~.star polygon{fill:#d8d8d8}.get-started{background:#FAFAFA}.get-started .block_get{background:url(assets/img/bg-screen-2.png) center bottom no-repeat #e5e5e5;padding-bottom:250px}.get-started .block3-get{width:100%;text-align:center}.get-started .block3-get img{width:100%}.get-started .block3-get p{color:#333;margin:20px auto;height:100px}.get-started .block3-get a{border:1px solid #41B3A4;padding:8px 10px;color:#41B3A4;text-transform:uppercase;border-radius:20px;width:250px;display:inline-block}.get-started .block3-get a:hover{text-decoration:none;background:#41B3A4;color:#fff}.get_bg_bottom{margin-top:30px}.get_bg_bottom img{width:100%}.get_start_icon{max-width:200px;margin:0 auto;line-height:200px}.title-check-border{margin-top:45px;float:left}.title-check-border .check-icon-top{float:left;width:30px}.title-check-border .check-icon-top i{background:#1ba492;border-radius:50%;width:30px;height:30px;color:#fff;text-align:center;line-height:30px;font-size:20px}.title-check-border .check-icon-top:before{top:0;bottom:0;position:absolute;content:"";width:1px;background-color:#ccc;left:32px;margin-left:-1.5px;height:45px}.title-check-border .check-title-name{float:left;margin-left:5px}.check-title-name h2{text-transform:uppercase;position:relative;padding-top:20px}.title-check-border .check-title-name h2{font-size:50px;color:#141414}.title-check-border .check-title-name h2:before{display:inline-block;content:" ";text-shadow:none;height:1px;background-color:#1BA492;width:170px;position:absolute;top:-5px;left:5px}.cu-white h2{color:#fff!important}.cu-white i{color:#000!important}.cu-block-title{background:url(assets/img/3-screen-bg.jpg) center center no-repeat}.cu-block-title .cu-buss-box{margin:0 0 40px;min-height:380px;padding:0 40px}.cu-block-title .col-md-4{margin-top:40px}.cu-block-title .cu-buss-box p{color:#fff;margin:20px auto}.cu-buss-box .cu_buss_icon svg{width:280px;height:280px}.cu-buss-box .cu_buss_icon img{width:100%}.cu_buss_bord{width:100%;height:40px;display:inline-block;text-align:center;position:relative;margin-bottom:55px}.cu_buss_bord i.firs_dot,.cu_buss_bord i.firs_dot i{border-radius:50%;right:0;left:0;margin:0 auto;position:absolute}.cu_buss_bord i.firs_dot i{width:10px;height:10px;background:#fff;top:8px}.cu_buss_bord i.firs_dot{width:30px;height:30px;background:0 0;border:1px dashed #fff;display:inline-block}.cu_buss_bord:before{width:100%;height:1px;content:"";position:absolute;background:#fff;top:14px;right:-54%}.cu-buss-box:hover~.cu_buss_bord i.firs_dot i{background:#1BA492}.cu-buss-box:hover~.cu_buss_bord i.firs_dot{border:1px dashed #1BA492}.cu_buss_bord.last:before{display:none}.cu-buss-box:hover p{color:#1ba492}.cu-block-main .cu-list .cu_list_detail p,.head_info h5{color:#141414}.cu-block-main{background:url(assets/img/4-bg.png) center top no-repeat;padding-bottom:40px}.cu-block-main .cu-list .cu_list_icon{display:inline-block;width:39%;padding-right:5%;text-align:right;vertical-align:middle}.cu-block-main .cu-list .cu_list_icon img{width:200px;height:200px}.cu-block-main .cu-list .cu_list_detail{display:inline-block;width:60%;vertical-align:middle}.cu-block-main .cu-list{margin:40px auto;display:inline-block}.cu-block-not{background:url(assets/img/5-top-bg-02.jpg) center center repeat-y fixed;background-size:contain;padding:80px 0}.not-sub_text h3{padding:0 20px;text-align:center;display:block}.cu-principles{background:url(assets/img/5-bottom-bg.png) center bottom no-repeat}.principles_list{text-align:center;padding:0 20px;margin:0 auto 40px}.cu-principles .col-md-4{margin-top:40px}.principles_list h3{margin:30px auto 10px;display:block}.principles_list .principles_icon img{width:70%}.cu-about{background:url(assets/img/footer.jpg) center center repeat-x;-webkit-animation:slide-r-to-l 60s infinite linear}.about_rating .rating_list{margin:20px auto;padding:0 50px}.about_rating .rating_list .rating_stars{display:block;height:27px;margin-bottom:20px}.about_rating .rating_list .rating_stars img{height:100%}.about_rating .rating_list h3{text-align:right;width:100%;display:block}.about-servic{margin-top:20px}.about_contact{margin-top:40px}.about_contact .about_detail .about_checkmark{display:table-cell;width:30px;vertical-align:top}.about_contact .about_detail .about_checkmark i{background:#1ba492;border-radius:50%;width:30px;height:30px;color:#000;text-align:center;line-height:30px;font-size:20px;z-index:1;position:relative}.about_contact .about_detail .about_checkmark:before{top:0;bottom:0;position:absolute;content:"";width:1px;background-color:#ccc;left:32px;margin-left:-1.5px;height:100%}.about_contact .about_detail .about_details{display:table-cell;padding-left:10px}.about_contact .about_detail .about_details h2{color:#fff;font-family:BarlowCondensed-SemiBold;position:relative;padding-top:20px}.about_contact .about_detail .about_details h2:before{display:inline-block;content:" ";text-shadow:none;height:1px;background-color:#1BA492;width:170px;position:absolute;top:-5px;left:5px}.about_contact .about_detail .about_details p{color:#fff;width:80%;margin-bottom:5px}.about_contact .about_detail .about_details a{color:#fff;margin-bottom:5px;font-size:14px;font-family:Barlow;display:block}.about_contact .about_detail{height:290px}footer{background:#e4e4e4;padding:20px 0}footer .footer_copyright span{text-align:center;width:100%;display:block}.cu_migrationtit{background:url(assets/img/bg-screen-2.jpg) center bottom no-repeat}.cu_migration_our .title-check-border .check-title-name{width:90%}.cu_migration_our .title-check-border .check-title-name p{color:#fff}.our_process_list .process_icon{display:inline-block;width:30%;vertical-align:middle}.our_process_list .process_icon img{width:140px;height:140px}.our_process_list .process_detail{display:inline-block;width:69%;vertical-align:middle}.our_process_list .process_detail h3{color:#1ba492;margin-bottom:5px;display:block}.process_before h3{color:#fff;position:relative;padding-top:15px}.process_before p{color:#fff}.process_before h3:before{position:absolute;top:0;width:200px;height:1px;background-color:#1ba492;content:""}.cu_migration_our .our_process{margin:60px auto}.our_process_before{margin-bottom:60px}.our_process_list{padding:0!important}.cu_migration_pro{background:url(assets/img/4-bg.png) center top no-repeat}.cu_migration_pro .height_info{height:400px}.cu_block5{background:url(assets/img/home-bg.jpg) center top no-repeat fixed}.cu-block6{background:url(assets/img/6-top-bg.png) center top no-repeat;padding:80px 0}.about_top_3 .cu_about_1{width:50%;text-align:center;margin:0 auto}.about_top_3 .cu_about_1 .cu_abou_icon{margin-bottom:20px;position:relative}.about_top_3 .cu_about_1 .cu_abou_icon img{position:relative;z-index:5}.about_top_3 .cu_about_1 .cu_abou_icon:after{content:"";position:absolute;left:50%;top:50%;margin-left:-40%;margin-top:-40%;width:80%;height:80%;border:2px solid #1BA492;background:0 0;transform:rotate(45deg);z-index:1}.about_top_3 .cu_about_1 p{display:block}.about_top_3 .cu_about_1 img{width:100%}.cu_migration_serv .migration_serv{width:24.5%;display:inline-block;text-align:center;vertical-align:top;margin-bottom:20px}.cu_migration_serv .migration_serv .migra_serv_icon{position:relative;margin-bottom:20px}.cu_migration_serv .migration_serv .migra_serv_icon img{z-index:5;position:relative}.cu_migration_serv .migration_serv .migra_serv_icon:after{content:"";position:absolute;left:50%;top:50%;margin-left:-61px;margin-top:-61px;width:119px;height:119px;border:2px solid #fff;background:0 0;transform:rotate(45deg);z-index:1}.cu_migration_serv .migration_serv .migra_serv_title p{min-height:35px;display:block;max-width:150px;margin:0 auto}.contact_email,.head_info{display:inline-block;padding-left:35px}.cu_migration_serv{text-align:center;margin:40px auto 60px}.head_hr_bord hr{width:200px;margin:25px 0;border-color:#1ba492;float:left}.head_hr_bord{text-align:left;float:left;width:100%}header#Home.mirgration_banne{background:url(assets/img/top-bg.jpg) center center repeat-x;padding-bottom:80px}header#Home.mirgration_banne .btn_WEBSITES{text-transform:uppercase}.cu_migrationtit .get_start_icon{margin:0 auto 15px}header#Home.mirgration_banne .migration_banner_text{width:75%}.header.mirgration_banne .icons{margin-top:130px}.cu_migration_pro .infographic_block{text-align:center;padding-bottom:60px}#Home.contact_banne{background:url(assets/img/top-contact-bg.jpg) center center repeat-x}header#Home.contact_banne .icons{margin-bottom:150px}.cu-contact{background:url(assets/img/4-bg.png) center top no-repeat rgba(204,204,204,.5);padding-bottom:80px}.head_info{margin-top:30px}.head_info h5{font-size:48px;font-family:BarlowCondensed-SemiBold;text-transform:uppercase;margin:40px 0}.contact_email .email_msg label,.contact_email .email_name_id label,.contact_email .email_sub label,.head_info a{font-family:Barlow}.head_info a,.head_info p{margin-bottom:2px;color:#141414}.head_info a i,.head_info p i{margin-right:10px}.head_info a{font-size:16px}.head_info p.mb2{margin-bottom:20px}.contact_email{width:100%;margin-top:30px}.contact_email .email_msg textarea,.contact_email .email_name_id input,.contact_email .email_sub input{border:1px solid #D1D1D1;padding:5px;background:rgba(255,255,255,.5);color:#141414;font-size:16px;display:inline-block}.contact_email .email_name_id input{width:68%}.contact_email .email_name_id label{color:#141414;font-size:16px;width:30%;display:inline-block;font-weight:400}.contact_email .email_name_id .name_fild{width:49.5%;display:inline-block}.contact_email .email_sub input{width:84%}.contact_email .email_sub label{color:#141414;font-size:16px;width:15%;display:inline-block;font-weight:400}.contact_email .email_msg textarea{width:84%;resize:none;height:100px}.contact_email .email_msg label{color:#141414;font-size:16px;width:15%;display:inline-block;font-weight:400;vertical-align:top}.contact_email .email_name_id .eid_fild label{width:20%;margin-left:10.5%}.contact_email .email_submit{padding-left:15.5%;margin-top:20px}.contact_email .email_submit input{background:#1ba492;color:#fff;font-size:12px;border-radius:20px;border:0;padding:12px;width:250px;text-transform:uppercase}.contact_email .email_sub{margin:20px 0}.contact_email .email_submit input:hover{background:#148f7e}.contact_banner_right{position:absolute;right:0;width:48%}.contact_banner_right img{width:100%}.about_map iframe{width:100%!important;border-radius:5px;border:1px solid #256A61;filter:grayscale(100%)}.about_map{margin-top:40px}.cu-contact .title-check-border .check-icon-top::before{background-color:rgba(255,255,255,.5)}.contact_banne .migration_banner_text p{font-size:20px}#Home.remote_support_banner{background:url(assets/img/top-remote-bg.jpg) center center repeat-x}.remote_support_icon{position:absolute;right:0;width:48%;height:100%;bottom:0}.remote_support_icon img{float:right;width:82%}.remote_support_banner .container>.row{position:relative}.remote_bottom_info p{display:inline-block;margin-right:20px}.remote_bottom_info p i{margin-right:10px}header.remote_support_banner .icons{margin-bottom:100px}.remote_support_banner h1{margin-bottom:20px}.remote_support_banner .home_bottom_bg{background:rgba(0,0,0,.75)}.remote_our_services .title-check-border .check-title-name{width:95%}.remote_our_services .title-check-border .check-title-name p{color:#141414}.get-started.remote_our_services{background:url(assets/img/5-bottom-bg.png) center bottom no-repeat}.remote_our_services h5{margin-top:30px}.remote_our_services .get_start_icon{margin-top:40px;width:150px;height:150px;line-height:150px;margin-bottom:20px;position:relative}.remote_our_services .get_start_icon img{position:relative;z-index:5}.remote_our_services .get_start_icon:after{content:"";position:absolute;left:10%;top:10%;width:80%;height:80%;border:1px solid #cacaca;background:0 0;transform:rotate(45deg);z-index:1}.remote_our_services .get_start_detail{margin-bottom:80px}.block3-get .get_start_detail h3{min-height:52px;margin-top:0;margin-bottom:20px}.get-started.remote_our_services .block3-get p{height:auto;color:#141414}.remote_footer{margin:30px auto 20px}.remote_footer .remote_reasons{text-align:center}.remote_footer .remote_reasons h3{margin-bottom:20px}.remote_footer .remote_reasons p{color:#fff}.remote_footer .remote_reasons .reasons_icon{height:100px}.remote_footer .remote_reasons .reasons_icon img{height:100%}#Home.proj_management{background:url(assets/img/BG-top.jpg) center center repeat-x}.cu_proj_management{background:url(assets/img/4-bg.png) center top no-repeat,url(assets/img/2-bg-bottom.png) center bottom no-repeat}#Home.proj_management .row{position:relative}.proj_management_banner_icon{position:absolute;bottom:-110px;right:0;z-index:1}.proj_management_banner_icon img{width:70%;float:right}#Home.proj_management .icons{z-index:2;margin-top:150px}.proj_sitelist .site_list{width:100%;margin-bottom:30px}.proj_sitelist .site_list .site_list_img img{width:100%}.proj_sitelist .site_list .site_list_img{border:1px solid #424242}.proj_sitelist .site_list .site_list_rat:hover{box-shadow:4px 4px 10px #afafaf}.proj_sitelist .site_list .site_list_rat{position:relative}.proj_sitelist .site_list .site_list_rat .site_list_detail{position:absolute;bottom:0;padding:10px;background:rgba(0,39,39,.88)}#Home.hr-assets_banner .row,#Home.sharepoint_branding .row,.hr-main-site li .left_dot_full i{position:relative}.proj_sitelist .site_list .site_list_rat .site_list_detail h6{color:#fff;font-size:40px;font-family:Conv_VANTABOL;margin-bottom:0}.hr-main-site .responsive-tabs li a,.main_bottom_note span,.share_request_btn a{font-family:Barlow}.proj_sitelist .site_list .site_list_rat .site_list_detail p{margin-bottom:0;color:#fff}.proj_sitelist{margin:20px auto 80px}#Home.proj_management .home_bottom_bg{background:rgba(0,0,0,.75)}#Home.sharepoint_branding{background:url(assets/img/1-TOP-BG.jpg) center center repeat-x}.sharepoint_branding .proj_management_banner_icon img{width:78%}.sharepoint_branding .proj_management_banner_icon{bottom:-240px}.shae_brand.remote_our_services .title-check-border .check-title-name{width:auto}.get-started.remote_our_services.shae_brand{background:url(assets/img/4-bg.png) center top no-repeat}.cu_proj_management.cu_share_bran{background:url(assets/img/3-screen-bg.jpg) center center no-repeat}.cu_share_bran .proj_sitelist .site_list .site_list_rat .site_list_detail{background:rgba(0,39,39,.88)}.cu_share_bran .proj_sitelist .site_list .site_list_rat:hover{box-shadow:4px 4px 10px #101010}.share_request_btn a{color:#fff;font-size:14px;border:1px solid #1BA492;width:250px;text-align:center;display:inline-block;padding:6px 12px;border-radius:30px;text-transform:uppercase}.share_reques.remote_footer .remote_reasons p{min-height:120px}.cu-block6.share_bloc{background:url(assets/img/5-bottom-bg-share.png) center top no-repeat;padding:100px 0}header.sharepoint_branding .icons{margin-top:100px;margin-bottom:30px}header.sharepoint_branding .heading_text{margin-bottom:30px}.sharepoint_branding .home_bottom_bg .line h5{font-size:16px;color:#ccc;line-height:22px}.share_request_btn a:hover{background:#1BA492;color:#fff;text-decoration:none}#Home.hr-assets_banner{background:url(assets/img/hr-bg.jpg) center center repeat-x}.hr-assets_banner .icons{margin-top:100px;margin-bottom:50px}.hr-assets_banner .icons .heading_text{margin-bottom:20px}.hr-main-site ul.responsive-tabs{float:left;width:30%;border-bottom:0 none}.hr-main-site .tab-content{float:left;width:70%;border:0}.hr-assets_banner .home_bottom_bg .line h5{color:#ccc}.hr-main-site .responsive-tabs li{width:100%;text-align:right;position:relative;height:200px}.hr-main-site .responsive-tabs li a{color:#141414;font-size:22px;text-transform:uppercase;background:0 0;border:0;display:inline-block;width:88%;vertical-align:middle}.main_site_form{background:#fff;padding:20px;border:1px solid #dedede;margin-left:40px;border-bottom:4px solid #1BA492}.main_bottom_note span{display:block;color:#777;font-size:14px}.main_bottom_note .btn-primary{background:#1BA492;border-color:#0e8e7d;outline:0}.main_bottom_note .btn-primary:focus,.main_bottom_note .btn-primary:hover{background:#0e8e7d;border-color:#0e8e7d}.main_site_form .card-body i.calendar_icon{width:30px;display:inline-block;height:40px;vertical-align:middle;background:url(assets/img/calendar_icon.png) left center no-repeat;margin-left:10px}.main_site_form .card-body input.form-control{width:91%;display:inline-block}.main_site_form textarea.form-control{min-height:120px;max-width:100%}.hr-main-site li .left_dot_full{width:30px;display:inline-block;vertical-align:middle}.hr-main-site li .left_dot_full span{background:#2C2C2C;width:8px;height:8px;display:inline-block;border-radius:50%}.hr-main-site li .left_dot_full i{border:1px dashed #2c2c2c;border-radius:50%;width:25px;height:25px;text-align:center;display:inline-block;background:0 0;z-index:5}.hr-main-site li .left_dot_full:after{background:#2c2c2c;height:88%;width:1px;content:"";position:absolute;bottom:0;right:12px;margin:0 auto;top:53px}.hr-main-site li:last-child .left_dot_full:after{display:none}.hr-main-site li.active .left_dot_full span,.hr-main-site li:hover .left_dot_full span{background:#1BA492}.hr-main-site li.active .left_dot_full i,.hr-main-site li:hover .left_dot_full span{border:1px dashed #1BA492}.hr-main-site li.active a,.hr-main-site li:focus a,.hr-main-site li:hover a{color:#1BA492!important;border:0!important;background:0 0!important;outline:0}.hr-main-site li a:hover{background:0 0!important;border:0!important}.hr-main-site li.active a:hover{color:#1BA492}.hr-main-site{width:100%;float:left;margin-bottom:200px;margin-top:30px}.hr-assets_main{background:url(assets/img/2-bg.png) center top no-repeat,url(assets/img/bg-screen-2.png) center bottom no-repeat #e5e5e5}.hr-internal .nav-tabs>li{width:287px;text-align:center;float:none;display:inline-block}.hr-main-site.hr-internal li .left_dot_full:after{top:auto;bottom:12px;height:1px;width:100%;background:#fff;right:-155px}.hr-main-site.hr-internal .responsive-tabs2 li a{border:0;text-transform:uppercase;font-size:22px;font-family:Conv_VANTABOL;color:#fff}.hr-main-site.hr-internal .responsive-tabs2 li a:focus,.hr-main-site.hr-internal .responsive-tabs2 li a:hover{color:#1BA492;background:0 0}.hr-main-site.hr-internal li .left_dot_full i{border-color:#fff;background:#1f1f1f}.hr-main-site.hr-internal li .left_dot_full span{background:#fff}.hr-main-site.hr-internal li.active .left_dot_full i,.hr-main-site.hr-internal li:hover .left_dot_full i{border-color:#1BA492;background:#1f1f1f}.datepicker-dropdown:after,.datepicker-dropdown:before{content:'';display:inline-block;border-top:0;position:absolute}.hr-main-site.hr-internal li.active .left_dot_full span,.hr-main-site.hr-internal li:hover .left_dot_full span{background:#1BA492}.hr-main-site.hr-internal li.active a{color:#1BA492}.hr-main-site.hr-internal .tab-content{width:100%;margin-top:40px}.hr-internal .nav-tabs{text-align:center;border:0}.hr-internal .main_site_form{margin-left:0}.remote_footer.hr-assets-footer .remote_reasons .reasons_icon{height:150px;width:150px;margin:0 auto}.share_reques.remote_footer.hr-assets-footer .remote_reasons p{min-height:90px;margin-top:30px}.hr-assets-footer .remote_reasons p a{color:#1ba492}.hr-assets-tit{background:url(assets/img/5-bottom-bg-share.png) center bottom no-repeat}.hr4-list{margin-top:20px;margin-bottom:60px}.hr4_img{text-align:center}.hr4_img img{width:120px}.hr4-head{text-align:center;margin-top:20px}.hr4-head span{color:#141414;font-size:16px;font-family:Barlow}.datepicker{border-radius:4px;direction:ltr}.datepicker-inline{width:220px}.datepicker.datepicker-rtl{direction:rtl}.datepicker.datepicker-rtl table tr td span{float:right}.datepicker-dropdown{top:0;left:0;padding:4px}.datepicker-dropdown:before{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid rgba(0,0,0,.15);border-bottom-color:rgba(0,0,0,.2)}.datepicker-dropdown:after{border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #fff}.datepicker-dropdown.datepicker-orient-left:before{left:6px}.datepicker-dropdown.datepicker-orient-left:after{left:7px}.datepicker-dropdown.datepicker-orient-right:before{right:6px}.datepicker-dropdown.datepicker-orient-right:after{right:7px}.datepicker-dropdown.datepicker-orient-bottom:before{top:-7px}.datepicker-dropdown.datepicker-orient-bottom:after{top:-6px}.datepicker-dropdown.datepicker-orient-top:before{bottom:-7px;border-bottom:0;border-top:7px solid rgba(0,0,0,.15)}.datepicker-dropdown.datepicker-orient-top:after{bottom:-6px;border-bottom:0;border-top:6px solid #fff}.datepicker>div{display:none}.datepicker table{margin:0;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.datepicker table tr td,.datepicker table tr th{text-align:center;width:30px;height:30px;border-radius:4px;border:none}.table-striped .datepicker table tr td,.table-striped .datepicker table tr th{background-color:transparent}.datepicker-days tbody tr td{border-radius:50%;font-weight:500}.datepicker table tr td.new,.datepicker table tr td.old{color:#999}.datepicker table tr td.day:hover,.datepicker table tr td.focused{background:#eee;cursor:pointer}.datepicker table tr td.disabled,.datepicker table tr td.disabled:hover{background:0 0;color:#999;cursor:default}.datepicker table tr td.highlighted{color:#000;background-color:#d9edf7;border-color:#85c5e5;border-radius:0}.datepicker table tr td.highlighted.focus,.datepicker table tr td.highlighted:focus{color:#000;background-color:#afd9ee;border-color:#298fc2}.datepicker table tr td.highlighted.active,.datepicker table tr td.highlighted:active,.datepicker table tr td.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.highlighted{color:#000;background-color:#afd9ee;border-color:#52addb}.datepicker table tr td.highlighted.active.focus,.datepicker table tr td.highlighted.active:focus,.datepicker table tr td.highlighted.active:hover,.datepicker table tr td.highlighted:active.focus,.datepicker table tr td.highlighted:active:focus,.datepicker table tr td.highlighted:active:hover,.open>.dropdown-toggle.datepicker table tr td.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.highlighted:hover{color:#000;background-color:#91cbe8;border-color:#298fc2}.datepicker table tr td.highlighted.active,.datepicker table tr td.highlighted:active,.open>.dropdown-toggle.datepicker table tr td.highlighted{background-image:none}.datepicker table tr td.highlighted.disabled.focus,.datepicker table tr td.highlighted.disabled:focus,.datepicker table tr td.highlighted.disabled:hover,.datepicker table tr td.highlighted[disabled].focus,.datepicker table tr td.highlighted[disabled]:focus,.datepicker table tr td.highlighted[disabled]:hover,fieldset[disabled] .datepicker table tr td.highlighted.focus,fieldset[disabled] .datepicker table tr td.highlighted:focus,fieldset[disabled] .datepicker table tr td.highlighted:hover{background-color:#d9edf7;border-color:#85c5e5}.datepicker table tr td.highlighted.focused{background:#afd9ee}.datepicker table tr td.highlighted.disabled,.datepicker table tr td.highlighted.disabled:active{background:#d9edf7;color:#999}.datepicker table tr td.today{color:#000;background-color:#ffdb99;border-color:#ffb733}.datepicker table tr td.today.focus,.datepicker table tr td.today:focus{color:#000;background-color:#ffc966;border-color:#b37400}.datepicker table tr td.today.active,.datepicker table tr td.today:active,.datepicker table tr td.today:hover,.open>.dropdown-toggle.datepicker table tr td.today{color:#000;background-color:#ffc966;border-color:#f59e00}.datepicker table tr td.today.active.focus,.datepicker table tr td.today.active:focus,.datepicker table tr td.today.active:hover,.datepicker table tr td.today:active.focus,.datepicker table tr td.today:active:focus,.datepicker table tr td.today:active:hover,.open>.dropdown-toggle.datepicker table tr td.today.focus,.open>.dropdown-toggle.datepicker table tr td.today:focus,.open>.dropdown-toggle.datepicker table tr td.today:hover{color:#000;background-color:#ffbc42;border-color:#b37400}.datepicker table tr td.today.active,.datepicker table tr td.today:active,.open>.dropdown-toggle.datepicker table tr td.today{background-image:none}.datepicker table tr td.today.disabled.focus,.datepicker table tr td.today.disabled:focus,.datepicker table tr td.today.disabled:hover,.datepicker table tr td.today[disabled].focus,.datepicker table tr td.today[disabled]:focus,.datepicker table tr td.today[disabled]:hover,fieldset[disabled] .datepicker table tr td.today.focus,fieldset[disabled] .datepicker table tr td.today:focus,fieldset[disabled] .datepicker table tr td.today:hover{background-color:#ffdb99;border-color:#ffb733}.datepicker table tr td.today.focused{background:#ffc966}.datepicker table tr td.today.disabled,.datepicker table tr td.today.disabled:active{background:#ffdb99;color:#999}.datepicker table tr td.range{color:#000;background-color:#eee;border-color:#bbb;border-radius:0}.datepicker table tr td.range.focus,.datepicker table tr td.range:focus{color:#000;background-color:#d5d5d5;border-color:#7c7c7c}.datepicker table tr td.range.active,.datepicker table tr td.range:active,.datepicker table tr td.range:hover,.open>.dropdown-toggle.datepicker table tr td.range{color:#000;background-color:#d5d5d5;border-color:#9d9d9d}.datepicker table tr td.range.active.focus,.datepicker table tr td.range.active:focus,.datepicker table tr td.range.active:hover,.datepicker table tr td.range:active.focus,.datepicker table tr td.range:active:focus,.datepicker table tr td.range:active:hover,.open>.dropdown-toggle.datepicker table tr td.range.focus,.open>.dropdown-toggle.datepicker table tr td.range:focus,.open>.dropdown-toggle.datepicker table tr td.range:hover{color:#000;background-color:#c3c3c3;border-color:#7c7c7c}.datepicker table tr td.range.active,.datepicker table tr td.range:active,.open>.dropdown-toggle.datepicker table tr td.range{background-image:none}.datepicker table tr td.range.disabled.focus,.datepicker table tr td.range.disabled:focus,.datepicker table tr td.range.disabled:hover,.datepicker table tr td.range[disabled].focus,.datepicker table tr td.range[disabled]:focus,.datepicker table tr td.range[disabled]:hover,fieldset[disabled] .datepicker table tr td.range.focus,fieldset[disabled] .datepicker table tr td.range:focus,fieldset[disabled] .datepicker table tr td.range:hover{background-color:#eee;border-color:#bbb}.datepicker table tr td.range.focused{background:#d5d5d5}.datepicker table tr td.range.disabled,.datepicker table tr td.range.disabled:active{background:#eee;color:#999}.datepicker table tr td.range.highlighted{color:#000;background-color:#e4eef3;border-color:#9dc1d3}.datepicker table tr td.range.highlighted.focus,.datepicker table tr td.range.highlighted:focus{color:#000;background-color:#c1d7e3;border-color:#4b88a6}.datepicker table tr td.range.highlighted.active,.datepicker table tr td.range.highlighted:active,.datepicker table tr td.range.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.range.highlighted{color:#000;background-color:#c1d7e3;border-color:#73a6c0}.datepicker table tr td.range.highlighted.active.focus,.datepicker table tr td.range.highlighted.active:focus,.datepicker table tr td.range.highlighted.active:hover,.datepicker table tr td.range.highlighted:active.focus,.datepicker table tr td.range.highlighted:active:focus,.datepicker table tr td.range.highlighted:active:hover,.open>.dropdown-toggle.datepicker table tr td.range.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.range.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.range.highlighted:hover{color:#000;background-color:#a8c8d8;border-color:#4b88a6}.datepicker table tr td.range.highlighted.active,.datepicker table tr td.range.highlighted:active,.open>.dropdown-toggle.datepicker table tr td.range.highlighted{background-image:none}.datepicker table tr td.range.highlighted.disabled.focus,.datepicker table tr td.range.highlighted.disabled:focus,.datepicker table tr td.range.highlighted.disabled:hover,.datepicker table tr td.range.highlighted[disabled].focus,.datepicker table tr td.range.highlighted[disabled]:focus,.datepicker table tr td.range.highlighted[disabled]:hover,fieldset[disabled] .datepicker table tr td.range.highlighted.focus,fieldset[disabled] .datepicker table tr td.range.highlighted:focus,fieldset[disabled] .datepicker table tr td.range.highlighted:hover{background-color:#e4eef3;border-color:#9dc1d3}.datepicker table tr td.range.highlighted.focused{background:#c1d7e3}.datepicker table tr td.range.highlighted.disabled,.datepicker table tr td.range.highlighted.disabled:active{background:#e4eef3;color:#999}.datepicker table tr td.range.today{color:#000;background-color:#f7ca77;border-color:#f1a417}.datepicker table tr td.range.today.focus,.datepicker table tr td.range.today:focus{color:#000;background-color:#f4b747;border-color:#815608}.datepicker table tr td.range.today.active,.datepicker table tr td.range.today:active,.datepicker table tr td.range.today:hover,.open>.dropdown-toggle.datepicker table tr td.range.today{color:#000;background-color:#f4b747;border-color:#bf800c}.datepicker table tr td.range.today.active.focus,.datepicker table tr td.range.today.active:focus,.datepicker table tr td.range.today.active:hover,.datepicker table tr td.range.today:active.focus,.datepicker table tr td.range.today:active:focus,.datepicker table tr td.range.today:active:hover,.open>.dropdown-toggle.datepicker table tr td.range.today.focus,.open>.dropdown-toggle.datepicker table tr td.range.today:focus,.open>.dropdown-toggle.datepicker table tr td.range.today:hover{color:#000;background-color:#f2aa25;border-color:#815608}.datepicker table tr td.range.today.active,.datepicker table tr td.range.today:active,.open>.dropdown-toggle.datepicker table tr td.range.today{background-image:none}.datepicker table tr td.range.today.disabled.focus,.datepicker table tr td.range.today.disabled:focus,.datepicker table tr td.range.today.disabled:hover,.datepicker table tr td.range.today[disabled].focus,.datepicker table tr td.range.today[disabled]:focus,.datepicker table tr td.range.today[disabled]:hover,fieldset[disabled] .datepicker table tr td.range.today.focus,fieldset[disabled] .datepicker table tr td.range.today:focus,fieldset[disabled] .datepicker table tr td.range.today:hover{background-color:#f7ca77;border-color:#f1a417}.datepicker table tr td.range.today.disabled,.datepicker table tr td.range.today.disabled:active{background:#f7ca77;color:#999}.datepicker table tr td.active.active,.datepicker table tr td.active.highlighted.active,.datepicker table tr td.active.highlighted:active,.datepicker table tr td.active:active,.datepicker table tr td.selected.active,.datepicker table tr td.selected.highlighted.active,.datepicker table tr td.selected.highlighted:active,.datepicker table tr td.selected:active,.open>.dropdown-toggle.datepicker table tr td.active,.open>.dropdown-toggle.datepicker table tr td.active.highlighted,.open>.dropdown-toggle.datepicker table tr td.selected,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted{background-image:none}.datepicker table tr td.selected,.datepicker table tr td.selected.highlighted{color:#fff;background-color:#999;border-color:#555;text-shadow:0 -1px 0 rgba(0,0,0,.25)}.datepicker table tr td.selected.focus,.datepicker table tr td.selected.highlighted.focus,.datepicker table tr td.selected.highlighted:focus,.datepicker table tr td.selected:focus{color:#fff;background-color:grey;border-color:#161616}.datepicker table tr td.selected.active,.datepicker table tr td.selected.highlighted.active,.datepicker table tr td.selected.highlighted:active,.datepicker table tr td.selected.highlighted:hover,.datepicker table tr td.selected:active,.datepicker table tr td.selected:hover,.open>.dropdown-toggle.datepicker table tr td.selected,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted{color:#fff;background-color:grey;border-color:#373737}.datepicker table tr td.selected.active.focus,.datepicker table tr td.selected.active:focus,.datepicker table tr td.selected.active:hover,.datepicker table tr td.selected.highlighted.active.focus,.datepicker table tr td.selected.highlighted.active:focus,.datepicker table tr td.selected.highlighted.active:hover,.datepicker table tr td.selected.highlighted:active.focus,.datepicker table tr td.selected.highlighted:active:focus,.datepicker table tr td.selected.highlighted:active:hover,.datepicker table tr td.selected:active.focus,.datepicker table tr td.selected:active:focus,.datepicker table tr td.selected:active:hover,.open>.dropdown-toggle.datepicker table tr td.selected.focus,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.selected:focus,.open>.dropdown-toggle.datepicker table tr td.selected:hover{color:#fff;background-color:#6e6e6e;border-color:#161616}.datepicker table tr td.selected.disabled.focus,.datepicker table tr td.selected.disabled:focus,.datepicker table tr td.selected.disabled:hover,.datepicker table tr td.selected.highlighted.disabled.focus,.datepicker table tr td.selected.highlighted.disabled:focus,.datepicker table tr td.selected.highlighted.disabled:hover,.datepicker table tr td.selected.highlighted[disabled].focus,.datepicker table tr td.selected.highlighted[disabled]:focus,.datepicker table tr td.selected.highlighted[disabled]:hover,.datepicker table tr td.selected[disabled].focus,.datepicker table tr td.selected[disabled]:focus,.datepicker table tr td.selected[disabled]:hover,fieldset[disabled] .datepicker table tr td.selected.focus,fieldset[disabled] .datepicker table tr td.selected.highlighted.focus,fieldset[disabled] .datepicker table tr td.selected.highlighted:focus,fieldset[disabled] .datepicker table tr td.selected.highlighted:hover,fieldset[disabled] .datepicker table tr td.selected:focus,fieldset[disabled] .datepicker table tr td.selected:hover{background-color:#999;border-color:#555}.datepicker table tr td.active,.datepicker table tr td.active.highlighted{color:#fff;background-color:#428bca;border-color:#357ebd;text-shadow:0 -1px 0 rgba(0,0,0,.25)}.datepicker table tr td.active.focus,.datepicker table tr td.active.highlighted.focus,.datepicker table tr td.active.highlighted:focus,.datepicker table tr td.active:focus{color:#fff;background-color:#3071a9;border-color:#193c5a}.datepicker table tr td.active.active,.datepicker table tr td.active.highlighted.active,.datepicker table tr td.active.highlighted:active,.datepicker table tr td.active.highlighted:hover,.datepicker table tr td.active:active,.datepicker table tr td.active:hover,.open>.dropdown-toggle.datepicker table tr td.active,.open>.dropdown-toggle.datepicker table tr td.active.highlighted{color:#fff;background-color:#3071a9;border-color:#285e8e}.datepicker table tr td.active.active.focus,.datepicker table tr td.active.active:focus,.datepicker table tr td.active.active:hover,.datepicker table tr td.active.highlighted.active.focus,.datepicker table tr td.active.highlighted.active:focus,.datepicker table tr td.active.highlighted.active:hover,.datepicker table tr td.active.highlighted:active.focus,.datepicker table tr td.active.highlighted:active:focus,.datepicker table tr td.active.highlighted:active:hover,.datepicker table tr td.active:active.focus,.datepicker table tr td.active:active:focus,.datepicker table tr td.active:active:hover,.open>.dropdown-toggle.datepicker table tr td.active.focus,.open>.dropdown-toggle.datepicker table tr td.active.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.active.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.active.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.active:focus,.open>.dropdown-toggle.datepicker table tr td.active:hover{color:#fff;background-color:#285e8e;border-color:#193c5a}.datepicker table tr td.active.disabled.focus,.datepicker table tr td.active.disabled:focus,.datepicker table tr td.active.disabled:hover,.datepicker table tr td.active.highlighted.disabled.focus,.datepicker table tr td.active.highlighted.disabled:focus,.datepicker table tr td.active.highlighted.disabled:hover,.datepicker table tr td.active.highlighted[disabled].focus,.datepicker table tr td.active.highlighted[disabled]:focus,.datepicker table tr td.active.highlighted[disabled]:hover,.datepicker table tr td.active[disabled].focus,.datepicker table tr td.active[disabled]:focus,.datepicker table tr td.active[disabled]:hover,fieldset[disabled] .datepicker table tr td.active.focus,fieldset[disabled] .datepicker table tr td.active.highlighted.focus,fieldset[disabled] .datepicker table tr td.active.highlighted:focus,fieldset[disabled] .datepicker table tr td.active.highlighted:hover,fieldset[disabled] .datepicker table tr td.active:focus,fieldset[disabled] .datepicker table tr td.active:hover{background-color:#428bca;border-color:#357ebd}.datepicker table tr td span{display:block;width:23%;height:54px;line-height:54px;float:left;margin:1%;cursor:pointer;border-radius:4px}.datepicker table tr td span:hover{background:#eee}.datepicker table tr td span.disabled,.datepicker table tr td span.disabled:hover{background:0 0;color:#999;cursor:default}.datepicker table tr td span.active,.datepicker table tr td span.active.disabled,.datepicker table tr td span.active.disabled:hover,.datepicker table tr td span.active:hover{color:#fff;background-color:#428bca;border-color:#357ebd;text-shadow:0 -1px 0 rgba(0,0,0,.25)}.datepicker table tr td span.active.disabled.focus,.datepicker table tr td span.active.disabled:focus,.datepicker table tr td span.active.disabled:hover.focus,.datepicker table tr td span.active.disabled:hover:focus,.datepicker table tr td span.active.focus,.datepicker table tr td span.active:focus,.datepicker table tr td span.active:hover.focus,.datepicker table tr td span.active:hover:focus{color:#fff;background-color:#3071a9;border-color:#193c5a}.datepicker table tr td span.active.active,.datepicker table tr td span.active.disabled.active,.datepicker table tr td span.active.disabled:active,.datepicker table tr td span.active.disabled:hover,.datepicker table tr td span.active.disabled:hover.active,.datepicker table tr td span.active.disabled:hover:active,.datepicker table tr td span.active.disabled:hover:hover,.datepicker table tr td span.active:active,.datepicker table tr td span.active:hover,.datepicker table tr td span.active:hover.active,.datepicker table tr td span.active:hover:active,.datepicker table tr td span.active:hover:hover,.open>.dropdown-toggle.datepicker table tr td span.active,.open>.dropdown-toggle.datepicker table tr td span.active.disabled,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover,.open>.dropdown-toggle.datepicker table tr td span.active:hover{color:#fff;background-color:#3071a9;border-color:#285e8e}.datepicker table tr td span.active.active.focus,.datepicker table tr td span.active.active:focus,.datepicker table tr td span.active.active:hover,.datepicker table tr td span.active.disabled.active.focus,.datepicker table tr td span.active.disabled.active:focus,.datepicker table tr td span.active.disabled.active:hover,.datepicker table tr td span.active.disabled:active.focus,.datepicker table tr td span.active.disabled:active:focus,.datepicker table tr td span.active.disabled:active:hover,.datepicker table tr td span.active.disabled:hover.active.focus,.datepicker table tr td span.active.disabled:hover.active:focus,.datepicker table tr td span.active.disabled:hover.active:hover,.datepicker table tr td span.active.disabled:hover:active.focus,.datepicker table tr td span.active.disabled:hover:active:focus,.datepicker table tr td span.active.disabled:hover:active:hover,.datepicker table tr td span.active:active.focus,.datepicker table tr td span.active:active:focus,.datepicker table tr td span.active:active:hover,.datepicker table tr td span.active:hover.active.focus,.datepicker table tr td span.active:hover.active:focus,.datepicker table tr td span.active:hover.active:hover,.datepicker table tr td span.active:hover:active.focus,.datepicker table tr td span.active:hover:active:focus,.datepicker table tr td span.active:hover:active:hover,.open>.dropdown-toggle.datepicker table tr td span.active.disabled.focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover.focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover:focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover:hover,.open>.dropdown-toggle.datepicker table tr td span.active.focus,.open>.dropdown-toggle.datepicker table tr td span.active:focus,.open>.dropdown-toggle.datepicker table tr td span.active:hover,.open>.dropdown-toggle.datepicker table tr td span.active:hover.focus,.open>.dropdown-toggle.datepicker table tr td span.active:hover:focus,.open>.dropdown-toggle.datepicker table tr td span.active:hover:hover{color:#fff;background-color:#285e8e;border-color:#193c5a}.datepicker table tr td span.active.active,.datepicker table tr td span.active.disabled.active,.datepicker table tr td span.active.disabled:active,.datepicker table tr td span.active.disabled:hover.active,.datepicker table tr td span.active.disabled:hover:active,.datepicker table tr td span.active:active,.datepicker table tr td span.active:hover.active,.datepicker table tr td span.active:hover:active,.open>.dropdown-toggle.datepicker table tr td span.active,.open>.dropdown-toggle.datepicker table tr td span.active.disabled,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover,.open>.dropdown-toggle.datepicker table tr td span.active:hover{background-image:none}.datepicker table tr td span.active.disabled.disabled.focus,.datepicker table tr td span.active.disabled.disabled:focus,.datepicker table tr td span.active.disabled.disabled:hover,.datepicker table tr td span.active.disabled.focus,.datepicker table tr td span.active.disabled:focus,.datepicker table tr td span.active.disabled:hover,.datepicker table tr td span.active.disabled:hover.disabled.focus,.datepicker table tr td span.active.disabled:hover.disabled:focus,.datepicker table tr td span.active.disabled:hover.disabled:hover,.datepicker table tr td span.active.disabled:hover[disabled].focus,.datepicker table tr td span.active.disabled:hover[disabled]:focus,.datepicker table tr td span.active.disabled:hover[disabled]:hover,.datepicker table tr td span.active.disabled[disabled].focus,.datepicker table tr td span.active.disabled[disabled]:focus,.datepicker table tr td span.active.disabled[disabled]:hover,.datepicker table tr td span.active:hover.disabled.focus,.datepicker table tr td span.active:hover.disabled:focus,.datepicker table tr td span.active:hover.disabled:hover,.datepicker table tr td span.active:hover[disabled].focus,.datepicker table tr td span.active:hover[disabled]:focus,.datepicker table tr td span.active:hover[disabled]:hover,.datepicker table tr td span.active[disabled].focus,.datepicker table tr td span.active[disabled]:focus,.datepicker table tr td span.active[disabled]:hover,fieldset[disabled] .datepicker table tr td span.active.disabled.focus,fieldset[disabled] .datepicker table tr td span.active.disabled:focus,fieldset[disabled] .datepicker table tr td span.active.disabled:hover,fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus,fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus,fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover,fieldset[disabled] .datepicker table tr td span.active.focus,fieldset[disabled] .datepicker table tr td span.active:focus,fieldset[disabled] .datepicker table tr td span.active:hover,fieldset[disabled] .datepicker table tr td span.active:hover.focus,fieldset[disabled] .datepicker table tr td span.active:hover:focus,fieldset[disabled] .datepicker table tr td span.active:hover:hover{background-color:#428bca;border-color:#357ebd}.datepicker table tr td span.new,.datepicker table tr td span.old{color:#999}.datepicker .datepicker-switch{width:145px}.datepicker .datepicker-switch,.datepicker .next,.datepicker .prev,.datepicker tfoot tr th{cursor:pointer}.datepicker .datepicker-switch:hover,.datepicker .next:hover,.datepicker .prev:hover,.datepicker tfoot tr th:hover{background:#eee}.datepicker .cw{font-size:10px;width:12px;padding:0 2px 0 5px;vertical-align:middle}.datepicker.dropdown-menu{position:absolute;top:100%;left:0;right:auto;z-index:1000;float:left;display:none;min-width:160px;list-style:none;background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:5px;box-shadow:0 5px 10px rgba(0,0,0,.2);background-clip:padding-box;color:#333;font-size:13px;line-height:1.42857143}.datepicker.datepicker-inline td,.datepicker.datepicker-inline th,.datepicker.dropdown-menu td,.datepicker.dropdown-menu th{padding:0 5px}#Home.contact_banne.aboutus-hr{background:url(assets/img/about-hr-bg.jpg) center center repeat-x;background-size:cover}#Home.contact_banne.aboutus-hr .home_bg{height:auto}.about_top h2{color:#fff;font-size:60px;font-family:Conv_VANTABOL;text-align:center;margin-top:60px;margin-bottom:40px}.about_top_center{border-top:5px solid #6dc3c4;width:400px;margin-bottom:60px}.about_top p{color:#fff;font-size:18px;text-align:center;margin-bottom:40px}.about_hones{text-align:center;margin:60px auto}.about_hones .about_hone_detail{width:650px;margin:0 auto;padding:20px;border:1px dashed #fff;border-radius:10px;position:relative;border-top:0 none}.about_hones .about_hone_detail span{color:#fff;font-size:20px;position:absolute;top:-14px;width:100%;left:0;font-family:Conv_VANTABOL}.about_hones .about_hone_detail li{color:#fff;font-size:14px;font-family:Barlow;text-align:left}.about_hones .about_hone_detail ul{padding-left:20px;margin-bottom:0}.about_top a.about-contac_btn{font-size:13px;background:#1ba492;padding:15px;color:#fff;font-family:Barlow;text-transform:uppercase;width:280px;display:block;text-align:center;border-radius:30px;margin:0 auto}.about_hones .about_hone_detail:after,.about_hones .about_hone_detail:before{content:"";width:70px;height:5px;position:absolute;top:-2px;border-radius:10px;display:inline-block}.about_top a.about-contac_btn:hover{text-decoration:none;background:#148F7E}.about_top{padding-bottom:60px}.about_hones .about_hone_detail:before{left:6px;background:url(assets/img/heading_dot_left.png) right 0 no-repeat}.about_hones .about_hone_detail:after{right:6px;background:url(assets/img/heading_dot_right.png) left 0 no-repeat}.about-hr_jed{width:31%;margin:20px 10px;display:inline-block}.jed_header{background:rgba(31,31,31,.8);border-radius:10px 10px 0 0;text-align:center;padding-bottom:10px}.hr-user{text-align:center;margin-top:-50%;display:inline-block;width:100%}.jed_header h3{color:#1ba492;margin-top:25px}.jed_header p{font-size:14px;color:#fff;margin-bottom:0;padding:0 10px}.jed_detail{background:#43b1a3;border-radius:0 0 10px 10px;padding:20px;border-top:1px solid #fff;position:relative;text-align:left}.jed_detail span{color:#fff;font-size:18px;font-family:Conv_VANTABOL}.jed_detail p{color:#fff;font-size:14px;margin-bottom:0}.about_bottom_dot{width:15px;height:15px;display:inline-block;background:#474745;border:2px solid #fff;border-radius:20px;position:absolute;bottom:-7px;right:0;left:0;margin:0 auto}.hr_about-list{text-align:center;margin-bottom:80px}.cu-contact.hr-abouts{background:url(assets/img/4-bg.png) center top no-repeat,url(assets/img/bg-screen-2.png) center bottom no-repeat;background-color:rgba(204,204,204,.5)}.services_our .servi_icon{margin-top:-80px;margin-bottom:20px;background:url(assets/img/6-angle.svg) center no-repeat;max-width:120px;max-height:120px;width:100%;height:100%;display:flex;flex-direction:row;justify-content:center;align-items:center}.servic_list{background:rgba(0,0,0,.6);padding:20px;border:2px dotted #1ba492;border-radius:10px;width:100%;margin-top:60px;min-height:400px;display:inline-block}.servic_list h6{color:#1ba492;margin:0 auto 20px;display:block}.servic_list p{font-size:14px;color:#fff;margin-bottom:0}.servi_icon img{width:120%}.navbar-inverse .navbar-nav>li.dropdown:hover a.dropdown-toggle{background:rgba(0,0,0,.9);color:#1BA492}ul.nav li:hover>ul.dropdown-menu{display:block;background:rgba(0,0,0,.9)}.animateblock{padding:8px 0;color:#fff;opacity:0;-webkit-transition:all .55s linear;-moz-transition:all .55s linear;transition:all .55s linear}.animateblock.animated{opacity:1}.animateblock.top{margin-top:-25px}.animateblock.top.animated{margin-top:0}.animateblock.btm{margin-top:25px}.animateblock.btm.animated{margin-top:0}.animateblock.centerleft{display:block;width:auto;margin-right:-10%}.animateblock.centerleft.animated{margin-right:0}.animateblock.centerright{display:block;width:auto;margin-left:-10%}.animateblock.centerright.animated{margin-left:0}.animateblock.center{margin-left:2%}.animateblock.center.animated{margin-left:42%}.animateblock.size{display:block;width:10%}.animateblock.size.animated{width:100%;height:100%}.animateblock.size img{max-width:100%;height:auto}@media (max-width:1199px){.navbar-inverse .navbar-nav>li>a{font-size:14px;padding:15px 10px}header .btn{margin:50px 10px 0 0}header .heading_text{font-size:40px}header .line h3{font-size:18px}.get-started .block3-get h5{height:35px}.get-started .block3-get p{height:120px}.cu_buss_bord::before{right:-55%}.about_contact .about_detail .about_details h4{font-size:48px}.cu-about,.cu-block-title{background-size:cover}.contact_email .email_name_id .eid_fild label{margin-left:10%}.remote_support_icon{bottom:-60px}.remote_support_icon img{width:auto;height:100%}#Home.proj_management .icons{margin-top:100px;margin-bottom:80px}#Home.proj_management .icons .migration_banner_text{margin-bottom:30px}.sharepoint_branding .proj_management_banner_icon img{width:65%}header.sharepoint_branding .icons{margin-bottom:60px}.hr-assets_banner .proj_management_banner_icon img{width:56%}.hr-main-site .responsive-tabs li a{font-size:20px;width:86%}.main_site_form .card-body input.form-control{width:89%}.hr-main-site li .left_dot_full:after{top:50px}.about-hr_jed{width:30.5%}.servic_list{min-height:535px}.jed_header h4{font-size:22px}.services_our .servi_icon{margin-top:-59px}.services_our .servi_icon.img-top-20{margin-top:-70px}.services_our .servi_icon.img-top-10{margin-top:-66px}.services_our .servi_icon.img-top-1{width:112px;top:23px}.services_our .servi_icon.img-top-1~span{margin-top:43px}}@media (max-width:991px){.navbar-brand{max-width:100px}header .heading_text{font-size:35px}header .icons{margin-top:10px}header .btn_WEBSITES{padding-right:30px;padding-left:30px}header .btn{margin:20px 5px 20px 0}.contact_email .email_name_id .eid_fild label,.home_contacts+.home_contacts,.main_site_form{margin-left:0}header .btn_MICROSOFT{padding-right:10px;padding-left:10px}header .icons .fa-map-marker{display:block;margin-left:0}.home_address{flex-direction:column}.home_bg{padding-top:130px}.navbar-inverse .navbar-nav>li>a{font-size:11px;padding:15px 7px}.get-started .block3-get p{height:180px}.get-started .block3-get a{font-size:12px;width:220px}.cu-block-title .cu-buss-box{height:350px}.cu_buss_bord::before{right:-57%}.about_contact .about_detail .about_details h4{font-size:46px}.infographic_block img{width:100%}header.mirgration_banne .icons{margin-top:30px}.cu-contact .title-check-border .check-title-name{width:85%}.contact_email .email_msg textarea,.contact_email .email_name_id input,.contact_email .email_sub input{width:78.5%}.contact_email .email_msg label,.contact_email .email_name_id label,.contact_email .email_sub label{width:20%}.contact_email .email_name_id .name_fild{width:100%}.contact_email .email_name_id .eid_fild{margin-top:20px}.contact_email .email_submit{padding-left:20.5%}header#Home.contact_banne .icons{margin-bottom:10px}.contact_banner_right{width:45%}.title-check-border .check-title-name{width:95%}.proj_sitelist .site_list .site_list_rat .site_list_detail p{max-height:40px;overflow:hidden}.proj_sitelist .site_list .site_list_rat .site_list_detail h6{font-size:30px}.proj_management_banner_icon{bottom:-80px;right:-5%}.proj_management_banner_icon img{width:75%}.sharepoint_branding .proj_management_banner_icon img{width:76%}.hr-assets_banner .proj_management_banner_icon{right:-10%}.hr-main-site .tab-content{width:100%}.responsive-tabs-container .accordion-link{font-size:22px}.cu-contact.hr-abouts .title-check-border .check-title-name,.hr-assets_main .title-check-border .check-title-name{width:auto}.about_top h2{font-size:55px}.about-hr_jed{width:30%}.services_our .servi_icon{width:140px;margin:-82px auto 0}.servic_list{min-height:280px;text-align:center;margin-bottom:60px}.services_our .servi_icon.img-top-20{margin-top:-98px}.services_our .servi_icon.img-top-10{margin-top:-93px}.services_our .servi_icon.img-top-1~span{margin-top:70px}.services_our .servi_icon.img-top-1{top:0;width:178px}}@media (max-width:847px){.navbar-inverse .navbar-nav>li>a{font-size:11px}.sharepoint_branding .proj_management_banner_icon{right:0}}@media (min-width:768px) and (max-width:847px){p{font-size:14px}header .header_menu{width:100%;float:none;padding-left:0}.navbar-brand>img{margin-left:0}header #myNavbar{width:100%;padding-left:0;padding-right:0}header .icons .fa-map-marker{margin-left:0;display:block}header .btn_MICROSOFT{margin-top:20px}.home_bg .men_img{bottom:-20px;height:10px}.home_bg .men_img img{max-width:270px;right:0;position:absolute;top:0}}@media (max-width:768px){.hr-assets_banner .proj_management_banner_icon,.proj_management_banner_icon{right:0}.navbar-brand>img{margin-left:0}#header{width:100%;display:flex;flex-direction:column}header#Home{min-height:100%;background-attachment:scroll!important}header .header{border-bottom:1px solid #fff}header .icons{text-align:left}header .btn{margin:50px 15px 20px 0}.navbar.navbar-inverse .container{padding:0}.header .navbar-header{width:100%;flex-direction:row;justify-content:space-between}#myNavbar.navbar-collapse{display:none;width:100%;flex-direction:column;justify-content:flex-start}#myNavbar.collapse{display:none}#myNavbar.collapse.in{display:flex;background:#333}.cu-about,.cu-block-title,.cu_proj_management.cu_share_bran,header#Home.mirgration_banne{background-size:cover}.home_bg .row{position:relative}.home_bg .men_img{position:absolute;bottom:-70px;right:0;width:30%}.home_buttons{width:50%;flex-direction:column}#home{max-height:100%!important}.home_bg,.home_bottom_bg{height:100%}header .men_img img{text-align:right}header .right::before{margin-top:-60px}.home_bottom_bg .line{padding-left:40px}.get-started .block3-get img{width:60%}.get-started .block3-get .get_start_icon{height:auto;float:right;width:40%}.get-started .block3-get .get_start_detail{float:left;width:60%;text-align:left}.get-started .block3-get h5,.get-started .block3-get p{height:auto}.get-started .block3-get{float:left;margin-bottom:10px}.get-started .block3-get a{float:left;text-align:center}.cu-block-title{background-attachment:inherit}.cu_block5{background-position:right top}.cu-block-title .cu-buss-box .cu_buss_icon{display:inline-block;width:30%;vertical-align:middle}.cu-block-title .cu-buss-box p{display:inline-block;width:69%;padding-left:40px;vertical-align:middle}.cu-block-title .cu_buss_bord{display:none}.cu-block-title .cu-buss-box{min-height:auto;height:100%;padding:0}.principles_list .principles_icon{display:inline-block;width:30%;vertical-align:middle}.principles_list .principles_detail{display:inline-block;width:69%;text-align:left;padding-left:20px;vertical-align:middle}.cu-principles .principles_list{float:left;width:100%}.about_contact .about_detail .about_details p{width:auto}.about_contact .about_detail{height:250px}.title-check-border .check-title-name{width:90%}.cu-block-main .cu-list .cu_list_icon img,.infographic_block img,.title-check-border{width:100%}header .icons button.btn{display:block;margin:20px 0}header .icons .fa-phone{display:block}.remote_support_banner .icons{width:60%}.remote_support_icon img{float:right}.remote_our_services .title-check-border .check-title-name{width:87%}.remote_our_services .get_start_detail{margin-bottom:0}.hr4-head,.remote_footer .remote_reasons{margin-bottom:40px}#Home.proj_management .icons{width:70%}.proj_management_banner_icon img{width:68%}header.sharepoint_branding .icons{width:70%}.sharepoint_branding .proj_management_banner_icon img{width:57%}.sharepoint_branding .proj_management_banner_icon{bottom:-115px}.home_bg{padding-top:85px}.hr-assets_banner .icons{width:65%}.hr-assets_banner .proj_management_banner_icon img{width:48%}.main_site_form .card-body input.form-control{width:92%}.servic_list{min-height:180px;text-align:center;margin-bottom:0}.about_hones .about_hone_detail{width:100%}.about-hr_jed{width:100%;margin:80px auto 20px}.cu_migration_serv .migration_serv .migra_serv_icon,.hr_about-list{margin-bottom:0}.cu-contact.hr-abouts{padding-bottom:150px}.services_our{margin-top:20px}.about_hones .about_hone_detail span{font-size:18px}.navbar-nav .open .dropdown-menu,.navbar-nav>li>.dropdown-menu{width:100%;background:#252525;position:relative;margin-top:2px;border:1px solid rgba(0,0,0,.15)}.navbar-inverse .navbar-nav .open .dropdown-menu>li>a,.navbar-nav>li>.dropdown-menu li a{color:#fff;font-size:12px;padding:10px 20px;line-height:1.42857143}.navbar-nav>li>.dropdown-menu li a:hover{color:#fff}ul.nav li:hover>ul.dropdown-menu{background:#252525}#Home.hr-assets_banner{background-size:cover}}@media (max-width:640px){.home_bg .men_img{width:40%}.cu_migration_serv .migration_serv{width:49.5%}.about_top_3 .cu_about_1{width:80%}.cu-block6{background-size:cover;padding:60px 0}header.sharepoint_branding .icons{width:60%}.sharepoint_branding .proj_management_banner_icon{bottom:-90px}header .heading_text{font-size:30px}.main_site_form .card-body input.form-control{width:89%}.about_hones .about_hone_detail span{width:60%;left:0;right:0;margin:0 auto}.about_hones .about_hone_detail ul{padding-top:30px}.about_top h2{font-size:40px}}@media (max-width:480px){.home_buttons{width:60%}header .icons button.btn{display:block;width:100%;word-break:break-all;white-space:normal;font-size:12px}.cu-block-title .cu-buss-box p{width:68%}.cu-block-main .cu-list .cu_list_detail{width:59%}.principles_list .principles_detail{width:68%}.about_rating .rating_list{padding:0}header .heading_text{font-size:34px}.title-check-border .check-title-name{width:85%}.get-started .block3-get a{width:200px;padding:8px}.principles_list span{margin:0 auto 10px}.principles_list{margin:0 auto 20px}.cu-block-main .cu-list{margin:20px auto}.cu-block-title .col-md-4{margin-top:20px}.cu-block-title .cu-buss-box{margin:0 0 20px}.get-started .block3-get img{width:80%}.our_process_list .process_detail{width:65%;padding-left:4%}.our_process_list .process_icon img{width:100%}.cu_migration_serv .migration_serv .migra_serv_title span{height:auto;width:65%}.cu_migration_our .title-check-border .check-title-name{width:87%}.about_top_3 .col-xs-6{width:80%;float:none;margin:0 auto 30px}.contact_banner_right{top:10%}header#Home.contact_banne .icons{width:60%}.remote_support_icon{height:100%}#Home.sharepoint_branding{background-size:cover}.main_site_form .card-body input.form-control{width:84%}.about_hones .about_hone_detail ul{padding-top:55px}.about_hones .about_hone_detail:after,.about_hones .about_hone_detail:before{width:55px}.about_top_center{width:100%}}@media (max-width:360px){header .heading_text{font-size:25px}.get-started .block3-get a{width:100%}.title-check-border .check-title-name h4{font-size:40px}.home_bg .men_img{width:45%}.about_contact .about_detail{height:auto}.get-started .block3-get img{width:90%}.cu_migration_serv .migration_serv{width:80%}.contact_email .email_msg textarea,.contact_email .email_name_id input,.contact_email .email_sub input{width:100%}.contact_email .email_submit{padding-left:0;text-align:center}header.sharepoint_branding .icons{width:59%}header.sharepoint_branding .icons button.btn{width:185px;border-radius:30px}#Home.hr-assets_banner{background-size:cover}.hr-assets_banner .proj_management_banner_icon{bottom:-68px}.hr-assets_banner .proj_management_banner_icon img{width:50%}.main_site_form .card-body input.form-control{width:81%}}
+/** Generated by FG **/
+@font-face {
+    font-family: 'Conv_VANTABOL';
+    src: url('assets/fonts/site/VANTABOL.eot');
+    src: local('☺'), url('assets/fonts/site/VANTABOL.woff') format('woff'),
+    url('assets/fonts/site/VANTABOL.ttf') format('truetype'),
+    url('assets/fonts/site/VANTABOL.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Generated by FG **/
+@font-face {
+    font-family: 'Conv_VANTALIG';
+    src: url('assets/fonts/site/VANTALIG.eot');
+    src: local('☺'), url('assets/fonts/site/VANTALIG.woff') format('woff'),
+    url('assets/fonts/site/VANTALIG.ttf') format('truetype'),
+    url('assets/fonts/site/VANTALIG.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothicLTBold';
+    src: url('assets/fonts/site/TradeGothicLTBold.eot');
+    src: url('assets/fonts/site/TradeGothicLTBold.eot') format('embedded-opentype'),
+    url('assets/fonts/site/TradeGothicLTBold.woff2') format('woff2'),
+    url('assets/fonts/site/TradeGothicLTBold.woff') format('woff'),
+    url('assets/fonts/site/TradeGothicLTBold.ttf') format('truetype'),
+    url('assets/fonts/site/TradeGothicLTBold.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('assets/fonts/Barlow/Barlow-Regular.eot');
+    src: url('assets/fonts/Barlow/Barlow-Regular.eot') format('embedded-opentype'),
+        /*url('assets/fonts/Barlow/Barlow-Regular.woff2') format('woff2'),*/
+        /*url('assets/fonts/Barlow/Barlow-Regular.woff') format('woff'),*/
+    url('assets/fonts/Barlow/Barlow-Regular.ttf') format('truetype'),
+    url('assets/fonts/Barlow/Barlow-Regular.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'Barlow-Light';
+    src: url('assets/fonts/Barlow/Barlow-Light.eot');
+    src: url('assets/fonts/Barlow/Barlow-Light.eot') format('embedded-opentype'),
+        /*url('assets/fonts/Barlow/Barlow-Light.woff2') format('woff2'),*/
+        /*url('assets/fonts/Barlow/Barlow-Light.woff') format('woff'),*/
+    url('assets/fonts/Barlow/Barlow-Light.ttf') format('truetype'),
+    url('assets/fonts/Barlow/Barlow-Light.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'Barlow-Bold';
+    src: url('assets/fonts/Barlow/Barlow-Bold.eot');
+    src: url('assets/fonts/Barlow/Barlow-Bold.eot') format('embedded-opentype'),
+        /*url('assets/fonts/Barlow/Barlow-Bold.woff2') format('woff2'),*/
+    url('assets/fonts/Barlow/Barlow-Bold.woff') format('woff'),
+    url('assets/fonts/Barlow/Barlow-Bold.ttf') format('truetype'),
+    url('assets/fonts/Barlow/Barlow-Bold.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'Barlow-Medium';
+    src: url('assets/fonts/Barlow-Medium.eot');
+    src: url('assets/fonts/Barlow/Barlow-Medium.eot') format('embedded-opentype'),
+    url('assets/fonts/Barlow/Barlow-Medium.woff2') format('woff2'),
+        /*url('assets/fonts/Barlow/Barlow-Medium.woff') format('woff'),*/
+    url('assets/fonts/Barlow/Barlow-Medium.ttf') format('truetype'),
+    url('assets/fonts/Barlow/Barlow-Medium.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'BarlowSemiCondensed-Bold';
+    src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot');
+    src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot') format('embedded-opentype'),
+        /*url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff2') format('woff2'),*/
+        /*url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff') format('woff'),*/
+    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.ttf') format('truetype'),
+    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.svg#TradeGothicLTBold') format('svg');
+}
+@font-face {
+    font-family: 'BarlowCondensed-SemiBold';
+    src: url('assets/fonts/Barlow/BarlowCondensed-SemiBold.eot');
+    src: url('assets/fonts/Barlow/BarlowCondensed-SemiBold.eot') format('embedded-opentype'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.woff2') format('woff2'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.woff') format('woff'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.ttf') format('truetype'),
+    url('assets/fonts/Barlow/BarlowCondensed-SemiBold.svg#TradeGothicLTBold') format('svg');
+}
+
+body {
+    font-family: 'Barlow';
+    color: #222;
+    overflow-x: hidden;
+}
+
+h1, h2, h4,{
+    font-family: 'Barlow';
+}
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 24px;
+    font-family: 'Barlow-Bold';
+}
+.h3-medium{
+    font-family: 'Barlow-Medium';
+}
+h5{
+    font-family: 'Barlow-Bold';
+    font-size: 18px;
+}
+h6{
+    font-family: 'Barlow-Bold';
+}
+p{
+    font-family: 'Barlow';
+    font-size: 16px;
+}
+.c-wh{  color: #ffffff;  }
+.c-bl{  color: #141414;  }
+.tt-up{  text-transform: uppercase;  }
+.btn:focus,
+.btn:active:focus,
+button:focus,
+button:active:focus{
+    outline: 0;
+    box-shadow: none;
+    opacity: .9;
+    color: inherit;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #6DC4C3;
+}
+.navbar-brand{
+    display: flex;
+    max-width: 180px;
+    max-height: 50px;
+    padding: 5px;
+}
+.navbar-brand>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#Home {
+    background-image: url("assets/img/home-bg.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: fixed !important;
+    /*height: auto;*/
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+@-webkit-keyframes slide-r-to-l {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+@-webkit-keyframes slide-l-to-r {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 0; }
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+#home .navbar-header{
+    display: flex;
+}
+.home_bg .home_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+.home_bottom_bg {
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 40px;
+    height: 27vh;
+}
+.home_address{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.home_contacts{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.home_contacts + .home_contacts{
+    margin-left: 35px;
+}
+.home_contacts .fa{
+    margin-right: 5px;
+}
+header .navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.navbar-inverse .navbar-toggle{
+    border-color: white;
+}
+.navbar-inverse .navbar-toggle:hover{
+    background: rgba(0,0,0,0.9);
+
+}
+.navbar-inverse .navbar-toggle:active{
+    background: rgba(0,0,0,0.9);
+}
+.navbar .dropdown-menu{
+    min-width: 100%;
+}
+.home_bg {
+    padding-top: 73px;
+    display: flex;
+    flex-direction: column;
+    height: 73vh;
+}
+
+.home_bg .container{
+    height: 100%;
+}
+
+.menu_sticky {
+    background: rgba(0,0,0,0.7) !important;
+    border-radius: 0;
+    border-bottom: 1px solid #fff !important;
+}
+.menu_sticky #header{
+    border-bottom: 0;
+}
+header .menu_sticky #myNavbar {
+    border-bottom: 0 none;
+}
+
+header #myNavbar {
+    color: #fff;
+    display: flex;
+    align-content: flex-end;
+}
+
+header .header_menu li a {
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+
+header .header_menu li ul li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    padding-left: 11px;
+    padding-right: 12px;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background: #1BA492;
+    color: #fff;
+}
+
+header .icons {
+    /*margin-top: 150px;*/
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+header .icons a {
+    color: #fff;
+}
+
+header .btn {
+    margin: 70px 40px 50px 0;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+header .btn:hover {
+    background-color: #1BA492;
+    color: #fff;
+    border-color: #1BA492;
+}
+
+header .btn_WEBSITES {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+header .btn_MICROSOFT {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+header .heading_text {
+    font-size: 52px;
+    font-family: 'BarlowCondensed-SemiBold';
+    text-transform: uppercase;
+}
+
+header .contant {
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+header .line h3:before {
+    display: inline-block;
+    margin: 0 -170px 30px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #1BA492;
+    width: 170px;
+    position: absolute;
+    top: 14px;
+}
+
+header .right .fa {
+    color: #000;
+    border-radius: 50%;
+    background-color: #1BA492;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+header .right::before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 1px;
+    background-color: #cccccc;
+    left: 18px;
+    margin-left: -1.5px;
+    margin-top: -40px;
+    margin-bottom: 31px;
+}
+
+.home_bottom_bg .right {
+    float: left;
+    width: 30px;
+    position: relative;
+}
+
+.home_bottom_bg .line h3 {
+    padding-top: 20px;
+    line-height: 28px;
+}
+
+.home_bg .men_img {
+    position: relative;
+    bottom: -120px;
+}
+.home_bg .men_img img{
+    width: 110%;
+}
+
+.home_bottom_bg .line h5 {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 22px;
+}
+.home_socials{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.home_socials li{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.home_socials li a{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.home_socials .fa{
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.home_socials li a:hover{
+    color: #1BA492;
+    text-decoration: none;
+}
+.home_buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+/*STARS RATING*/
+.stars {  cursor: pointer;  }
+.stars:hover .star polygon {  fill: #1BA492 !important;  }
+.stars .star {  float: left;  }
+.stars .star polygon {  fill: #d8d8d8;  }
+.stars .star:hover ~ .star polygon {  fill: #d8d8d8 !important;  }
+.stars[data-stars] .star polygon {  fill: #1BA492;  }
+.stars[data-stars="1"] .star:nth-child(1) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="2"] .star:nth-child(2) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="3"] .star:nth-child(3) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="4"] .star:nth-child(4) ~ .star polygon {  fill: #d8d8d8;  }
+.stars[data-stars="5"] .star:nth-child(5) ~ .star polygon {  fill: #d8d8d8;  }
+
+
+/*end of STARS RATING*/
+/* New css */
+.get-started {
+    background: #FAFAFA;
+}
+.get-started .block_get{
+    background: url('assets/img/bg-screen-2.png') no-repeat center bottom #e5e5e5;
+    padding-bottom: 250px;
+}
+.get-started .block3-get {
+    width: 100%;
+    text-align: center;
+}
+
+.get-started .block3-get img {
+    width: 100%;
+}
+.get-started .block3-get p {
+    color: #333333;
+    margin: 20px auto;
+    height: 100px;
+}
+
+.get-started .block3-get a {
+    border: 1px solid #41B3A4;
+    padding: 8px 10px;
+    color: #41B3A4;
+    text-transform: uppercase;
+    border-radius: 20px;
+    width: 250px;
+    display: inline-block;
+}
+
+.get-started .block3-get a:hover {
+    text-decoration: none;
+    background: #41B3A4;
+    color: #fff;
+}
+
+.get_bg_bottom {
+    margin-top: 30px;
+}
+
+.get_bg_bottom img {
+    width: 100%;
+}
+
+.get_start_icon {
+    max-width: 200px;
+    margin: 0 auto;
+    line-height: 200px;
+}
+
+.title-check-border {
+    margin-top: 45px;
+    float: left;
+}
+
+.title-check-border .check-icon-top {
+    float: left;
+    width: 30px;
+}
+
+.title-check-border .check-icon-top i {
+    background: #1ba492;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.title-check-border .check-icon-top:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 1px;
+    background-color: #cccccc;
+    left: 32px;
+    margin-left: -1.5px;
+    height: 45px;
+}
+
+.title-check-border .check-title-name {
+    float: left;
+    margin-left: 5px;
+}
+.check-title-name h2{
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 20px;
+}
+
+.title-check-border .check-title-name h2 {
+    font-size: 50px;
+    color: #141414;
+    font-family: 'BarlowCondensed-SemiBold';
+
+}
+
+.title-check-border .check-title-name h2:before {
+    display: inline-block;
+    content: " ";
+    text-shadow: none;
+    height: 1px;
+    background-color: #1BA492;
+    width: 170px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+
+.cu-white h2 {
+    color: #fff !important;
+}
+
+.cu-white i {
+    color: #000 !important;
+}
+
+.cu-block-title {
+    background: url('assets/img/3-screen-bg.jpg') no-repeat center center;
+}
+
+.cu-block-title .cu-buss-box {
+    margin: 0 0 40px;
+    min-height: 380px;
+    padding: 0 40px;
+}
+
+.cu-block-title .col-md-4 {
+    margin-top: 40px;
+}
+
+.cu-block-title .cu-buss-box p {
+    color: #fff;
+    margin: 20px auto;
+}
+
+.cu-buss-box .cu_buss_icon svg{
+    width: 280px;
+    height: 280px;
+}
+.cu-buss-box .cu_buss_icon img {
+    width: 100%;
+}
+
+.cu_buss_bord {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.cu_buss_bord i.firs_dot i {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 8px;
+}
+
+.cu_buss_bord i.firs_dot {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px dashed #fff;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.cu_buss_bord:before {
+    width: 100%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 14px;
+    right: -54%;
+}
+
+.cu-buss-box:hover ~ .cu_buss_bord i.firs_dot i {
+    background: #1BA492;
+}
+
+.cu-buss-box:hover ~ .cu_buss_bord i.firs_dot {
+    border: 1px dashed #1BA492;
+}
+
+.cu_buss_bord.last:before {
+    display: none;
+}
+
+.cu-buss-box:hover p {
+    color: #1ba492;
+}
+
+.cu-block-main {
+    background: url('assets/img/4-bg.png') no-repeat center top;
+    padding-bottom: 40px;
+}
+
+.cu-block-main .cu-list .cu_list_icon {
+    display: inline-block;
+    width: 39%;
+    padding-right: 5%;
+    text-align: right;
+    vertical-align: middle;
+}
+.cu-block-main .cu-list .cu_list_icon img{
+    width: 200px;
+    height: 200px;
+}
+.cu-block-main .cu-list .cu_list_detail {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.cu-block-main .cu-list .cu_list_detail p {
+    color: #141414;
+}
+
+.cu-block-main .cu-list {
+    margin: 40px auto;
+    display: inline-block;
+}
+
+.cu-block-not {
+    background: url('assets/img/5-top-bg-02.jpg') repeat-y center center;
+    background-size: contain;
+    padding: 80px 0;
+    background-attachment: fixed;
+}
+
+.not-sub_text h3 {
+    font-family: 'BarlowCondensed-SemiBold';
+    padding: 0 20px;
+    text-align: center;
+    display: block;
+}
+
+.cu-principles {
+    background: url('assets/img/5-bottom-bg.png') no-repeat center bottom;
+}
+
+.principles_list {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 auto 40px;
+}
+
+.cu-principles .col-md-4 {
+    margin-top: 40px;
+}
+
+.principles_list h3 {
+    margin: 30px auto 10px;
+    display: block;
+}
+
+.principles_list .principles_icon img {
+    width: 70%;
+}
+
+.cu-about {
+    background: url('assets/img/footer.jpg') repeat-x center center;
+    -webkit-animation: slide-r-to-l 60s infinite linear;
+}
+
+.about_rating .rating_list {
+    margin: 20px auto;
+    padding: 0 50px;
+}
+.about_rating .rating_list .rating_stars {
+    display: block;
+    height: 27px;
+    margin-bottom: 20px;
+}
+.about_rating .rating_list .rating_stars img{
+    height: 100%;
+}
+.about_rating .rating_list h3 {
+    text-align: right;
+    width: 100%;
+    display: block;
+}
+.about-servic{  margin-top: 20px;}
+.about_contact{  margin-top: 40px;}
+
+.about_contact .about_detail .about_checkmark {
+    display: table-cell;
+    width: 30px;
+    vertical-align: top;
+}
+
+.about_contact .about_detail .about_checkmark i {
+    background: #1ba492;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.about_contact .about_detail .about_checkmark:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 1px;
+    background-color: #cccccc;
+    left: 32px;
+    margin-left: -1.5px;
+    height: 100%;
+}
+
+.about_contact .about_detail .about_details {
+    display: table-cell;
+    padding-left: 10px;
+}
+
+.about_contact .about_detail .about_details h2 {
+    color: #fff;
+    font-family: 'BarlowCondensed-SemiBold';
+    position: relative;
+    padding-top: 20px;
+}
+
+.about_contact .about_detail .about_details h2:before {
+    display: inline-block;
+    content: " ";
+    text-shadow: none;
+    height: 1px;
+    background-color: #1BA492;
+    width: 170px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+
+.about_contact .about_detail .about_details p {
+    color: #fff;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.about_contact .about_detail .about_details a {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: 'Barlow';
+    display: block;
+}
+
+.about_contact .about_detail {
+    height: 290px;
+}
+
+footer {
+    background: #e4e4e4;
+    padding: 20px 0;
+}
+
+footer .footer_copyright span {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.cu_migrationtit {
+    background: url('assets/img/bg-screen-2.jpg') no-repeat center bottom;
+}
+
+.cu_migration_our .title-check-border .check-title-name {
+    width: 90%;
+}
+
+.cu_migration_our .title-check-border .check-title-name p {
+    color: #fff;
+}
+
+.our_process_list .process_icon {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+.our_process_list .process_icon img{
+    width: 140px;
+    height: 140px;
+}
+
+.our_process_list .process_detail {
+    display: inline-block;
+    width: 69%;
+    vertical-align: middle;
+}
+
+.our_process_list .process_detail h3 {
+    color: #1ba492;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.process_before h3 {
+    color: #fff;
+    position: relative;
+    padding-top: 15px;
+}
+
+.process_before p {
+    color: #fff;
+}
+
+.process_before h3:before {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 1px;
+    background-color: #1ba492;
+    content: "";
+}
+
+.cu_migration_our .our_process {
+    margin: 60px auto;
+}
+
+.our_process_before {
+    margin-bottom: 60px;
+}
+
+.our_process_list {
+    padding: 0 !important;
+}
+
+.cu_migration_pro {
+    background: url('assets/img/4-bg.png') no-repeat center top;
+}
+
+.cu_migration_pro .height_info {
+    height: 400px;
+}
+
+.cu_block5 {
+    background: url('assets/img/home-bg.jpg') no-repeat center top;
+    background-attachment: fixed;
+}
+
+.cu-block6 {
+    background: url('assets/img/6-top-bg.png') no-repeat center top;
+    padding: 80px 0;
+}
+
+
+.about_top_3 .cu_about_1 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about_top_3 .cu_about_1 .cu_abou_icon {
+    margin-bottom: 20px;
+    position: relative;
+}
+.about_top_3 .cu_about_1 .cu_abou_icon img{
+    position: relative;
+    z-index: 5;
+}
+.about_top_3 .cu_about_1 .cu_abou_icon:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -40%;
+    margin-top: -40%;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #1BA492;
+    background: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.about_top_3 .cu_about_1 p {  display: block;  }
+.about_top_3 .cu_about_1 img {  width: 100%;  }
+
+.cu_migration_serv .migration_serv {
+    width: 24.5%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.cu_migration_serv .migration_serv .migra_serv_icon {
+    position: relative;
+    margin-bottom: 20px;
+}
+.cu_migration_serv .migration_serv .migra_serv_icon img{
+    z-index: 5;
+    position: relative;
+}
+.cu_migration_serv .migration_serv .migra_serv_icon:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -61px;
+    margin-top: -61px;
+    width: 119px;
+    height: 119px;
+    border: 1px solid #fff;
+    background: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.cu_migration_serv .migration_serv .migra_serv_title p {
+    min-height: 35px;
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.cu_migration_serv {
+    text-align: center;
+    margin: 40px auto 60px;
+}
+
+.head_hr_bord hr {
+    width: 200px;
+    margin: 25px 0;
+    border-color: #1ba492;
+    float: left;
+}
+
+.head_hr_bord {
+    text-align: left;
+    float: left;
+    width: 100%;
+}
+
+header#Home.mirgration_banne {
+    background: url('assets/img/top-bg.jpg') repeat-x center center;
+    padding-bottom: 80px;
+}
+
+header#Home.mirgration_banne .btn_WEBSITES {  text-transform: uppercase;  }
+
+.cu_migrationtit .get_start_icon {  margin: 0 auto 15px;  }
+
+header#Home.mirgration_banne .migration_banner_text {  width: 75%;  }
+
+.header.mirgration_banne .icons {
+    margin-top: 130px;
+}
+
+.cu_migration_pro .infographic_block {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#Home.contact_banne {
+    background: url('assets/img/top-contact-bg.jpg') repeat-x center center;
+}
+
+header#Home.contact_banne .icons {
+    margin-bottom: 150px;
+}
+
+.cu-contact {
+    background: rgba(204, 204, 204, 0.5) url('assets/img/4-bg.png') no-repeat center top;
+    padding-bottom: 80px;
+}
+
+.head_info {
+    display: inline-block;
+    padding-left: 35px;
+    margin-top: 30px;
+}
+
+.head_info h5 {
+    font-size: 48px;
+    color: #141414;
+    font-family: 'BarlowCondensed-SemiBold';
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+.head_info p {
+    margin-bottom: 2px;
+    color: #141414;
+}
+
+.head_info p i {
+    margin-right: 10px;
+}
+
+.head_info a i {
+    margin-right: 10px;
+}
+
+.head_info a {
+    margin-bottom: 2px;
+    color: #141414;
+    font-family: 'Barlow';
+    font-size: 16px;
+}
+
+.head_info p.mb2 {
+    margin-bottom: 20px;
+}
+
+.contact_email {
+    display: inline-block;
+    padding-left: 35px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact_email .email_name_id input {
+    width: 68%;
+    display: inline-block;
+    border: 1px solid #D1D1D1;
+    color: #141414;
+    font-size: 16px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.contact_email .email_name_id label {
+    color: #141414;
+    font-size: 16px;
+    font-family: 'Barlow';
+    width: 30%;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.contact_email .email_name_id .name_fild {
+    width: 49.5%;
+    display: inline-block;
+}
+
+.contact_email .email_sub input {
+    width: 84%;
+    display: inline-block;
+    border: 1px solid #D1D1D1;
+    color: #141414;
+    font-size: 16px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.contact_email .email_sub label {
+    color: #141414;
+    font-size: 16px;
+    font-family: 'Barlow';
+    width: 15%;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.contact_email .email_msg textarea {
+    width: 84%;
+    display: inline-block;
+    border: 1px solid #D1D1D1;
+    color: #141414;
+    font-size: 16px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    resize: none;
+    height: 100px;
+}
+
+.contact_email .email_msg label {
+    color: #141414;
+    font-size: 16px;
+    font-family: 'Barlow';
+    width: 15%;
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.contact_email .email_name_id .eid_fild label {
+    width: 20%;
+    margin-left: 10.5%;
+}
+
+.contact_email .email_submit {
+    padding-left: 15.5%;
+    margin-top: 20px;
+}
+
+.contact_email .email_submit input {
+    background: #1ba492;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 0 none;
+    padding: 12px;
+    width: 250px;
+    text-transform: uppercase;
+}
+
+.contact_email .email_sub {
+    margin: 20px 0;
+}
+
+.contact_email .email_submit input:hover {
+    background: #148f7e;
+}
+
+.contact_banner_right {
+    position: absolute;
+    right: 0;
+    width: 48%;
+}
+
+.contact_banner_right img {
+    width: 100%;
+}
+
+.about_map iframe {
+    width: 100% !important;
+    border-radius: 5px;
+    border: 1px solid #256A61;
+    filter: grayscale(100%);
+}
+
+.about_map {
+    margin-top: 40px;
+}
+
+.cu-contact .title-check-border .check-icon-top::before {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact_banne .migration_banner_text p {
+    font-size: 20px;
+}
+
+#Home.remote_support_banner {
+    background: url('assets/img/top-remote-bg.jpg') repeat-x center center;
+}
+
+.remote_support_icon {
+    position: absolute;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    bottom: 0;
+}
+
+.remote_support_icon img {
+    float: right;
+    width: 82%;
+}
+
+.remote_support_banner .container > .row {
+    position: relative;
+}
+
+.remote_bottom_info p {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.remote_bottom_info p i {
+    margin-right: 10px;
+}
+
+header.remote_support_banner .icons {
+    margin-bottom: 100px;
+}
+
+.remote_support_banner h1 {
+    margin-bottom: 20px;
+}
+
+.remote_support_banner .home_bottom_bg {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.remote_our_services .title-check-border .check-title-name {
+    width: 95%;
+}
+
+.remote_our_services .title-check-border .check-title-name p {
+    color: #141414;
+}
+
+.get-started.remote_our_services {
+    background: url('assets/img/5-bottom-bg.png') no-repeat center bottom;
+}
+
+.remote_our_services h5 {
+    margin-top: 30px;
+}
+
+.remote_our_services .get_start_icon {
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.remote_our_services .get_start_icon img{
+    position: relative;
+    z-index: 5;
+}
+.remote_our_services .get_start_icon:after{
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #cacaca;
+    background: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.remote_our_services .get_start_detail {  margin-bottom: 80px;  }
+.block3-get  .get_start_detail h3{
+    min-height: 52px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.get-started.remote_our_services .block3-get p {
+    height: auto;
+    color: #141414;
+}
+.remote_footer {  margin: 30px auto 20px;  }
+
+.remote_footer .remote_reasons {  text-align: center;  }
+
+.remote_footer .remote_reasons h3 {
+    margin-bottom: 20px;
+}
+
+.remote_footer .remote_reasons p {
+    color: #fff;
+}
+
+.remote_footer .remote_reasons .reasons_icon {
+    height: 100px;
+}
+.remote_footer .remote_reasons .reasons_icon img{
+    height: 100%;
+}
+
+#Home.proj_management {
+    background: url('assets/img/BG-top.jpg') repeat-x center center;
+}
+
+.cu_proj_management {
+    background: url('assets/img/4-bg.png') no-repeat center top, url('assets/img/2-bg-bottom.png') no-repeat center bottom;
+}
+
+#Home.proj_management .row {
+    position: relative;
+}
+
+.proj_management_banner_icon {
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    z-index: 1;
+}
+
+.proj_management_banner_icon img {
+    width: 70%;
+    float: right;
+}
+
+#Home.proj_management .icons {
+    z-index: 2;
+    margin-top: 150px;
+}
+
+.proj_sitelist .site_list {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.proj_sitelist .site_list .site_list_img img {
+    width: 100%;
+}
+
+.proj_sitelist .site_list .site_list_img {
+    border: 1px solid #424242;
+}
+
+.proj_sitelist .site_list .site_list_rat:hover {
+    box-shadow: 4px 4px 10px #afafaf;
+}
+
+.proj_sitelist .site_list .site_list_rat {
+    position: relative;
+}
+
+.proj_sitelist .site_list .site_list_rat .site_list_detail {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0, 39, 39, 0.88);
+}
+
+.proj_sitelist .site_list .site_list_rat .site_list_detail h6 {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Conv_VANTABOL';
+    margin-bottom: 0;
+}
+
+.proj_sitelist .site_list .site_list_rat .site_list_detail p {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.proj_sitelist {
+    margin: 20px auto 80px;
+}
+
+#Home.proj_management .home_bottom_bg {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#Home.sharepoint_branding {
+    background: url('assets/img/1-TOP-BG.jpg') repeat-x center center
+}
+
+#Home.sharepoint_branding .row {
+    position: relative;
+}
+
+.sharepoint_branding .proj_management_banner_icon img {
+    width: 78%;
+}
+
+.sharepoint_branding .proj_management_banner_icon {
+    bottom: -240px;
+}
+
+.shae_brand.remote_our_services .title-check-border .check-title-name {
+    width: auto;
+}
+
+.get-started.remote_our_services.shae_brand {
+    background: url('assets/img/4-bg.png') no-repeat center top;
+}
+
+.cu_proj_management.cu_share_bran {
+    background: url('assets/img/3-screen-bg.jpg') no-repeat center center;
+}
+
+.cu_share_bran .proj_sitelist .site_list .site_list_rat .site_list_detail {
+    background: rgba(0, 39, 39, 0.88);
+}
+
+.cu_share_bran .proj_sitelist .site_list .site_list_rat:hover {
+    box-shadow: 4px 4px 10px #101010;
+}
+
+.share_request_btn a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Barlow';
+    border: 1px solid #1BA492;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.share_reques.remote_footer .remote_reasons p {
+    min-height: 120px;
+}
+
+.cu-block6.share_bloc {
+    background: url('assets/img/5-bottom-bg-share.png') no-repeat center top;
+    padding: 100px 0;
+}
+
+header.sharepoint_branding .icons {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+header.sharepoint_branding .heading_text {
+    margin-bottom: 30px;
+}
+
+.sharepoint_branding .home_bottom_bg .line h5 {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 22px;
+}
+
+.share_request_btn a:hover {
+    background: #1BA492;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Home.hr-assets_banner {
+    background: url('assets/img/hr-bg.jpg') repeat-x center center;
+}
+
+.hr-assets_banner .icons {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.hr-assets_banner .icons .heading_text {
+    margin-bottom: 20px;
+}
+
+#Home.hr-assets_banner .row {
+    position: relative;
+}
+
+.hr-main-site ul.responsive-tabs {
+    float: left;
+    width: 30%;
+    border-bottom: 0 none;
+}
+
+.hr-main-site .tab-content {
+    float: left;
+    width: 70%;
+    border: 0 none;
+}
+
+.hr-assets_banner .home_bottom_bg .line h5 {
+    color: #cccccc;
+}
+
+.hr-main-site .responsive-tabs li {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    height: 200px;
+}
+
+.hr-main-site .responsive-tabs li a {
+    color: #141414;
+    font-family: 'Barlow';
+    font-size: 22px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 0 none;
+    display: inline-block;
+    width: 88%;
+    vertical-align: middle;
+}
+
+.main_site_form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #dedede;
+    margin-left: 40px;
+    border-bottom: 4px solid #1BA492;
+}
+
+.main_bottom_note span {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    font-family: 'Barlow';
+}
+
+.main_bottom_note .btn-primary {
+    background: #1BA492;
+    border-color: #0e8e7d;
+    outline: none;
+}
+
+.main_bottom_note .btn-primary:hover, .main_bottom_note .btn-primary:focus {
+    background: #0e8e7d;
+    border-color: #0e8e7d;
+}
+
+.main_site_form .card-body i.calendar_icon {
+    width: 30px;
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+    background: url('assets/img/calendar_icon.png') no-repeat left center;
+    margin-left: 10px;
+}
+
+.main_site_form .card-body input.form-control {
+    width: 91%;
+    display: inline-block;
+}
+
+.main_site_form textarea.form-control {
+    min-height: 120px;
+    max-width: 100%;
+}
+
+.hr-main-site li .left_dot_full {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hr-main-site li .left_dot_full span {
+    background: #2C2C2C;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.hr-main-site li .left_dot_full i {
+    border: 1px dashed #2c2c2c;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    z-index: 5;
+    position: relative;
+}
+
+.hr-main-site li .left_dot_full:after {
+    background: #2c2c2c;
+    height: 88%;
+    width: 1px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    margin: 0 auto;
+    top: 53px;
+}
+
+.hr-main-site li:last-child .left_dot_full:after {
+    display: none
+}
+
+.hr-main-site li.active .left_dot_full span, .hr-main-site li:hover .left_dot_full span {
+    background: #1BA492;
+}
+
+.hr-main-site li.active .left_dot_full i, .hr-main-site li:hover .left_dot_full span {
+    border: 1px dashed #1BA492;
+}
+
+.hr-main-site li.active a, .hr-main-site li:hover a, .hr-main-site li:focus a {
+    color: #1BA492 !important;
+    border: 0 none !important;
+    background: transparent !important;
+    outline: none;
+}
+
+.hr-main-site li a:hover {
+    background: transparent !important;
+    border: 0 none !important;
+}
+
+.hr-main-site li.active a:hover {
+    color: #1BA492;
+}
+
+.hr-main-site {
+    width: 100%;
+    float: left;
+    margin-bottom: 200px;
+    margin-top: 30px;
+}
+
+.hr-assets_main {
+    background: url('assets/img/2-bg.png') no-repeat center top, url('assets/img/bg-screen-2.png') no-repeat center bottom #e5e5e5;
+}
+
+.hr-internal .nav-tabs > li {
+    width: 287px;
+    text-align: center;
+    float: none;
+    display: inline-block;
+}
+
+.hr-main-site.hr-internal li .left_dot_full:after {
+    top: auto;
+    bottom: 12px;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    right: -155px;
+}
+
+.hr-main-site.hr-internal .responsive-tabs2 li a {
+    border: 0 none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Conv_VANTABOL';
+    color: #fff;
+}
+
+.hr-main-site.hr-internal .responsive-tabs2 li a:hover, .hr-main-site.hr-internal .responsive-tabs2 li a:focus {
+    color: #1BA492;
+    background: transparent;
+}
+
+.hr-main-site.hr-internal li .left_dot_full i {
+    border-color: #ffffff;
+    background: rgb(31, 31, 31);
+}
+
+.hr-main-site.hr-internal li .left_dot_full span {
+    background: #fff;
+}
+
+.hr-main-site.hr-internal li:hover .left_dot_full i, .hr-main-site.hr-internal li.active .left_dot_full i {
+    border-color: #1BA492;
+    background: rgb(31, 31, 31);
+}
+
+.hr-main-site.hr-internal li:hover .left_dot_full span, .hr-main-site.hr-internal li.active .left_dot_full span {
+    background: #1BA492;
+}
+
+.hr-main-site.hr-internal li.active a {
+    color: #1BA492;
+}
+
+.hr-main-site.hr-internal .tab-content {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.hr-internal .nav-tabs {
+    text-align: center;
+    border: 0 none;
+}
+
+.hr-internal .main_site_form {
+    margin-left: 0;
+}
+
+.remote_footer.hr-assets-footer .remote_reasons .reasons_icon {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+.share_reques.remote_footer.hr-assets-footer .remote_reasons p {
+    min-height: 90px;
+    margin-top: 30px;
+}
+
+.hr-assets-footer .remote_reasons p a {
+    color: #1ba492;
+}
+
+.hr-assets-tit {
+    background: url('assets/img/5-bottom-bg-share.png') no-repeat center bottom;
+}
+
+.hr4-list {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.hr4_img {
+    text-align: center;
+}
+
+.hr4_img img {
+    width: 120px;
+}
+
+.hr4-head {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hr4-head span {
+    color: #141414;
+    font-size: 16px;
+    font-family: 'Barlow';
+}
+
+/* Datepicker  */
+.datepicker {
+    border-radius: 4px;
+    direction: ltr
+}
+
+.datepicker-inline {
+    width: 220px
+}
+
+.datepicker.datepicker-rtl {
+    direction: rtl
+}
+
+.datepicker.datepicker-rtl table tr td span {
+    float: right
+}
+
+.datepicker-dropdown {
+    top: 0;
+    left: 0;
+    padding: 4px
+}
+
+.datepicker-dropdown:before {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid rgba(0, 0, 0, 0.15);
+    border-top: 0;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    position: absolute
+}
+
+.datepicker-dropdown:after {
+    content: '';
+    display: inline-block;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    border-top: 0;
+    position: absolute
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+    left: 6px
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+    left: 7px
+}
+
+.datepicker-dropdown.datepicker-orient-right:before {
+    right: 6px
+}
+
+.datepicker-dropdown.datepicker-orient-right:after {
+    right: 7px
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:before {
+    top: -7px
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:after {
+    top: -6px
+}
+
+.datepicker-dropdown.datepicker-orient-top:before {
+    bottom: -7px;
+    border-bottom: 0;
+    border-top: 7px solid rgba(0, 0, 0, 0.15)
+}
+
+.datepicker-dropdown.datepicker-orient-top:after {
+    bottom: -6px;
+    border-bottom: 0;
+    border-top: 6px solid #ffffff
+}
+
+.datepicker > div {
+    display: none
+}
+
+.datepicker table {
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.datepicker table tr td, .datepicker table tr th {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: none
+}
+
+.table-striped .datepicker table tr td, .table-striped .datepicker table tr th {
+    background-color: transparent
+}
+
+.datepicker-days tbody tr td {
+    border-radius: 50%;
+    font-weight: 500
+}
+
+.datepicker table tr td.old, .datepicker table tr td.new {
+    color: #999999
+}
+
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+    background: #eeeeee;
+    cursor: pointer
+}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+    background: none;
+    color: #999999;
+    cursor: default
+}
+
+.datepicker table tr td.highlighted {
+    color: #000000;
+    background-color: #d9edf7;
+    border-color: #85c5e5;
+    border-radius: 0
+}
+
+.datepicker table tr td.highlighted:focus, .datepicker table tr td.highlighted.focus {
+    color: #000000;
+    background-color: #afd9ee;
+    border-color: #298fc2
+}
+
+.datepicker table tr td.highlighted:hover {
+    color: #000000;
+    background-color: #afd9ee;
+    border-color: #52addb
+}
+
+.datepicker table tr td.highlighted:active, .datepicker table tr td.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.highlighted {
+    color: #000000;
+    background-color: #afd9ee;
+    border-color: #52addb
+}
+
+.datepicker table tr td.highlighted:active:hover, .datepicker table tr td.highlighted.active:hover, .open > .dropdown-toggle.datepicker table tr td.highlighted:hover, .datepicker table tr td.highlighted:active:focus, .datepicker table tr td.highlighted.active:focus, .open > .dropdown-toggle.datepicker table tr td.highlighted:focus, .datepicker table tr td.highlighted:active.focus, .datepicker table tr td.highlighted.active.focus, .open > .dropdown-toggle.datepicker table tr td.highlighted.focus {
+    color: #000000;
+    background-color: #91cbe8;
+    border-color: #298fc2
+}
+
+.datepicker table tr td.highlighted:active, .datepicker table tr td.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.highlighted {
+    background-image: none
+}
+
+.datepicker table tr td.highlighted.disabled:hover, .datepicker table tr td.highlighted[disabled]:hover, fieldset[disabled] .datepicker table tr td.highlighted:hover, .datepicker table tr td.highlighted.disabled:focus, .datepicker table tr td.highlighted[disabled]:focus, fieldset[disabled] .datepicker table tr td.highlighted:focus, .datepicker table tr td.highlighted.disabled.focus, .datepicker table tr td.highlighted[disabled].focus, fieldset[disabled] .datepicker table tr td.highlighted.focus {
+    background-color: #d9edf7;
+    border-color: #85c5e5
+}
+
+.datepicker table tr td.highlighted.focused {
+    background: #afd9ee
+}
+
+.datepicker table tr td.highlighted.disabled, .datepicker table tr td.highlighted.disabled:active {
+    background: #d9edf7;
+    color: #999999
+}
+
+.datepicker table tr td.today {
+    color: #000000;
+    background-color: #ffdb99;
+    border-color: #ffb733
+}
+
+.datepicker table tr td.today:focus, .datepicker table tr td.today.focus {
+    color: #000000;
+    background-color: #ffc966;
+    border-color: #b37400
+}
+
+.datepicker table tr td.today:hover {
+    color: #000000;
+    background-color: #ffc966;
+    border-color: #f59e00
+}
+
+.datepicker table tr td.today:active, .datepicker table tr td.today.active, .open > .dropdown-toggle.datepicker table tr td.today {
+    color: #000000;
+    background-color: #ffc966;
+    border-color: #f59e00
+}
+
+.datepicker table tr td.today:active:hover, .datepicker table tr td.today.active:hover, .open > .dropdown-toggle.datepicker table tr td.today:hover, .datepicker table tr td.today:active:focus, .datepicker table tr td.today.active:focus, .open > .dropdown-toggle.datepicker table tr td.today:focus, .datepicker table tr td.today:active.focus, .datepicker table tr td.today.active.focus, .open > .dropdown-toggle.datepicker table tr td.today.focus {
+    color: #000000;
+    background-color: #ffbc42;
+    border-color: #b37400
+}
+
+.datepicker table tr td.today:active, .datepicker table tr td.today.active, .open > .dropdown-toggle.datepicker table tr td.today {
+    background-image: none
+}
+
+.datepicker table tr td.today.disabled:hover, .datepicker table tr td.today[disabled]:hover, fieldset[disabled] .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today[disabled]:focus, fieldset[disabled] .datepicker table tr td.today:focus, .datepicker table tr td.today.disabled.focus, .datepicker table tr td.today[disabled].focus, fieldset[disabled] .datepicker table tr td.today.focus {
+    background-color: #ffdb99;
+    border-color: #ffb733
+}
+
+.datepicker table tr td.today.focused {
+    background: #ffc966
+}
+
+.datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:active {
+    background: #ffdb99;
+    color: #999999
+}
+
+.datepicker table tr td.range {
+    color: #000000;
+    background-color: #eeeeee;
+    border-color: #bbbbbb;
+    border-radius: 0
+}
+
+.datepicker table tr td.range:focus, .datepicker table tr td.range.focus {
+    color: #000000;
+    background-color: #d5d5d5;
+    border-color: #7c7c7c
+}
+
+.datepicker table tr td.range:hover {
+    color: #000000;
+    background-color: #d5d5d5;
+    border-color: #9d9d9d
+}
+
+.datepicker table tr td.range:active, .datepicker table tr td.range.active, .open > .dropdown-toggle.datepicker table tr td.range {
+    color: #000000;
+    background-color: #d5d5d5;
+    border-color: #9d9d9d
+}
+
+.datepicker table tr td.range:active:hover, .datepicker table tr td.range.active:hover, .open > .dropdown-toggle.datepicker table tr td.range:hover, .datepicker table tr td.range:active:focus, .datepicker table tr td.range.active:focus, .open > .dropdown-toggle.datepicker table tr td.range:focus, .datepicker table tr td.range:active.focus, .datepicker table tr td.range.active.focus, .open > .dropdown-toggle.datepicker table tr td.range.focus {
+    color: #000000;
+    background-color: #c3c3c3;
+    border-color: #7c7c7c
+}
+
+.datepicker table tr td.range:active, .datepicker table tr td.range.active, .open > .dropdown-toggle.datepicker table tr td.range {
+    background-image: none
+}
+
+.datepicker table tr td.range.disabled:hover, .datepicker table tr td.range[disabled]:hover, fieldset[disabled] .datepicker table tr td.range:hover, .datepicker table tr td.range.disabled:focus, .datepicker table tr td.range[disabled]:focus, fieldset[disabled] .datepicker table tr td.range:focus, .datepicker table tr td.range.disabled.focus, .datepicker table tr td.range[disabled].focus, fieldset[disabled] .datepicker table tr td.range.focus {
+    background-color: #eeeeee;
+    border-color: #bbbbbb
+}
+
+.datepicker table tr td.range.focused {
+    background: #d5d5d5
+}
+
+.datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:active {
+    background: #eeeeee;
+    color: #999999
+}
+
+.datepicker table tr td.range.highlighted {
+    color: #000000;
+    background-color: #e4eef3;
+    border-color: #9dc1d3
+}
+
+.datepicker table tr td.range.highlighted:focus, .datepicker table tr td.range.highlighted.focus {
+    color: #000000;
+    background-color: #c1d7e3;
+    border-color: #4b88a6
+}
+
+.datepicker table tr td.range.highlighted:hover {
+    color: #000000;
+    background-color: #c1d7e3;
+    border-color: #73a6c0
+}
+
+.datepicker table tr td.range.highlighted:active, .datepicker table tr td.range.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.range.highlighted {
+    color: #000000;
+    background-color: #c1d7e3;
+    border-color: #73a6c0
+}
+
+.datepicker table tr td.range.highlighted:active:hover, .datepicker table tr td.range.highlighted.active:hover, .open > .dropdown-toggle.datepicker table tr td.range.highlighted:hover, .datepicker table tr td.range.highlighted:active:focus, .datepicker table tr td.range.highlighted.active:focus, .open > .dropdown-toggle.datepicker table tr td.range.highlighted:focus, .datepicker table tr td.range.highlighted:active.focus, .datepicker table tr td.range.highlighted.active.focus, .open > .dropdown-toggle.datepicker table tr td.range.highlighted.focus {
+    color: #000000;
+    background-color: #a8c8d8;
+    border-color: #4b88a6
+}
+
+.datepicker table tr td.range.highlighted:active, .datepicker table tr td.range.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.range.highlighted {
+    background-image: none
+}
+
+.datepicker table tr td.range.highlighted.disabled:hover, .datepicker table tr td.range.highlighted[disabled]:hover, fieldset[disabled] .datepicker table tr td.range.highlighted:hover, .datepicker table tr td.range.highlighted.disabled:focus, .datepicker table tr td.range.highlighted[disabled]:focus, fieldset[disabled] .datepicker table tr td.range.highlighted:focus, .datepicker table tr td.range.highlighted.disabled.focus, .datepicker table tr td.range.highlighted[disabled].focus, fieldset[disabled] .datepicker table tr td.range.highlighted.focus {
+    background-color: #e4eef3;
+    border-color: #9dc1d3
+}
+
+.datepicker table tr td.range.highlighted.focused {
+    background: #c1d7e3
+}
+
+.datepicker table tr td.range.highlighted.disabled, .datepicker table tr td.range.highlighted.disabled:active {
+    background: #e4eef3;
+    color: #999999
+}
+
+.datepicker table tr td.range.today {
+    color: #000000;
+    background-color: #f7ca77;
+    border-color: #f1a417
+}
+
+.datepicker table tr td.range.today:focus, .datepicker table tr td.range.today.focus {
+    color: #000000;
+    background-color: #f4b747;
+    border-color: #815608
+}
+
+.datepicker table tr td.range.today:hover {
+    color: #000000;
+    background-color: #f4b747;
+    border-color: #bf800c
+}
+
+.datepicker table tr td.range.today:active, .datepicker table tr td.range.today.active, .open > .dropdown-toggle.datepicker table tr td.range.today {
+    color: #000000;
+    background-color: #f4b747;
+    border-color: #bf800c
+}
+
+.datepicker table tr td.range.today:active:hover, .datepicker table tr td.range.today.active:hover, .open > .dropdown-toggle.datepicker table tr td.range.today:hover, .datepicker table tr td.range.today:active:focus, .datepicker table tr td.range.today.active:focus, .open > .dropdown-toggle.datepicker table tr td.range.today:focus, .datepicker table tr td.range.today:active.focus, .datepicker table tr td.range.today.active.focus, .open > .dropdown-toggle.datepicker table tr td.range.today.focus {
+    color: #000000;
+    background-color: #f2aa25;
+    border-color: #815608
+}
+
+.datepicker table tr td.range.today:active, .datepicker table tr td.range.today.active, .open > .dropdown-toggle.datepicker table tr td.range.today {
+    background-image: none
+}
+
+.datepicker table tr td.range.today.disabled:hover, .datepicker table tr td.range.today[disabled]:hover, fieldset[disabled] .datepicker table tr td.range.today:hover, .datepicker table tr td.range.today.disabled:focus, .datepicker table tr td.range.today[disabled]:focus, fieldset[disabled] .datepicker table tr td.range.today:focus, .datepicker table tr td.range.today.disabled.focus, .datepicker table tr td.range.today[disabled].focus, fieldset[disabled] .datepicker table tr td.range.today.focus {
+    background-color: #f7ca77;
+    border-color: #f1a417
+}
+
+.datepicker table tr td.range.today.disabled, .datepicker table tr td.range.today.disabled:active {
+    background: #f7ca77;
+    color: #999999
+}
+
+.datepicker table tr td.selected, .datepicker table tr td.selected.highlighted {
+    color: #ffffff;
+    background-color: #999999;
+    border-color: #555555;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+
+.datepicker table tr td.selected:focus, .datepicker table tr td.selected.highlighted:focus, .datepicker table tr td.selected.focus, .datepicker table tr td.selected.highlighted.focus {
+    color: #ffffff;
+    background-color: #808080;
+    border-color: #161616
+}
+
+.datepicker table tr td.selected:hover, .datepicker table tr td.selected.highlighted:hover {
+    color: #ffffff;
+    background-color: #808080;
+    border-color: #373737
+}
+
+.datepicker table tr td.selected:active, .datepicker table tr td.selected.highlighted:active, .datepicker table tr td.selected.active, .datepicker table tr td.selected.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.selected, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted {
+    color: #ffffff;
+    background-color: #808080;
+    border-color: #373737
+}
+
+.datepicker table tr td.selected:active:hover, .datepicker table tr td.selected.highlighted:active:hover, .datepicker table tr td.selected.active:hover, .datepicker table tr td.selected.highlighted.active:hover, .open > .dropdown-toggle.datepicker table tr td.selected:hover, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted:hover, .datepicker table tr td.selected:active:focus, .datepicker table tr td.selected.highlighted:active:focus, .datepicker table tr td.selected.active:focus, .datepicker table tr td.selected.highlighted.active:focus, .open > .dropdown-toggle.datepicker table tr td.selected:focus, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted:focus, .datepicker table tr td.selected:active.focus, .datepicker table tr td.selected.highlighted:active.focus, .datepicker table tr td.selected.active.focus, .datepicker table tr td.selected.highlighted.active.focus, .open > .dropdown-toggle.datepicker table tr td.selected.focus, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted.focus {
+    color: #ffffff;
+    background-color: #6e6e6e;
+    border-color: #161616
+}
+
+.datepicker table tr td.selected:active, .datepicker table tr td.selected.highlighted:active, .datepicker table tr td.selected.active, .datepicker table tr td.selected.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.selected, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted {
+    background-image: none
+}
+
+.datepicker table tr td.selected.disabled:hover, .datepicker table tr td.selected.highlighted.disabled:hover, .datepicker table tr td.selected[disabled]:hover, .datepicker table tr td.selected.highlighted[disabled]:hover, fieldset[disabled] .datepicker table tr td.selected:hover, fieldset[disabled] .datepicker table tr td.selected.highlighted:hover, .datepicker table tr td.selected.disabled:focus, .datepicker table tr td.selected.highlighted.disabled:focus, .datepicker table tr td.selected[disabled]:focus, .datepicker table tr td.selected.highlighted[disabled]:focus, fieldset[disabled] .datepicker table tr td.selected:focus, fieldset[disabled] .datepicker table tr td.selected.highlighted:focus, .datepicker table tr td.selected.disabled.focus, .datepicker table tr td.selected.highlighted.disabled.focus, .datepicker table tr td.selected[disabled].focus, .datepicker table tr td.selected.highlighted[disabled].focus, fieldset[disabled] .datepicker table tr td.selected.focus, fieldset[disabled] .datepicker table tr td.selected.highlighted.focus {
+    background-color: #999999;
+    border-color: #555555
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active.highlighted {
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+
+.datepicker table tr td.active:focus, .datepicker table tr td.active.highlighted:focus, .datepicker table tr td.active.focus, .datepicker table tr td.active.highlighted.focus {
+    color: #ffffff;
+    background-color: #3071a9;
+    border-color: #193c5a
+}
+
+.datepicker table tr td.active:hover, .datepicker table tr td.active.highlighted:hover {
+    color: #ffffff;
+    background-color: #3071a9;
+    border-color: #285e8e
+}
+
+.datepicker table tr td.active:active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.active, .open > .dropdown-toggle.datepicker table tr td.active.highlighted {
+    color: #ffffff;
+    background-color: #3071a9;
+    border-color: #285e8e
+}
+
+.datepicker table tr td.active:active:hover, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active:hover, .open > .dropdown-toggle.datepicker table tr td.active:hover, .open > .dropdown-toggle.datepicker table tr td.active.highlighted:hover, .datepicker table tr td.active:active:focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.highlighted.active:focus, .open > .dropdown-toggle.datepicker table tr td.active:focus, .open > .dropdown-toggle.datepicker table tr td.active.highlighted:focus, .datepicker table tr td.active:active.focus, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.active.focus, .datepicker table tr td.active.highlighted.active.focus, .open > .dropdown-toggle.datepicker table tr td.active.focus, .open > .dropdown-toggle.datepicker table tr td.active.highlighted.focus {
+    color: #ffffff;
+    background-color: #285e8e;
+    border-color: #193c5a
+}
+
+.datepicker table tr td.active:active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.active, .open > .dropdown-toggle.datepicker table tr td.active.highlighted {
+    background-image: none
+}
+
+.datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.highlighted.disabled:hover, .datepicker table tr td.active[disabled]:hover, .datepicker table tr td.active.highlighted[disabled]:hover, fieldset[disabled] .datepicker table tr td.active:hover, fieldset[disabled] .datepicker table tr td.active.highlighted:hover, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.highlighted.disabled:focus, .datepicker table tr td.active[disabled]:focus, .datepicker table tr td.active.highlighted[disabled]:focus, fieldset[disabled] .datepicker table tr td.active:focus, fieldset[disabled] .datepicker table tr td.active.highlighted:focus, .datepicker table tr td.active.disabled.focus, .datepicker table tr td.active.highlighted.disabled.focus, .datepicker table tr td.active[disabled].focus, .datepicker table tr td.active.highlighted[disabled].focus, fieldset[disabled] .datepicker table tr td.active.focus, fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.datepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px
+}
+
+.datepicker table tr td span:hover {
+    background: #eeeeee
+}
+
+.datepicker table tr td span.disabled, .datepicker table tr td span.disabled:hover {
+    background: none;
+    color: #999999;
+    cursor: default
+}
+
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover {
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+
+.datepicker table tr td span.active:focus, .datepicker table tr td span.active:hover:focus, .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active.disabled:hover:focus, .datepicker table tr td span.active.focus, .datepicker table tr td span.active:hover.focus, .datepicker table tr td span.active.disabled.focus, .datepicker table tr td span.active.disabled:hover.focus {
+    color: #ffffff;
+    background-color: #3071a9;
+    border-color: #193c5a
+}
+
+.datepicker table tr td span.active:hover, .datepicker table tr td span.active:hover:hover, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover:hover {
+    color: #ffffff;
+    background-color: #3071a9;
+    border-color: #285e8e
+}
+
+.datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active, .open > .dropdown-toggle.datepicker table tr td span.active, .open > .dropdown-toggle.datepicker table tr td span.active:hover, .open > .dropdown-toggle.datepicker table tr td span.active.disabled, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+    color: #ffffff;
+    background-color: #3071a9;
+    border-color: #285e8e
+}
+
+.datepicker table tr td span.active:active:hover, .datepicker table tr td span.active:hover:active:hover, .datepicker table tr td span.active.disabled:active:hover, .datepicker table tr td span.active.disabled:hover:active:hover, .datepicker table tr td span.active.active:hover, .datepicker table tr td span.active:hover.active:hover, .datepicker table tr td span.active.disabled.active:hover, .datepicker table tr td span.active.disabled:hover.active:hover, .open > .dropdown-toggle.datepicker table tr td span.active:hover, .open > .dropdown-toggle.datepicker table tr td span.active:hover:hover, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active:active:focus, .datepicker table tr td span.active:hover:active:focus, .datepicker table tr td span.active.disabled:active:focus, .datepicker table tr td span.active.disabled:hover:active:focus, .datepicker table tr td span.active.active:focus, .datepicker table tr td span.active:hover.active:focus, .datepicker table tr td span.active.disabled.active:focus, .datepicker table tr td span.active.disabled:hover.active:focus, .open > .dropdown-toggle.datepicker table tr td span.active:focus, .open > .dropdown-toggle.datepicker table tr td span.active:hover:focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover:focus, .datepicker table tr td span.active:active.focus, .datepicker table tr td span.active:hover:active.focus, .datepicker table tr td span.active.disabled:active.focus, .datepicker table tr td span.active.disabled:hover:active.focus, .datepicker table tr td span.active.active.focus, .datepicker table tr td span.active:hover.active.focus, .datepicker table tr td span.active.disabled.active.focus, .datepicker table tr td span.active.disabled:hover.active.focus, .open > .dropdown-toggle.datepicker table tr td span.active.focus, .open > .dropdown-toggle.datepicker table tr td span.active:hover.focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled.focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover.focus {
+    color: #ffffff;
+    background-color: #285e8e;
+    border-color: #193c5a
+}
+
+.datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active, .open > .dropdown-toggle.datepicker table tr td span.active, .open > .dropdown-toggle.datepicker table tr td span.active:hover, .open > .dropdown-toggle.datepicker table tr td span.active.disabled, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+    background-image: none
+}
+
+.datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active:hover.disabled:hover, .datepicker table tr td span.active.disabled.disabled:hover, .datepicker table tr td span.active.disabled:hover.disabled:hover, .datepicker table tr td span.active[disabled]:hover, .datepicker table tr td span.active:hover[disabled]:hover, .datepicker table tr td span.active.disabled[disabled]:hover, .datepicker table tr td span.active.disabled:hover[disabled]:hover, fieldset[disabled] .datepicker table tr td span.active:hover, fieldset[disabled] .datepicker table tr td span.active:hover:hover, fieldset[disabled] .datepicker table tr td span.active.disabled:hover, fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active:hover.disabled:focus, .datepicker table tr td span.active.disabled.disabled:focus, .datepicker table tr td span.active.disabled:hover.disabled:focus, .datepicker table tr td span.active[disabled]:focus, .datepicker table tr td span.active:hover[disabled]:focus, .datepicker table tr td span.active.disabled[disabled]:focus, .datepicker table tr td span.active.disabled:hover[disabled]:focus, fieldset[disabled] .datepicker table tr td span.active:focus, fieldset[disabled] .datepicker table tr td span.active:hover:focus, fieldset[disabled] .datepicker table tr td span.active.disabled:focus, fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus, .datepicker table tr td span.active.disabled.focus, .datepicker table tr td span.active:hover.disabled.focus, .datepicker table tr td span.active.disabled.disabled.focus, .datepicker table tr td span.active.disabled:hover.disabled.focus, .datepicker table tr td span.active[disabled].focus, .datepicker table tr td span.active:hover[disabled].focus, .datepicker table tr td span.active.disabled[disabled].focus, .datepicker table tr td span.active.disabled:hover[disabled].focus, fieldset[disabled] .datepicker table tr td span.active.focus, fieldset[disabled] .datepicker table tr td span.active:hover.focus, fieldset[disabled] .datepicker table tr td span.active.disabled.focus, fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.datepicker table tr td span.old, .datepicker table tr td span.new {
+    color: #999999
+}
+
+.datepicker .datepicker-switch {
+    width: 145px
+}
+
+.datepicker .datepicker-switch, .datepicker .prev, .datepicker .next, .datepicker tfoot tr th {
+    cursor: pointer
+}
+
+.datepicker .datepicker-switch:hover, .datepicker .prev:hover, .datepicker .next:hover, .datepicker tfoot tr th:hover {
+    background: #eeeeee
+}
+
+.datepicker .cw {
+    font-size: 10px;
+    width: 12px;
+    padding: 0 2px 0 5px;
+    vertical-align: middle
+}
+
+.datepicker.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.42857143
+}
+
+.datepicker.dropdown-menu th, .datepicker.datepicker-inline th, .datepicker.dropdown-menu td, .datepicker.datepicker-inline td {
+    padding: 0 5px
+}
+
+#Home.contact_banne.aboutus-hr {
+    background: url('assets/img/about-hr-bg.jpg') repeat-x center center;
+    background-size: cover;
+}
+#Home.contact_banne.aboutus-hr .home_bg{
+    height: auto;
+}
+.about_top h2 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Conv_VANTABOL';
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.about_top_center {
+    border-top: 5px solid #6dc3c4;
+    width: 400px;
+    margin-bottom: 60px;
+}
+
+.about_top p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about_hones {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.about_hones .about_hone_detail {
+    width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed #fff;
+    border-radius: 10px;
+    position: relative;
+    border-top: 0 none;
+}
+
+.about_hones .about_hone_detail span {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: -14px;
+    width: 100%;
+    left: 0;
+    font-family: 'Conv_VANTABOL';
+}
+
+.about_hones .about_hone_detail li {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Barlow';
+    text-align: left;
+}
+
+.about_hones .about_hone_detail ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.about_top a.about-contac_btn {
+    font-size: 13px;
+    background: #1ba492;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Barlow';
+    text-transform: uppercase;
+    width: 280px;
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.about_top a.about-contac_btn:hover {
+    text-decoration: none;
+    background: #148F7E;
+}
+
+.about_top {
+    padding-bottom: 60px;
+}
+
+.about_hones .about_hone_detail:before {
+    content: "";
+    width: 70px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 6px;
+    border-radius: 10px;
+    background: url('assets/img/heading_dot_left.png') no-repeat right 0;
+}
+
+.about_hones .about_hone_detail:after {
+    content: "";
+    width: 70px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 6px;
+    border-radius: 10px;
+    background: url('assets/img/heading_dot_right.png') no-repeat left 0;
+}
+
+.about-hr_jed {
+    width: 31%;
+    margin: 20px 10px;
+    display: inline-block;
+}
+
+.jed_header {
+    background: rgba(31, 31, 31, 0.8);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.hr-user {
+    text-align: center;
+    margin-top: -50%;
+    display: inline-block;
+    width: 100%;
+}
+
+.jed_header h3 {
+    color: #1ba492;
+    margin-top: 25px;
+}
+
+.jed_header p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.jed_detail {
+    background: #43b1a3;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    border-top: 1px solid #fff;
+    position: relative;
+    text-align: left;
+}
+
+.jed_detail span {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Conv_VANTABOL';
+}
+
+.jed_detail p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.about_bottom_dot {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #474745;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.hr_about-list {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.cu-contact.hr-abouts {
+    background: url('assets/img/4-bg.png') no-repeat center top,
+    url('assets/img/bg-screen-2.png') no-repeat center bottom;
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+.services_our .servi_icon {
+    margin-top: -80px;
+    margin-bottom: 20px;
+    background: url("assets/img/6-angle.svg") no-repeat center;
+    max-width: 120px;
+    max-height: 120px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.servic_list {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border: 2px dotted #1ba492;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 60px;
+    min-height: 400px;
+    display: inline-block;
+}
+
+.servic_list h6 {
+    color: #1ba492;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.servic_list p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.servi_icon img {
+    width: 120%;
+}
+
+.navbar-inverse .navbar-nav > li.dropdown:hover a.dropdown-toggle {
+    background: rgba(0, 0, 0, 0.9);
+    color: #1BA492;
+}
+
+ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* animated elements */
+.animateblock {
+    padding: 8px 0;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.55s linear;
+    -moz-transition: all 0.55s linear;
+    transition: all 0.55s linear;
+}
+
+.animateblock.animated {
+    opacity: 1;
+}
+
+/* animation transition styles */
+
+.animateblock.top {
+    margin-top: -25px;
+}
+
+.animateblock.top.animated {
+    margin-top: 0;
+}
+
+.animateblock.btm {
+    margin-top: 25px;
+}
+
+.animateblock.btm.animated {
+    margin-top: 0;
+}
+
+.animateblock.centerleft {
+    display: block;
+    width: auto;
+    margin-right: -10%;
+}
+
+.animateblock.centerleft.animated {
+    margin-right: 0;
+}
+
+.animateblock.centerright {
+    display: block;
+    width: auto;
+    margin-left: -10%;
+}
+
+.animateblock.centerright.animated {
+    margin-left: 0;
+}
+
+.animateblock.center {
+    margin-left: 2%;
+}
+
+.animateblock.center.animated {
+    margin-left: 42%;
+}
+
+.animateblock.size {
+    display: block;
+    width: 10%;
+}
+
+.animateblock.size.animated {
+    width: 100%;
+    height: 100%;
+}
+
+.animateblock.size img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1199px) {
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 14px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 15px 10px;
+    }
+
+    header .btn {
+        margin: 50px 10px 0 0;
+    }
+
+    header .heading_text {
+        font-size: 40px;
+    }
+
+    header .line h3 {
+        font-size: 18px;
+    }
+
+    /* New css */
+    .get-started .block3-get h5 {
+        height: 35px;
+    }
+
+    .get-started .block3-get p {
+        height: 120px;
+    }
+
+    .cu_buss_bord::before {
+        right: -55%;
+    }
+
+    .about_contact .about_detail .about_details h4 {
+        font-size: 48px;
+    }
+
+    .cu-block-title {
+        background-size: cover;
+    }
+
+    .cu-about {
+        background-size: cover;
+    }
+
+    .contact_email .email_name_id .eid_fild label {
+        margin-left: 10%;
+    }
+
+    .remote_support_icon {
+        bottom: -60px;
+    }
+
+    .remote_support_icon img {
+        width: auto;
+        height: 100%;
+    }
+
+    #Home.proj_management .icons {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+    #Home.proj_management .icons .migration_banner_text {
+        margin-bottom: 30px;
+    }
+
+    .sharepoint_branding .proj_management_banner_icon img {
+        width: 65%;
+    }
+
+    header.sharepoint_branding .icons {
+        margin-bottom: 60px;
+    }
+
+    .hr-assets_banner .proj_management_banner_icon img {
+        width: 56%;
+    }
+
+    .hr-main-site .responsive-tabs li a {
+        font-size: 20px;
+        width: 86%;
+    }
+
+    .main_site_form .card-body input.form-control {
+        width: 89%;
+    }
+
+    .hr-main-site li .left_dot_full:after {
+        top: 50px;
+    }
+
+    .about-hr_jed {
+        width: 30.5%;
+    }
+
+    .servic_list {
+        min-height: 535px;
+    }
+
+    .jed_header h4 {
+        font-size: 22px;
+    }
+
+    .services_our .servi_icon {
+        margin-top: -59px;
+    }
+
+    .services_our .servi_icon.img-top-20 {
+        margin-top: -70px;
+    }
+
+    .services_our .servi_icon.img-top-10 {
+        margin-top: -66px;
+    }
+
+    .services_our .servi_icon.img-top-1 {
+        width: 112px;
+        top: 23px;
+    }
+
+    .services_our .servi_icon.img-top-1 ~ span {
+        margin-top: 43px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand{
+        max-width: 100px;
+    }
+    header .heading_text {
+        font-size: 35px;
+    }
+    header .icons {
+        margin-top: 10px;
+    }
+    header .btn_WEBSITES {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    header .btn {
+        margin: 20px 5px 20px 0;
+    }
+    header .btn_MICROSOFT {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    header .icons .fa-map-marker {
+        display: block;
+        margin-left: 0;
+    }
+    .home_address{  flex-direction: column;  }
+    .home_contacts + .home_contacts{  margin-left: 0;  }
+
+    .home_bg {
+        padding-top: 130px;
+    }
+
+    /* New css */
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 11px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 15px 7px;
+    }
+
+    .get-started .block3-get p {
+        height: 180px;
+    }
+
+    .get-started .block3-get a {
+        font-size: 12px;
+        width: 220px;
+    }
+
+    .cu-block-title .cu-buss-box {
+        height: 350px;
+    }
+
+    .cu_buss_bord::before {
+        right: -57%;
+    }
+
+    .about_contact .about_detail .about_details h4 {
+        font-size: 46px;
+    }
+
+    .infographic_block img {
+        width: 100%;
+    }
+
+    header.mirgration_banne .icons {
+        margin-top: 30px;
+    }
+
+    .cu-contact .title-check-border .check-title-name {
+        width: 85%;
+    }
+
+    .contact_email .email_sub input, .contact_email .email_name_id input, .contact_email .email_msg textarea {
+        width: 78.5%;
+    }
+
+    .contact_email .email_sub label, .contact_email .email_name_id label, .contact_email .email_msg label {
+        width: 20%;
+    }
+
+    .contact_email .email_name_id .name_fild {
+        width: 100%;
+    }
+
+    .contact_email .email_name_id .eid_fild label {
+        margin-left: 0;
+    }
+
+    .contact_email .email_name_id .eid_fild {
+        margin-top: 20px;
+    }
+
+    .contact_email .email_submit {
+        padding-left: 20.5%;
+    }
+
+    header#Home.contact_banne .icons {
+        margin-bottom: 10px;
+    }
+
+    .contact_banner_right {
+        width: 45%;
+    }
+
+    .title-check-border .check-title-name {
+        width: 95%;
+    }
+
+    .proj_sitelist .site_list .site_list_rat .site_list_detail p {
+        max-height: 40px;
+        overflow: hidden;
+    }
+
+    .proj_sitelist .site_list .site_list_rat .site_list_detail h6 {
+        font-size: 30px;
+    }
+
+    .proj_management_banner_icon {
+        bottom: -80px;
+        right: -5%;
+    }
+
+    .proj_management_banner_icon img {
+        width: 75%;
+    }
+
+    .sharepoint_branding .proj_management_banner_icon img {
+        width: 76%;
+    }
+
+    .hr-assets_banner .proj_management_banner_icon {
+        right: -10%;
+    }
+
+    .hr-main-site .tab-content {
+        width: 100%;
+    }
+
+    .main_site_form {
+        margin-left: 0;
+    }
+
+    .responsive-tabs-container .accordion-link {
+        font-size: 22px;
+    }
+
+    .hr-assets_main .title-check-border .check-title-name {
+        width: auto;
+    }
+
+    .cu-contact.hr-abouts .title-check-border .check-title-name {
+        width: auto;
+    }
+
+    .about_top h2 {
+        font-size: 55px;
+    }
+
+    .about-hr_jed {
+        width: 30%;
+    }
+
+    .services_our .servi_icon {
+        width: 140px;
+        margin: -82px auto 0;
+    }
+
+    .servic_list {
+        min-height: 280px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .services_our .servi_icon.img-top-20 {
+        margin-top: -98px;
+    }
+
+    .services_our .servi_icon.img-top-10 {
+        margin-top: -93px;
+    }
+
+    .services_our .servi_icon.img-top-1 ~ span {
+        margin-top: 70px;
+    }
+
+    .services_our .servi_icon.img-top-1 {
+        top: 0;
+        width: 178px;
+    }
+}
+
+@media (max-width: 847px) {
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 11px;
+    }
+
+    .sharepoint_branding .proj_management_banner_icon {
+        right: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 847px) {
+    p{
+        font-size: 14px;
+    }
+    header .header_menu {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+    .navbar-brand > img {
+        margin-left: 0;
+    }
+    header #myNavbar {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header .icons .fa-map-marker {
+        margin-left: 0;
+        display: block;
+    }
+    header .btn_MICROSOFT {
+        margin-top: 20px;
+    }
+    .home_bg .men_img {
+        bottom: -20px;
+        height: 10px;
+    }
+    .home_bg .men_img img {
+        max-width: 270px;
+        right: 0;
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand > img {
+        margin-left:0;
+    }
+    .navbar-toggle {
+        /*margin-top: 20px;*/
+    }
+    #header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    header#Home{
+        min-height: 100%;
+        background-attachment: scroll !important;
+    }
+    header .header {
+        border-bottom: 1px solid white;
+    }
+
+    header .icons {
+        text-align: left;
+    }
+
+    header .btn {
+        margin: 50px 15px 20px 0;
+    }
+    .navbar.navbar-inverse .container{
+        padding: 0;
+    }
+
+    .header .navbar-header {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #myNavbar.navbar-collapse{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #myNavbar.collapse{
+        display: none;
+    }
+    #myNavbar.collapse.in{
+        display: flex;
+        background: #333333;
+    }
+    .home_bg .row {
+        position: relative;
+    }
+
+    .home_bg .men_img {
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+        width: 30%;
+    }
+    .home_buttons{
+        width: 50%;
+        flex-direction: column;
+    }
+    #home{
+        max-height: 100% !important;
+    }
+    .home_bg{
+        height: 100%;
+    }
+    .home_bottom_bg{
+        height: 100%;
+    }
+    header .men_img img {
+        text-align: right;
+    }
+
+    header .right::before {
+        margin-top: -60px;
+    }
+
+    .home_bottom_bg .line {
+        padding-left: 40px;
+    }
+
+    .get-started .block3-get img {
+        width: 60%;
+    }
+
+    .get-started .block3-get .get_start_icon {
+        height: auto;
+    }
+
+    .get-started .block3-get .get_start_icon {
+        float: right;
+        width: 40%;
+    }
+
+    .get-started .block3-get .get_start_detail {
+        float: left;
+        width: 60%;
+        text-align: left;
+    }
+
+    .get-started .block3-get p {
+        height: auto;
+    }
+
+    .get-started .block3-get h5 {
+        height: auto;
+    }
+
+    .get-started .block3-get {
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    .get-started .block3-get a {
+        float: left;
+        text-align: center;
+    }
+
+    .cu-block-title {
+        background-size: cover;
+        background-attachment: inherit ;
+    }
+    .cu_block5{
+        background-position: right top;
+    }
+
+    .cu-block-title .cu-buss-box .cu_buss_icon {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    .cu-block-title .cu-buss-box p {
+        display: inline-block;
+        width: 69%;
+        padding-left: 40px;
+        vertical-align: middle;
+    }
+
+    .cu-block-title .cu_buss_bord {
+        display: none;
+    }
+
+    .cu-block-title .cu-buss-box {
+        min-height: auto;
+        height: 100%;
+        padding: 0;
+    }
+
+    .principles_list .principles_icon {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    .principles_list .principles_detail {
+        display: inline-block;
+        width: 69%;
+        text-align: left;
+        padding-left: 20px;
+        vertical-align: middle;
+    }
+
+    .cu-principles .principles_list {
+        float: left;
+        width: 100%;
+    }
+
+    .cu-about {
+        background-size: cover;
+
+    }
+
+    .about_contact .about_detail .about_details p {
+        width: auto;
+    }
+
+    .about_contact .about_detail {
+        height: 250px;
+    }
+    .title-check-border .check-title-name {
+        width: 90%;
+    }
+    .title-check-border {
+        width: 100%;
+    }
+    .cu-block-main .cu-list .cu_list_icon img {
+        width: 100%;
+    }
+    header .icons button.btn {
+        display: block;
+        margin: 20px 0;
+    }
+
+    header .icons .fa-phone {
+        display: block;
+    }
+    header#Home.mirgration_banne {
+        background-size: cover;
+    }
+
+    .infographic_block img {
+        width: 100%;
+    }
+
+    .remote_support_banner .icons {
+        width: 60%;
+    }
+
+    .remote_support_icon img {
+        float: right;
+    }
+
+    .remote_our_services .title-check-border .check-title-name {
+        width: 87%;
+    }
+
+    .remote_our_services .get_start_detail {
+        margin-bottom: 0;
+    }
+
+    .remote_footer .remote_reasons {
+        margin-bottom: 40px;
+    }
+
+    #Home.proj_management .icons {
+        width: 70%;
+    }
+
+    .proj_management_banner_icon img {
+        width: 68%;
+    }
+
+    .proj_management_banner_icon {
+        right: 0;
+    }
+
+    .cu_proj_management.cu_share_bran {
+        background-size: cover;
+    }
+
+    header.sharepoint_branding .icons {
+        width: 70%;
+    }
+
+    .sharepoint_branding .proj_management_banner_icon img {
+        width: 57%;
+    }
+
+    .sharepoint_branding .proj_management_banner_icon {
+        bottom: -115px;
+    }
+
+    .home_bg {
+        padding-top: 85px;
+    }
+
+    .hr-assets_banner .icons {
+        width: 65%;
+    }
+
+    .hr-assets_banner .proj_management_banner_icon img {
+        width: 48%;
+    }
+
+    .hr-assets_banner .proj_management_banner_icon {
+        right: 0;
+    }
+
+    .hr4-head {
+        margin-bottom: 40px;
+    }
+
+    .main_site_form .card-body input.form-control {
+        width: 92%;
+    }
+
+    .servic_list {
+        min-height: 180px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .about_hones .about_hone_detail {
+        width: 100%;
+    }
+
+    .about-hr_jed {
+        width: 100%;
+        margin: 80px auto 20px;
+    }
+
+    .hr_about-list {
+        margin-bottom: 0;
+    }
+
+    .cu-contact.hr-abouts {
+        padding-bottom: 150px;
+    }
+
+    .services_our {
+        margin-top: 20px;
+    }
+
+    .about_hones .about_hone_detail span {
+        font-size: 18px;
+    }
+
+    .navbar-nav > li > .dropdown-menu, .navbar-nav .open .dropdown-menu {
+
+        width: 100%;
+        background: #252525;
+        position: relative;
+        margin-top: 2px;
+        border: 1px solid rgba(0, 0, 0, .15);
+    }
+
+    .navbar-nav > li > .dropdown-menu li a, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 20px;
+        line-height: 1.42857143;
+    }
+
+    .navbar-nav > li > .dropdown-menu li a:hover {
+        color: #fff;
+    }
+
+    ul.nav li:hover > ul.dropdown-menu {
+        background: #252525;
+    }
+
+    #Home.hr-assets_banner {
+        background-size: cover;
+    }
+    .cu_migration_serv .migration_serv .migra_serv_icon{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .home_bg .men_img {
+        width: 40%;
+    }
+
+    .cu_migration_serv .migration_serv {
+        width: 49.5%;
+    }
+
+    .about_top_3 .cu_about_1 {
+        width: 80%;
+    }
+
+    .cu-block6 {
+        background-size: cover;
+        padding: 60px 0;
+    }
+
+    header.sharepoint_branding .icons {
+        width: 60%;
+    }
+
+    .sharepoint_branding .proj_management_banner_icon {
+        bottom: -90px;
+    }
+
+    header .heading_text {
+        font-size: 30px;
+    }
+
+    .main_site_form .card-body input.form-control {
+        width: 89%;
+    }
+
+    .about_hones .about_hone_detail span {
+        width: 60%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .about_hones .about_hone_detail ul {
+        padding-top: 30px;
+    }
+
+    .about_top h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home_buttons {
+        width: 60%;
+    }
+    header .icons button.btn {
+        display: block;
+        width: 100%;
+        word-break: break-all;
+        white-space: normal;
+        font-size: 12px;
+    }
+
+    .cu-block-title .cu-buss-box p {
+        width: 68%;
+    }
+
+    .cu-block-main .cu-list .cu_list_detail {
+        width: 59%;
+    }
+
+    .principles_list .principles_detail {
+        width: 68%;
+    }
+
+    .about_rating .rating_list {
+        padding: 0;
+    }
+
+    header .heading_text {
+        font-size: 34px;
+    }
+
+    .title-check-border .check-title-name {
+        width: 85%;
+    }
+
+    .get-started .block3-get a {
+        width: 200px;
+        padding: 8px;
+    }
+
+    .principles_list span {
+        margin: 0 auto 10px;
+    }
+
+    .principles_list {
+        margin: 0 auto 20px;
+    }
+
+    .cu-block-main .cu-list {
+        margin: 20px auto;
+    }
+
+    .cu-block-title .col-md-4 {
+        margin-top: 20px;
+    }
+
+    .cu-block-title .cu-buss-box {
+        margin: 0 0 20px;
+    }
+
+    .get-started .block3-get img {
+        width: 80%;
+    }
+
+    .our_process_list .process_detail {
+        width: 65%;
+        padding-left: 4%;
+    }
+
+    .our_process_list .process_icon img {
+        width: 100%;
+    }
+
+    .cu_migration_serv .migration_serv .migra_serv_title span {
+        height: auto;
+        width: 65%;
+    }
+
+    .cu_migration_our .title-check-border .check-title-name {
+        width: 87%;
+    }
+
+    .about_top_3 .col-xs-6 {
+        width: 80%;
+        float: none;
+        margin: 0 auto 30px;
+    }
+
+    .contact_banner_right {
+        top: 10%;
+    }
+
+    header#Home.contact_banne .icons {
+        width: 60%;
+    }
+
+    .remote_support_icon {
+        height: 100%;
+    }
+
+    #Home.sharepoint_branding {
+        background-size: cover;
+    }
+
+    .main_site_form .card-body input.form-control {
+        width: 84%;
+    }
+
+    .about_hones .about_hone_detail ul {
+        padding-top: 55px;
+    }
+
+    .about_hones .about_hone_detail:before, .about_hones .about_hone_detail:after {
+        width: 55px;
+    }
+
+    .about_top_center {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    header .heading_text {
+        font-size: 25px;
+    }
+
+    .get-started .block3-get a {
+        width: 100%;
+    }
+
+    .title-check-border .check-title-name h4 {
+        font-size: 40px;
+    }
+
+    .home_bg .men_img {
+        width: 45%;
+    }
+
+    .about_contact .about_detail {
+        height: auto;
+    }
+
+    .get-started .block3-get img {
+        width: 90%;
+    }
+
+    .cu_migration_serv .migration_serv {
+        width: 80%;
+    }
+
+    .contact_email .email_sub input, .contact_email .email_name_id input, .contact_email .email_msg textarea {
+        width: 100%;
+    }
+
+    .contact_email .email_submit {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    header.sharepoint_branding .icons {
+        width: 59%;
+    }
+
+    header.sharepoint_branding .icons button.btn {
+        width: 185px;
+        border-radius: 30px;
+    }
+
+    #Home.hr-assets_banner {
+        background-size: cover;
+    }
+
+    .hr-assets_banner .proj_management_banner_icon {
+        bottom: -68px;
+    }
+
+    .hr-assets_banner .proj_management_banner_icon img {
+        width: 50%;
+    }
+
+    .main_site_form .card-body input.form-control {
+        width: 81%;
+    }
+}
