@@ -33,8 +33,8 @@
     font-family: 'Barlow';
     src: url('assets/fonts/Barlow/Barlow-Regular.eot');
     src: url('assets/fonts/Barlow/Barlow-Regular.eot') format('embedded-opentype'),
-    url('assets/fonts/Barlow/Barlow-Regular.woff2') format('woff2'),
-    url('assets/fonts/Barlow/Barlow-Regular.woff') format('woff'),
+    /*url('assets/fonts/Barlow/Barlow-Regular.woff2') format('woff2'),*/
+    /*url('assets/fonts/Barlow/Barlow-Regular.woff') format('woff'),*/
     url('assets/fonts/Barlow/Barlow-Regular.ttf') format('truetype'),
     url('assets/fonts/Barlow/Barlow-Regular.svg#TradeGothicLTBold') format('svg');
 }
@@ -42,8 +42,8 @@
     font-family: 'Barlow-Light';
     src: url('assets/fonts/Barlow/Barlow-Light.eot');
     src: url('assets/fonts/Barlow/Barlow-Light.eot') format('embedded-opentype'),
-    url('assets/fonts/Barlow/Barlow-Light.woff2') format('woff2'),
-    url('assets/fonts/Barlow/Barlow-Light.woff') format('woff'),
+    /*url('assets/fonts/Barlow/Barlow-Light.woff2') format('woff2'),*/
+    /*url('assets/fonts/Barlow/Barlow-Light.woff') format('woff'),*/
     url('assets/fonts/Barlow/Barlow-Light.ttf') format('truetype'),
     url('assets/fonts/Barlow/Barlow-Light.svg#TradeGothicLTBold') format('svg');
 }
@@ -51,7 +51,7 @@
     font-family: 'Barlow-Bold';
     src: url('assets/fonts/Barlow/Barlow-Bold.eot');
     src: url('assets/fonts/Barlow/Barlow-Bold.eot') format('embedded-opentype'),
-    url('assets/fonts/Barlow/Barlow-Bold.woff2') format('woff2'),
+    /*url('assets/fonts/Barlow/Barlow-Bold.woff2') format('woff2'),*/
     url('assets/fonts/Barlow/Barlow-Bold.woff') format('woff'),
     url('assets/fonts/Barlow/Barlow-Bold.ttf') format('truetype'),
     url('assets/fonts/Barlow/Barlow-Bold.svg#TradeGothicLTBold') format('svg');
@@ -61,7 +61,7 @@
     src: url('assets/fonts/Barlow-Medium.eot');
     src: url('assets/fonts/Barlow/Barlow-Medium.eot') format('embedded-opentype'),
     url('assets/fonts/Barlow/Barlow-Medium.woff2') format('woff2'),
-    url('assets/fonts/Barlow/Barlow-Medium.woff') format('woff'),
+    /*url('assets/fonts/Barlow/Barlow-Medium.woff') format('woff'),*/
     url('assets/fonts/Barlow/Barlow-Medium.ttf') format('truetype'),
     url('assets/fonts/Barlow/Barlow-Medium.svg#TradeGothicLTBold') format('svg');
 }
@@ -69,8 +69,8 @@
     font-family: 'BarlowSemiCondensed-Bold';
     src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot');
     src: url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.eot') format('embedded-opentype'),
-    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff2') format('woff2'),
-    url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff') format('woff'),
+    /*url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff2') format('woff2'),*/
+    /*url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.woff') format('woff'),*/
     url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.ttf') format('truetype'),
     url('assets/fonts/Barlow/BarlowSemiCondensed-Bold.svg#TradeGothicLTBold') format('svg');
 }
@@ -888,6 +888,25 @@ footer .footer_copyright span {
 
 .about_top_3 .cu_about_1 .cu_abou_icon {
     margin-bottom: 20px;
+    position: relative;
+}
+.about_top_3 .cu_about_1 .cu_abou_icon img{
+    position: relative;
+    z-index: 5;
+}
+.about_top_3 .cu_about_1 .cu_abou_icon:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -40%;
+    margin-top: -40%;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #1BA492;
+    background: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
 }
 .about_top_3 .cu_about_1 p {  display: block;  }
 .about_top_3 .cu_about_1 img {  width: 100%;  }
@@ -901,7 +920,26 @@ footer .footer_copyright span {
 }
 
 .cu_migration_serv .migration_serv .migra_serv_icon {
+    position: relative;
     margin-bottom: 20px;
+}
+.cu_migration_serv .migration_serv .migra_serv_icon img{
+    z-index: 5;
+    position: relative;
+}
+.cu_migration_serv .migration_serv .migra_serv_icon:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -61px;
+    margin-top: -61px;
+    width: 119px;
+    height: 119px;
+    border: 2px solid #fff;
+    background: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
 }
 .cu_migration_serv .migration_serv .migra_serv_title p {
     min-height: 35px;
@@ -1159,12 +1197,6 @@ header#Home.contact_banne .icons {
     margin-right: 10px;
 }
 
-.remote_support_banner .line h3 {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'Barlow';
-}
-
 header.remote_support_banner .icons {
     margin-bottom: 100px;
 }
@@ -1199,6 +1231,23 @@ header.remote_support_banner .icons {
     height: 150px;
     line-height: 150px;
     margin-bottom: 20px;
+    position: relative;
+}
+.remote_our_services .get_start_icon img{
+    position: relative;
+    z-index: 5;
+}
+.remote_our_services .get_start_icon:after{
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #cacaca;
+    background: transparent;
+    transform: rotate(45deg);
+    z-index: 1;
 }
 .remote_our_services .get_start_detail {  margin-bottom: 80px;  }
 .block3-get  .get_start_detail h3{
