@@ -1533,7 +1533,15 @@ header.sharepoint_branding .heading_text {
     background: #0e8e7d;
     border-color: #0e8e7d;
 }
-
+.btn-primary {
+    background: #1BA492;
+    border-color: #0e8e7d;
+    outline: none;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: #0e8e7d;
+    border-color: #0e8e7d;
+}
 .main_site_form .card-body i.calendar_icon {
     width: 30px;
     display: inline-block;
