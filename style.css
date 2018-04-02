@@ -117,6 +117,7 @@ p{
 .c-wh{  color: #ffffff;  }
 .c-bl{  color: #141414;  }
 .tt-up{  text-transform: uppercase;  }
+.mb20{  margin-bottom: 20px;  }
 .btn:focus,
 .btn:active:focus,
 button:focus,
@@ -1296,14 +1297,37 @@ header.remote_support_banner .icons {
     margin-bottom: 20px;
 }
 
-.remote_footer .remote_reasons p {
-    color: #fff;
-}
-
+.remote_footer p {  color: #fff;  }
+.remote_footer p a{  color: #1ba492;}
 .remote_footer .remote_reasons .reasons_icon {
     height: 100px;
 }
-.remote_footer .remote_reasons .reasons_icon img{
+.remote_footer .hexagon_icon {
+    position: relative;
+    height: 150px;
+    width: 200px;
+    margin: 0 auto;
+    background: url('assets/img/svg/HR-icon-0.svg') no-repeat center;
+}
+.remote_footer .hexagon_icon p{
+    height: auto;
+    position: absolute;
+    top: 30px;
+    font-size: 24px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.remote_footer .hexagon_icon .reason_price{
+    position: absolute;
+    left: 70px;
+    color: #1ba492;
+    bottom: 22px;
+    font-size: 60px;
+    text-align: right;
+    font-family: "Barlow-Bold";
+}
+.remote_footer .reasons_icon img{
     height: 100%;
 }
 
@@ -1739,7 +1763,7 @@ header.sharepoint_branding .heading_text {
 }
 
 .hr4_img img {
-    width: 120px;
+    width: 130px;
 }
 
 .hr4-head {
