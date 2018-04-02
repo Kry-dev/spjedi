@@ -1582,6 +1582,13 @@ header.sharepoint_branding .heading_text {
     background: url('assets/img/calendar_icon.png') no-repeat left center;
     margin-left: 10px;
 }
+.main_site_form .card-body .fa{
+    width: 30px;
+    height: 34px;
+    margin-left: 10px;
+    display: inline-block;
+    float: right;
+}
 
 .main_site_form .card-body input.form-control {
     width: 91%;
