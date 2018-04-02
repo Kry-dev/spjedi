@@ -1410,6 +1410,7 @@ header.remote_support_banner .icons {
 
 .cu_proj_management.cu_share_bran {
     background: url('assets/img/3-screen-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .cu_share_bran .proj_sitelist .site_list .site_list_rat .site_list_detail {
@@ -3076,44 +3077,16 @@ ul.nav li:hover > ul.dropdown-menu {
     .home_bottom_bg .line {
         padding-left: 40px;
     }
-
-    .get-started .block3-get img {
-        width: 60%;
-    }
-
     .get-started .block3-get .get_start_icon {
+        margin-top: 0;
         height: auto;
     }
-
-    .get-started .block3-get .get_start_icon {
-        float: right;
-        width: 40%;
-    }
-
-    .get-started .block3-get .get_start_detail {
-        float: left;
-        width: 60%;
-        text-align: left;
-    }
-
     .get-started .block3-get p {
         height: auto;
     }
-
-    .get-started .block3-get h5 {
-        height: auto;
+    .block3-get .get_start_detail h3{
+        min-height: 10px;
     }
-
-    .get-started .block3-get {
-        float: left;
-        margin-bottom: 10px;
-    }
-
-    .get-started .block3-get a {
-        float: left;
-        text-align: center;
-    }
-
     .cu-block-title {
         background-size: cover;
         background-attachment: inherit ;
@@ -3337,6 +3310,9 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     .cu_migration_serv .migration_serv .migra_serv_icon{
         margin-bottom: 0;
+    }
+    .share_reques.remote_footer .remote_reasons p{
+        min-height: 10px;
     }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
