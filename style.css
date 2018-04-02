@@ -578,12 +578,16 @@ header .right::before {
 
 .cu-block-title .cu-buss-box p {
     color: #fff;
-    margin: 20px auto;
+    margin: 0 auto 10px;
+    min-height: 90px;
 }
 
 .cu-buss-box .cu_buss_icon svg{
     width: 280px;
     height: 280px;
+}
+.cu-buss-box .cu_buss_icon{
+    margin-bottom: 20px;
 }
 .cu-buss-box .cu_buss_icon img {
     width: 100%;
@@ -1398,6 +1402,7 @@ header.remote_support_banner .icons {
 .proj_sitelist .site_list .site_list_rat .site_list_detail p {
     margin-bottom: 0;
     color: #fff;
+    font-size: 14px;
 }
 
 .proj_sitelist {
