@@ -34,8 +34,8 @@
     <meta name="robots" content="all, index, follow">
     <title>SharePoint Project Portal | SharePoint Invoice | SharePoint Custom | Office 365</title>
     <!--delete on production and change links-->
-    <!--<base href="https://kry-dev.pro/spjedi/">-->
-    <base href="http://spjediexternal.azurewebsites.net/spjedi3/">
+    <base href="https://kry-dev.pro/spjedi/">
+    <!--<base href="http://spjediexternal.azurewebsites.net/spjedi3/">-->
     <!--delete on production and change links-->
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -542,23 +542,22 @@
         <div class="modal-content">
             <div class="modal-header"><h4 class="head-title">Get Immediate Access</h4></div>
             <div class="modal-body">
-                <div class="input-group">
+                <div class="form-group">
                     <input class="form-control" type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address">
-                    <span class="input-group-addon" style="padding: 3px 12px;">
-						<i class="fa fa-envelope-o"
-                           style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
-					</span>
+                    <div class="email-icon">
+                        <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
+                    </div>
                 </div>
-                <span class="status-message status-success" style="display: none"> Success</span>
-                <span class="status-message status-danger" style="display: none">Please correct the error</span>
+                <div class="btn-group btn-group-lg">
+                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo2"
+                            onclick="window.open('http://spjedi.com/vader/')">Vader Demo Site
+                    </button>
+                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo3"
+                            onclick="window.open('http://spjedi.com/swatch/')">Modern Demo Site
+                    </button>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo2"
-                        onclick="window.open('http://spjedi.com/vader/')">Vader Demo Site
-                </button>
-                <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo3"
-                        onclick="window.open('http://spjedi.com/swatch/')">Modern Demo Site
-                </button>
                 <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -611,8 +610,7 @@
                         'text': 'Text- I got instant access to the slim site  From Email : ' + $email.val(),
                         'to': [
                             {
-                                'email': 'yaroslavkryvda@gmail.com',
-//                                'email': 'info@spjedi.com',
+                                'email': 'info@spjedi.com',
                                 'name': 'Jed Elliott',
                                 'type': 'to'
                             }
@@ -647,8 +645,7 @@
                     'text': 'Text- I got instant access to the slim site  From Email : ' + $email.val(),
                     'to': [
                         {
-                            'email': 'yaroslavkryvda@gmail.com',
-//                                'email': 'info@spjedi.com',
+                            'email': 'info@spjedi.com',
                             'name': 'Jed Elliott',
                             'type': 'to'
                         }

@@ -126,8 +126,15 @@ button:active:focus{
     opacity: .9;
     color: inherit;
 }
-
-
+input:focus,
+.form-control:focus{
+    border-color: #1BA492;
+}
+.form-group .email-icon{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
     font-size: 14px;
@@ -2983,6 +2990,7 @@ ul.nav li:hover > ul.dropdown-menu {
         position: absolute;
         top: 0;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -3197,10 +3205,14 @@ ul.nav li:hover > ul.dropdown-menu {
         width: 60%;
     }
 
-    .remote_support_icon img {
-        float: right;
+    .remote_support_icon{
+        position: relative;
     }
-
+    .remote_support_icon img{
+        position: absolute;
+        bottom: -60px;
+        height: auto;
+    }
     .remote_our_services .title-check-border .check-title-name {
         width: 87%;
     }
@@ -3326,6 +3338,31 @@ ul.nav li:hover > ul.dropdown-menu {
     .cu_migration_serv .migration_serv .migra_serv_icon{
         margin-bottom: 0;
     }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+    #header{
+        flex-direction: row;
+    }
+    .header .navbar-header{
+        width: 10%;
+    }
+    header#Home{
+        min-height: 100vh;
+    }
+    .home_bg{
+        height: 75vh;
+    }
+    .home_bottom_bg{
+        height: 25vh;
+    }
+    .home_bg .men_img{
+        position: relative;
+    }
+    .navbar-nav > li > .dropdown-menu, .navbar-nav .open .dropdown-menu{
+        position: absolute;
+        width: 150%;
+    }
+
 }
 
 @media (max-width: 640px) {
