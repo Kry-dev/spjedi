@@ -168,6 +168,7 @@ input:focus,
 #Home .home_right_img{
     position: relative;
     height: 100%;
+    display: inline-block;
 }
 #Home .home_right_img img{
     position: absolute;
@@ -3108,7 +3109,7 @@ ul.nav li:hover > ul.dropdown-menu {
         width: 30%;
     }
     .home_buttons{
-        width: 50%;
+        width: 100%;
         flex-direction: column;
     }
     #home{
@@ -3116,6 +3117,9 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     .home_bg{
         height: 100%;
+    }
+    .home_bg .home_row{
+        align-items: flex-end;
     }
     .home_bottom_bg{
         height: 100%;
@@ -3130,6 +3134,12 @@ ul.nav li:hover > ul.dropdown-menu {
 
     .home_bottom_bg .line {
         padding-left: 40px;
+    }
+    #Home .home_right_img img{
+        bottom: 0;
+        max-height: 500px;
+        width: auto;
+        right: 0;
     }
     .get-started .block3-get .get_start_icon {
         margin-top: 0;
@@ -3227,19 +3237,6 @@ ul.nav li:hover > ul.dropdown-menu {
     .infographic_block img {
         width: 100%;
     }
-
-    .remote_support_banner .icons {
-        width: 60%;
-    }
-
-    .remote_support_icon{
-        position: relative;
-    }
-    .remote_support_icon img{
-        position: absolute;
-        bottom: -60px;
-        height: auto;
-    }
     .remote_our_services .title-check-border .check-title-name {
         width: 87%;
     }
@@ -3252,48 +3249,13 @@ ul.nav li:hover > ul.dropdown-menu {
         margin-bottom: 40px;
     }
 
-    #Home.proj_management .icons {
-        width: 70%;
-    }
-
-    .proj_management_banner_icon img {
-        width: 68%;
-    }
-
-    .proj_management_banner_icon {
-        right: 0;
-    }
-
     .cu_proj_management.cu_share_bran {
         background-size: cover;
     }
 
-    header.sharepoint_branding .icons {
-        width: 70%;
-    }
-
-    .sharepoint_branding .proj_management_banner_icon img {
-        width: 57%;
-    }
-
-    .sharepoint_branding .proj_management_banner_icon {
-        bottom: -115px;
-    }
-
     .home_bg {
         padding-top: 85px;
-    }
-
-    .hr-assets_banner .icons {
-        width: 65%;
-    }
-
-    .hr-assets_banner .proj_management_banner_icon img {
-        width: 48%;
-    }
-
-    .hr-assets_banner .proj_management_banner_icon {
-        right: 0;
+        overflow: hidden;
     }
 
     .hr4-head {
