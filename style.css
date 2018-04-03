@@ -165,6 +165,18 @@ input:focus,
     box-sizing: border-box;
     min-height: 100vh;
 }
+#Home .home_right_img{
+    position: relative;
+    height: 100%;
+}
+#Home .home_right_img img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -150px;
+    right: -30px;
+    max-height: 730px;
+}
 @-webkit-keyframes slide-r-to-l {
     from { background-position: 0 0; }
     to { background-position: -1000px 0; }
@@ -447,6 +459,7 @@ header .right::before {
 .get-started .block_get{
     background: url('assets/img/bg-screen-2.png') no-repeat center bottom #e5e5e5;
     padding-bottom: 250px;
+    overflow: hidden;
 }
 .get-started .block3-get {
     width: 100%;
@@ -1003,8 +1016,11 @@ footer .footer_copyright span {
 header#Home.mirgration_banne {
     background: url('assets/img/top-bg.jpg') repeat-x center center;
     padding-bottom: 80px;
+    min-height: 100vh;
 }
-
+#Home.mirgration_banne .home_bg{
+    height: 100vh;
+}
 header#Home.mirgration_banne .btn_WEBSITES {  text-transform: uppercase;  }
 
 .cu_migrationtit .get_start_icon {  margin: 0 auto 15px;  }
@@ -1023,7 +1039,9 @@ header#Home.mirgration_banne .migration_banner_text {  width: 75%;  }
 #Home.contact_banne {
     background: url('assets/img/top-contact-bg.jpg') repeat-x center center;
 }
-
+#Home.contact_banne .home_bg{
+    height: 100vh;
+}
 header#Home.contact_banne .icons {
     margin-bottom: 150px;
 }
