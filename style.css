@@ -969,26 +969,31 @@ footer .footer_copyright span {
 
 .cu_migration_serv .migration_serv .migra_serv_icon {
     position: relative;
+    display: block;
     margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
 }
 .cu_migration_serv .migration_serv .migra_serv_icon img{
+    display: block;
     z-index: 5;
-    position: relative;
-}
-.cu_migration_serv .migration_serv .migra_serv_icon:after{
-    content: "";
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -61px;
-    margin-top: -61px;
-    width: 119px;
-    height: 119px;
-    border: 1px solid #fff;
-    background: transparent;
-    transform: rotate(45deg);
-    z-index: 1;
+    left: 65px;
 }
+/*.cu_migration_serv .migration_serv .migra_serv_icon:after{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*margin-left: -61px;*/
+    /*margin-top: -61px;*/
+    /*width: 119px;*/
+    /*height: 119px;*/
+    /*border: 1px solid #fff;*/
+    /*background: transparent;*/
+    /*transform: rotate(45deg);*/
+    /*z-index: 1;*/
+/*}*/
 .cu_migration_serv .migration_serv .migra_serv_title p {
     min-height: 35px;
     display: block;
