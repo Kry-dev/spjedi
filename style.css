@@ -173,7 +173,7 @@ input:focus,
 #Home .home_right_img img{
     position: absolute;
     display: block;
-    width: 100%;
+    width: 90%;
     bottom: -150px;
     right: -30px;
     max-height: 730px;
@@ -1444,7 +1444,9 @@ header.remote_support_banner .icons {
 #Home.sharepoint_branding .row {
     position: relative;
 }
-
+#Home.sharepoint_branding .home_bg{
+    height: 85vh;
+}
 .sharepoint_branding .proj_management_banner_icon img {
     width: 78%;
 }
