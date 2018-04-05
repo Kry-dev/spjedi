@@ -2378,9 +2378,8 @@ header.sharepoint_branding .heading_text {
     height: auto;
 }
 .about_top h2 {
-    color: #fff;
-    font-size: 60px;
-    font-family: 'Conv_VANTABOL';
+    /*color: #fff;*/
+    /*font-size: 60px;*/
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -2415,13 +2414,11 @@ header.sharepoint_branding .heading_text {
 }
 
 .about_hones .about_hone_detail span {
-    color: #fff;
     font-size: 20px;
     position: absolute;
     top: -14px;
     width: 100%;
     left: 0;
-    font-family: 'Conv_VANTABOL';
 }
 
 .about_hones .about_hone_detail li {
