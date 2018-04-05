@@ -935,11 +935,14 @@ footer .footer_copyright span {
 }
 
 .about_top_3 .cu_about_1 .cu_abou_icon {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     position: relative;
+    width: 250px;
+    height: 250px;
 }
 .about_top_3 .cu_about_1 .cu_abou_icon img{
     position: relative;
+    width: 100%;
     z-index: 5;
 }
 .about_top_3 .cu_about_1 .cu_abou_icon:after{
