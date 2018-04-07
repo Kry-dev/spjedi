@@ -3355,6 +3355,13 @@ ul.nav li:hover > ul.dropdown-menu {
         width: 80%;
         bottom: -15%;
     }
+    #Home.hr-assets_banner .home_bg{
+        padding-top: 0;}
+    #Home.hr-assets_banner .home_right_img img{
+        right: 0;
+        bottom: -15%;
+        width: 80%;
+    }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
     #header{
