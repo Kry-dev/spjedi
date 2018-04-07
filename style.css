@@ -3068,6 +3068,9 @@ ul.nav li:hover > ul.dropdown-menu {
         min-height: 100%;
         background-attachment: scroll !important;
     }
+    #Home.proj_management  .home_bg{
+        padding-top: 0;
+    }
     header .header {
         border-bottom: 1px solid white;
     }
@@ -3230,6 +3233,10 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     header#Home.mirgration_banne {
         background-size: cover;
+    }
+    #Home.proj_management .home_right_img img{
+        bottom: -90px;
+        right: 0;
     }
 
     .infographic_block img {
@@ -3432,9 +3439,12 @@ ul.nav li:hover > ul.dropdown-menu {
     header .icons button.btn {
         display: block;
         width: 100%;
-        word-break: break-all;
         white-space: normal;
         font-size: 12px;
+    }
+    header .btn_WEBSITES{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .cu-block-title .cu-buss-box p {
