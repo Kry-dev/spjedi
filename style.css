@@ -3077,7 +3077,7 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     header .btn {
-        margin: 50px 15px 20px 0;
+        /*margin: 50px 15px 20px 0;*/
     }
     .navbar.navbar-inverse .container{
         padding: 0;
@@ -3138,12 +3138,7 @@ ul.nav li:hover > ul.dropdown-menu {
     .home_bottom_bg .line {
         padding-left: 40px;
     }
-    #Home .home_right_img img{
-        bottom: 0;
-        max-height: 500px;
-        width: auto;
-        right: 0;
-    }
+
     .get-started .block3-get .get_start_icon {
         margin-top: 0;
         height: auto;
@@ -3257,8 +3252,8 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     .home_bg {
-        padding-top: 85px;
-        overflow: hidden;
+        padding-top: 150px;
+        /*overflow: hidden;*/
     }
 
     .hr4-head {
@@ -3364,7 +3359,12 @@ ul.nav li:hover > ul.dropdown-menu {
     .home_bg .men_img {
         width: 40%;
     }
-
+    #Home .home_right_img img{
+        bottom: 0;
+        max-height: 500px;
+        width: auto;
+        right: 0;
+    }
     .cu_migration_serv .migration_serv {
         width: 49.5%;
     }
