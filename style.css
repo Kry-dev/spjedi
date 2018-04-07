@@ -3411,9 +3411,6 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 480px) {
-    .home_buttons {
-        width: 60%;
-    }
     header .icons button.btn {
         display: block;
         width: 100%;
