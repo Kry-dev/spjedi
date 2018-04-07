@@ -736,8 +736,9 @@ header .right::before {
 }
 
 .cu-about {
-    background: url('assets/img/footer.jpg') repeat-x center center;
-    -webkit-animation: slide-r-to-l 60s infinite linear;
+    background: url('assets/img/footer.jpg') no-repeat center center;
+    /*-webkit-animation: slide-r-to-l 60s infinite linear;*/
+    background-attachment: fixed;
 }
 
 .about_rating .rating_list {
@@ -1505,10 +1506,6 @@ header.sharepoint_branding .icons {
     margin-bottom: 30px;
 }
 
-header.sharepoint_branding .heading_text {
-    margin-bottom: 30px;
-}
-
 .sharepoint_branding .home_bottom_bg .line h5 {
     font-size: 16px;
     color: #cccccc;
@@ -1521,8 +1518,9 @@ header.sharepoint_branding .heading_text {
     text-decoration: none;
 }
 
-#Home.hr-assets_banner {
-    background: url('assets/img/hr-bg.jpg') repeat-x center center;
+#Home.hr-assets_banner {  background: url('assets/img/hr-bg.jpg') repeat-x center center;  }
+#Home.hr-assets_banner .home_right_img img{
+    width:100%;
 }
 
 .hr-assets_banner .icons {
@@ -1730,6 +1728,7 @@ header.sharepoint_branding .heading_text {
     border: 0 none;
     text-transform: uppercase;
     font-size: 22px;
+    line-height: 1;
     color: #fff;
 }
 
@@ -2039,7 +2038,6 @@ header.sharepoint_branding .heading_text {
     background: #ffdb99;
     color: #999999
 }
-
 .datepicker table tr td.range {
     color: #000000;
     background-color: #eeeeee;
@@ -2504,6 +2502,7 @@ header.sharepoint_branding .heading_text {
 .jed_header h3 {
     color: #1ba492;
     margin-top: 25px;
+    margin-bottom: 5px;
 }
 
 .jed_header p {
@@ -2525,7 +2524,6 @@ header.sharepoint_branding .heading_text {
 .jed_detail span {
     color: #fff;
     font-size: 18px;
-    font-family: 'Conv_VANTABOL';
 }
 
 .jed_detail p {

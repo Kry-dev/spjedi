@@ -25,22 +25,56 @@
  #show_form { width:820px; margin: 0 auto; color: #fff; }
  #show_form .main-form { width: 110%; margin: 30px auto 0;}
  .cost_calcu fieldset .row { margin-left: 0; margin-right: 0; }
-.price-calculator {background:#28a392; padding:20px 20px; margin:30px auto; overflow: auto; width:auto;}
+.price-calculator {
+	margin:30px auto;
+	overflow: auto;
+	width:auto;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #dedede;
+	border-bottom: 4px solid #1BA492;
+	border-radius: 5px;
+}
 .price-calculator .row { float: left; width:100%;}
 .price-calculator .row input.submit {border:none;}
-.price-calculator .row label {float:left; font-size:14px; width: 200px; padding: 10px 0; color: #fff; font-weight: normal;}
-.price-calculator .row input[type="text"] {float:right; font-size:14px; background: #3E959C; border: 0; box-shadow: none; padding: 10px; border-radius:0; min-height: 45px;}
+.price-calculator .row label {
+	float:left;
+	font-size:14px;
+	width: 30%;
+	padding: 10px 0;
+	font-weight: normal;
+}
+.price-calculator .row input[type="text"] {
+	float:right;
+	font-size:14px;
+	background: #3E959C;
+	border: 0;
+	box-shadow: none;
+	padding: 10px;
+	border-radius:0;
+	min-height: 45px;
+	color: #fff;
+	width: 30%;
+}
 .price-calculator .slider-left,
 .price-calculator .slider-right {
 	float:left; width: 25px; padding: 0; margin:7px 0; height: 25px; cursor:pointer; position: relative; line-height: 1.4em;
 font-size: 16px;
-	color: #ffffff;
+	color: #3E959C;
 }
 .price-calculator .slider-left { border-radius: 10px 0 0 10px; }
 .price-calculator .slider-right { border-radius: 0 10px 10px 0; }
 .price-calculator .slider-left .pictogram,
 .price-calculator .slider-right .pictogram {padding: 0; position: absolute; top: 2px; left: 6px;}
-.price-calculator .slider {float:left; height: 25px; width: 240px; position:relative; background:#0E5E65; margin:7px 15px; border:1px solid #50A5AA;}
+.price-calculator .slider {
+	float:left;
+	height: 25px;
+	width: 30%;
+	position:relative;
+	margin:7px 15px;
+	border:1px solid #50A5AA;
+	border-radius: 4px;
+}
 .price-calculator .slider .ui-slider-handle {background-color: #4FA4A9; display: block; height: 25px; position: absolute; width:25px; top:-1px; -webkit-border-radius: 50px; border-radius: 50px; outline:none;-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .3);
 box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .3); margin-left:-10px; }
 .price-calculator .button-row {margin-top:20px;}
