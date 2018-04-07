@@ -3323,10 +3323,22 @@ ul.nav li:hover > ul.dropdown-menu {
         background-size: cover;
     }
     .cu_migration_serv .migration_serv .migra_serv_icon{
-        margin-bottom: 0;
+        margin: 0 auto !important;
     }
     .share_reques.remote_footer .remote_reasons p{
         min-height: 10px;
+    }
+    .cu_migration_serv{
+        overflow: hidden;
+    }
+    .cu_migration_serv .migration_serv .migra_serv_icon img{
+        position: relative;
+        left: auto;
+
+    }
+    .about_top_3 .cu_about_1 .cu_abou_icon{
+        width: 150px;
+        height: 150px;
     }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
@@ -3407,6 +3419,9 @@ ul.nav li:hover > ul.dropdown-menu {
 
     .about_top h2 {
         font-size: 40px;
+    }
+    .cu_migration_serv .migration_serv .migra_serv_icon img{
+        position: relative;
     }
 }
 
