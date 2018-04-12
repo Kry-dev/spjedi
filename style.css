@@ -1435,7 +1435,18 @@ header.remote_support_banner .icons {
 .proj_sitelist {
     margin: 20px auto 80px;
 }
-
+.proj_sitelist .image-popup{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.mfp-arrow-left:after{  border-right: 17px solid #1ba492;  }
+.mfp-arrow-right:after{  border-left: 17px solid #1ba492;  }
+.proj_sitelist .image-popup img{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
 #Home.proj_management .home_bottom_bg {
     background: rgba(0, 0, 0, 0.75);
 }
@@ -1556,7 +1567,7 @@ header.sharepoint_branding .icons {
     width: 100%;
     text-align: right;
     position: relative;
-    height: 200px;
+    min-height: 200px;
 }
 
 .hr-main-site .responsive-tabs li a {
@@ -1635,6 +1646,7 @@ header.sharepoint_branding .icons {
     width: 30px;
     display: inline-block;
     vertical-align: middle;
+    background: #e5e5e5;
 }
 
 .hr-main-site li .left_dot_full span {
@@ -1659,7 +1671,8 @@ header.sharepoint_branding .icons {
 
 .hr-main-site li .left_dot_full:after {
     background: #2c2c2c;
-    height: 88%;
+    /*height: 88%;*/
+    height: 100%;
     width: 1px;
     content: "";
     position: absolute;
@@ -2683,6 +2696,28 @@ ul.nav li:hover > ul.dropdown-menu {
     height: auto;
 }
 
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
 @media (max-width: 1199px) {
     .navbar-inverse .navbar-nav > li > a {
         font-size: 14px;
