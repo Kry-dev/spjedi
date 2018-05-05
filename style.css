@@ -1563,6 +1563,7 @@ header.sharepoint_branding .icons {
 .main_site_form textarea.form-control {
     min-height: 120px;
     max-width: 100%;
+    resize: none;
 }
 
 .hr-main-site li .left_dot_full {
