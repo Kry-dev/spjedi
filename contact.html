@@ -176,20 +176,20 @@
                     <div class="email_name_id">
                         <div class="name_fild">
                             <label>Name</label>
-                            <input type="text" name="name">
+                            <input type="text" name="name" required>
                         </div>
                         <div class="name_fild eid_fild">
                             <label>Email</label>
-                            <input type="text" name="email">
+                            <input type="text" name="email" required>
                         </div>
                     </div>
                     <div class="email_sub">
                         <label>Subject</label>
-                        <input type="text" name="email_sub">
+                        <input type="text" name="subject">
                     </div>
                     <div class="email_msg">
                         <label>Message</label>
-                        <textarea name="message"></textarea>
+                        <textarea name="message" required></textarea>
                     </div>
                     <div class="email_submit">
                         <input type="submit" value="Send">
@@ -285,6 +285,18 @@
             </div>
         </div>
     </div>
+    <!-- Modal for displaying the messages -->
+    <div class="modal ade bs-example-modal-lg" id="messageModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body bg-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!-- The messages container -->
+                    <p>Your message was successfully sent!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <footer>
@@ -303,17 +315,17 @@
 
 <script type="text/javascript">
     $(function () {
-        $("#contact_form").submit(function () { //устанавливаем событие отправки для формы с id=form
-            var form_data = $(this).serialize(); //собераем все данные из формы
+        $("#contact_form").submit(function (e) { //устанавливаем событие отправки для формы с id=form
+            e.preventDefault();
             $.ajax({
                 type: "POST", //Метод отправки
                 url: "contact.php", //путь до php фаила отправителя
-                data: form_data,
-                success: function () {
-                    //код в этом блоке выполняется при успешной отправке сообщения
-                    alert("Ваше сообщение отпрвлено!");
-                }
+                data: $(this).serialize()
+            }).done(function () {
+                $(this).find('input').val('');
+                $('#messageModal').modal('show');
             });
+            return false;
         });
         var $elems = $('.animateblock');
         var winheight = $(window).height();

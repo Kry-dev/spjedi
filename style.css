@@ -119,6 +119,7 @@ button:active:focus{
 input:focus,
 .form-control:focus{
     border-color: #1BA492;
+    outline: none;
 }
 .form-group .email-icon{
     position: absolute;
