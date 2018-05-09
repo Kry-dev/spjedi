@@ -402,7 +402,7 @@ header .right::before {
 .get-started .block_get{
     background: url('assets/img/bg-screen-2.png') no-repeat center bottom #e5e5e5;
     padding-bottom: 250px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .get-started .block3-get {
     width: 100%;
