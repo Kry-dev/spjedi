@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+ lang="en">
 <head>
     <!-- meta -->
     <meta name="msvalidate.01" content="6A47F5EAB911EE2F84C1F8F5FBF2448C">
@@ -39,7 +39,7 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
     <title>Kick Ass Websites completed in under 30 days</title>
-    <base href="http://spjedi.com/">
+    <!--<base href="http://spjedi.com/">-->
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -73,7 +73,7 @@
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPGZ63"
+    <iframe src="https://www.googletagmanager.com/ns?id=GTM-KDPGZ63"
     height="0" width="0" style="display:none;visibility:hidden"></iframe>;
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -88,7 +88,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index">
                             <img class="img-responsive" src="assets/img/logo.svg">
                         </a>
                     </div>
@@ -96,18 +96,18 @@
                         <ul class="nav navbar-nav header_menu">
                             <li class="dropdown"><a href="#home" class="dropdown-toggle" data-toggle="dropdown">SharePoint Services</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="migration.html">Migration Services</a></li>
-                                    <li><a href="remote_support.html">Remote Support</a></li>
-                                    <li><a href="project-management.html">Project Management</a></li>
-                                    <li><a href="sharepoint-branding.html">Branding Hub</a></li>
-                                    <li><a href="hr-assets.html">HR Portal</a></li>
+                                    <li><a href="migration">Migration Services</a></li>
+                                    <li><a href="remote_support">Remote Support</a></li>
+                                    <li><a href="project-management">Project Management</a></li>
+                                    <li><a href="sharepoint-branding">Branding Hub</a></li>
+                                    <li><a href="hr-assets">HR Portal</a></li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.html">Website Development</a></li>
+                            <li><a href="portfolio">Website Development</a></li>
                             <!--<li><a href="#">Operations Assistance</a></li>-->
                             <!--<li><a href="#">Resource Center</a></li>-->
-                            <li><a href="about-us.html">About us</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="about-us">About us</a></li>
+                            <li><a href="contact">Contact us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -322,79 +322,79 @@
                                                         var keyObj = elem[i].value.replace(/ /g, '');
                                                         lowtotal += parseInt(lowpagesObj[keyObj]);
                                                         hightotal += parseInt(highpagesObj[keyObj]);
-                                                        $('.pagesPrice .item').html(elem[i].value);
-                                                        $('.pagesPrice .low').html('$ ' + lowpagesObj[keyObj]);
-                                                        $('.pagesPrice .high').html('$ ' + highpagesObj[keyObj]);
-                                                        quoteText += $('.pagesPrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.pagesPrice .item')(elem[i].value);
+                                                        $('.pagesPrice .low')('$ ' + lowpagesObj[keyObj]);
+                                                        $('.pagesPrice .high')('$ ' + highpagesObj[keyObj]);
+                                                        quoteText += $('.pagesPrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                     else if (elem[i].name == "style") {
                                                         var keyObj = elem[i].value;
                                                         lowtotal += parseInt(lowstyleObj[keyObj]);
                                                         hightotal += parseInt(highstyleObj[keyObj]);
-                                                        $('.designPrice .item').html(elem[i].value);
-                                                        $('.designPrice .low').html('$ ' + lowstyleObj[keyObj]);
-                                                        $('.designPrice .high').html('$ ' + highstyleObj[keyObj]);
-                                                        quoteText += $('.designPrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.designPrice .item')(elem[i].value);
+                                                        $('.designPrice .low')('$ ' + lowstyleObj[keyObj]);
+                                                        $('.designPrice .high')('$ ' + highstyleObj[keyObj]);
+                                                        quoteText += $('.designPrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                     else if (elem[i].name == "copywriting") {
                                                         var keyObj = elem[i].value;
                                                         lowtotal += parseInt(lowcopywObj[keyObj]);
                                                         hightotal += parseInt(highcopywObj[keyObj]);
-                                                        $('.copywritePrice .item').html(elem[i].value);
-                                                        $('.copywritePrice .low').html('$ ' + lowcopywObj[keyObj]);
-                                                        $('.copywritePrice .high').html('$ ' + highcopywObj[keyObj]);
-                                                        quoteText += $('.copywritePrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.copywritePrice .item')(elem[i].value);
+                                                        $('.copywritePrice .low')('$ ' + lowcopywObj[keyObj]);
+                                                        $('.copywritePrice .high')('$ ' + highcopywObj[keyObj]);
+                                                        quoteText += $('.copywritePrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                     else if (elem[i].name == "seo") {
                                                         var keyObj = elem[i].value;
                                                         lowtotal += parseInt(lowseoObj[keyObj]);
                                                         hightotal += parseInt(highseoObj[keyObj]);
-                                                        $('.seoPrice .item').html(elem[i].value);
-                                                        $('.seoPrice .low').html('$ ' + lowseoObj[keyObj]);
-                                                        $('.seoPrice .high').html('$ ' + highseoObj[keyObj]);
-                                                        quoteText += $('.seoPrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.seoPrice .item')(elem[i].value);
+                                                        $('.seoPrice .low')('$ ' + lowseoObj[keyObj]);
+                                                        $('.seoPrice .high')('$ ' + highseoObj[keyObj]);
+                                                        quoteText += $('.seoPrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                     else if (elem[i].name == "responsive") {
                                                         var keyObj = elem[i].value;
                                                         lowtotal += parseInt(lowrespoObj[keyObj]);
                                                         hightotal += parseInt(highrespoObj[keyObj]);
-                                                        $('.responsivePrice .item').html(elem[i].value);
-                                                        $('.responsivePrice .low').html('$ ' + lowrespoObj[keyObj]);
-                                                        $('.responsivePrice .high').html('$ ' + highrespoObj[keyObj]);
-                                                        quoteText += $('.responsivePrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.responsivePrice .item')(elem[i].value);
+                                                        $('.responsivePrice .low')('$ ' + lowrespoObj[keyObj]);
+                                                        $('.responsivePrice .high')('$ ' + highrespoObj[keyObj]);
+                                                        quoteText += $('.responsivePrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                     else if (elem[i].name == "database") {
                                                         var keyObj = elem[i].value;
                                                         lowtotal += parseInt(lowdatabObj[keyObj]);
                                                         hightotal += parseInt(highdatabObj[keyObj]);
-                                                        $('.databasePrice .item').html(elem[i].value);
-                                                        $('.databasePrice .low').html('$ ' + lowdatabObj[keyObj]);
-                                                        $('.databasePrice .high').html('$ ' + highdatabObj[keyObj]);
-                                                        quoteText += $('.databasePrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.databasePrice .item')(elem[i].value);
+                                                        $('.databasePrice .low')('$ ' + lowdatabObj[keyObj]);
+                                                        $('.databasePrice .high')('$ ' + highdatabObj[keyObj]);
+                                                        quoteText += $('.databasePrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                     else if (elem[i].name == "ecommerce") {
                                                         var keyObj = elem[i].value;
                                                         lowtotal += parseInt(lowecomObj[keyObj]);
                                                         hightotal += parseInt(highecomObj[keyObj]);
-                                                        $('.ecomPrice .item').html(elem[i].value);
-                                                        $('.ecomPrice .low').html('$ ' + lowecomObj[keyObj]);
-                                                        $('.ecomPrice .high').html('$ ' + highecomObj[keyObj]);
-                                                        quoteText += $('.ecomPrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.ecomPrice .item')(elem[i].value);
+                                                        $('.ecomPrice .low')('$ ' + lowecomObj[keyObj]);
+                                                        $('.ecomPrice .high')('$ ' + highecomObj[keyObj]);
+                                                        quoteText += $('.ecomPrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                     else if (elem[i].name == "cms") {
                                                         var keyObj = elem[i].value;
                                                         lowtotal += parseInt(lowcmsObj[keyObj]);
                                                         hightotal += parseInt(highcmsObj[keyObj]);
-                                                        $('.cmsPrice .item').html(elem[i].value);
-                                                        $('.cmsPrice .low').html('$ ' + lowcmsObj[keyObj]);
-                                                        $('.cmsPrice .high').html('$ ' + highcmsObj[keyObj]);
-                                                        quoteText += $('.cmsPrice .service').html() + " : " + elem[i].value + ";";
+                                                        $('.cmsPrice .item')(elem[i].value);
+                                                        $('.cmsPrice .low')('$ ' + lowcmsObj[keyObj]);
+                                                        $('.cmsPrice .high')('$ ' + highcmsObj[keyObj]);
+                                                        quoteText += $('.cmsPrice .service')() + " : " + elem[i].value + ";";
                                                     }
                                                 }
 
-                                                $('.totalPrice .low').html('$ ' + lowtotal);
-                                                $('.totalPrice .high').html('$ ' + hightotal);
-                                                $('.valid').html(quoteText);
+                                                $('.totalPrice .low')('$ ' + lowtotal);
+                                                $('.totalPrice .high')('$ ' + hightotal);
+                                                $('.valid')(quoteText);
                                                 qry_str = qry_str.substring(0, qry_str.length - 1);
                                                 //        alert(qry_str);
 
@@ -718,4 +718,4 @@
 
 </script>
 </body>
-</html>
+<>
