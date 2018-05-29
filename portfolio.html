@@ -1,5 +1,5 @@
 <!DOCTYPE>
- lang="en">
+<html lang="en">
 <head>
     <!-- meta -->
     <meta name="msvalidate.01" content="6A47F5EAB911EE2F84C1F8F5FBF2448C">
@@ -100,7 +100,7 @@
                                     <li><a href="remote_support">Remote Support</a></li>
                                     <li><a href="project-management">Project Management</a></li>
                                     <li><a href="sharepoint-branding">Branding Hub</a></li>
-                                    <li><a href="hr-assets">HR Portal</a></li>
+                                    <li><a href="hr.html">HR Portal</a></li>
                                 </ul>
                             </li>
                             <li><a href="portfolio">Website Development</a></li>
@@ -170,47 +170,47 @@
                 <div class="row">
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/sfha.png" class="image-popup" title="">
-                                <img src="assets/img/portfolio/sfha_small.png">
+                                <img class="img-responsive" src="assets/img/portfolio/sfha_small.png">
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/geier_asset.png" class="image-popup" title="">
-                                <img src="assets/img/portfolio/geier%20asset_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/geier%20asset_small.jpg">
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/ialtc.jpg" class="image-popup" title="">
-                                <img src="assets/img/portfolio/ialtc_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/ialtc_small.jpg">
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/NDCP.jpg" class="image-popup" title="">
-                                <img src="assets/img/portfolio/ndcp_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/ndcp_small.jpg">
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/Training_Room.jpg" class="image-popup" title="">
-                                <img src="assets/img/portfolio/Training_Room_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/Training_Room_small.jpg">
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/violamilano.png" class="image-popup" title="">
-                                <img src="assets/img/portfolio/viola_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/viola_small.jpg">
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/watermovers.jpg" class="image-popup" title="">
-                                <img src="assets/img/portfolio/watermovers_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/watermovers_small.jpg">
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/portfolio_4.jpg" class="image-popup" title="">
-                                <img src="assets/img/portfolio/workthis_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/workthis_small.jpg">
                             </a>
                         </div>
 						<div class="col-md-4 col-xs-6">
                             <a href="assets/img/portfolio/abbot.jpg" class="image-popup" title="">
-                                <img src="assets/img/portfolio/abbott_small.jpg">
+                                <img class="img-responsive" src="assets/img/portfolio/abbott_small.jpg">
                             </a>
                         </div>
                     </div>
@@ -601,6 +601,35 @@
         </div>
     </div>
 </footer>
+<div class="modal fade in" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header"><h4 class="head-title">Get Immediate Access</h4></div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input class="form-control" type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address">
+                    <div class="email-icon">
+                        <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-lg">
+                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo2"
+                            onclick="window.open('http://spjedi.com/vader/')">
+                        Vader Demo Site
+                    </button>
+                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo3"
+                            onclick="window.open('http://spjedi.com/swatch/')">
+                        Modern Demo Site
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- All the scripts -->
 <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script type="text/javascript">
@@ -695,8 +724,18 @@
         } else {
             $(".navbar").removeClass("menu_sticky");
         }
+        var porfolioHeight = $('.block_get').height();
+        var scrollToPorfolio = $('.block_get').position().top;
+        if(scroll>= (scrollToPorfolio)){
+            $('#myModal2').show();
+        }
+        if(scroll>= (scrollToPorfolio + porfolioHeight)){
+            $('#myModal2').hide();
+        }
+        $('button[data-dismiss="modal"]').click(function () {
+            $('.modal').hide();
+        })
     });
-
     $(".image-popup").magnificPopup({
         type: "image",
         closeOnContentClick: false,
@@ -718,4 +757,3 @@
 
 </script>
 </body>
-<>

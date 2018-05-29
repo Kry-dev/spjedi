@@ -1448,7 +1448,7 @@ header.remote_support_banner .icons {
 .proj_sitelist .image-popup img{
     display: block;
     margin: 0 auto;
-    height: 100%;
+    width: 100%;
 }
 #Home.proj_management .home_bottom_bg {
     background: rgba(0, 0, 0, 0.75);
