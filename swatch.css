@@ -1,0 +1,607 @@
+
+@import 'reset.css';
+
+.topToggle {
+  color: #f0ffff;
+  cursor: pointer;
+  display: none;
+  font-size: 15px;
+  left: 30px;
+  position: absolute;
+  top: 18px;
+}
+.tConHeader {
+  display: none;
+}
+.tCkHeader {
+  background: #e8021f;
+  cursor: pointer;
+  height: 20px;
+  padding: 2px;
+}
+.tCkHeader i {
+  color: #f0ffff;
+  transition: all 0.3s ease 0s;
+}
+.changeArrow i {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.tCNHeader {
+  background: #202020;
+}
+.tCNav li {
+  border-right: 1px solid #535353;
+  float: left;
+}
+.tCNav li:last-child {
+  border-right: 0;
+}
+.tCRNav li:first-child {
+  border-left: 1px solid #535353;
+}
+.tCRNav li:last-child {
+  border-right: 1px solid #535353 !important;
+}
+.tCNav li a {
+  color: #f0ffff;
+  display: inline-block;
+  padding: 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.topUser {
+  color: #f0ffff;
+  cursor: pointer;
+  padding: 8px 15px;
+  text-align: right;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 150px;
+}
+.topUser i {
+  background: #a0a1a5;
+  border-radius: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  text-align: center;
+  width: 40px;
+}
+.tCGreyHeader {
+  background: #ededed;
+  padding: 0 15px;
+}
+.tCGreyHeader ul li {
+  float: left;
+  margin-right: 20px;
+}
+.tCGreyHeader ul li a {
+  color: #636466;
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+.tCGreyHeader ul li i {
+  margin-right: 10px;
+}
+.tCGreyHeader ul li:last-child {
+  margin-right: 0;
+}
+.tCNav li a:hover, .topUser:hover {
+  background: #a90015;
+}
+.tCNav li a[href="javascript:void(0)"] {
+  cursor: default;
+}
+.tCNav li a[href="javascript:void(0)"]:hover {
+  background: transparent;
+}
+.tCGreyHeader ul li a:hover {
+  color: #303030;
+}
+.mainToggle {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background: #E8021F;
+  width: 38px;
+  height: 34px;
+  text-align: center;
+  line-height: 31px;
+  color: #fff;
+  font-size: 15px;
+  display:none;
+  cursor:pointer;
+}
+.mainToggle img {
+  width: 14px;
+}
+.myHeader {
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  padding: 20px 10px;
+  position: relative;
+}
+.sLogo {
+  margin: 8px 0 0;
+}
+.myHeader h1{
+	display:inline-block;
+	line-height: 12px;
+}
+.mainNav li {
+  float: left;
+  position:relative;
+}
+.mainNav li a{
+  font-size:15px;
+  color:#000;
+  padding:6px 16px;
+}
+.mainNav li.active a , .mainNav li a:hover{
+	background:#e8021f;
+	color:#fff;
+}
+
+/* Sub Menu */
+
+.mainNav li ul{
+	position:absolute;
+	left:0;
+	top:150%;
+	background:#6c6c6c;
+	z-index:9;
+	width:130px;
+	visibility:hidden;
+	-webkit-transition:all ease 0.2s;
+	-moz-transition:all ease 0.2s;
+	-o-transition:all ease 0.2s;
+	transition:all ease 0.2s;
+}
+.mainNav li:hover ul{
+	visibility:visible;
+	top:100%;
+}
+.mainNav li ul li {
+	width:100%;
+}
+.mainNav li ul li a{
+	display:block;
+	color:#fff;
+}
+/* Sub Menu End */
+
+
+.banner{
+	float:left;
+	width:100%;
+	margin-bottom: 21px;
+}
+.banner .carousel-indicators {
+  bottom: -21px;
+  width: 100%;
+  left: 30%;
+}
+.banner .carousel-indicators li {
+  background: #a5a5a5;
+  border: none;
+  border-radius: 0;
+  float: left;
+  height: 9px;
+  width: 16%;
+  margin:0;
+  border-right:1px solid #fff;
+  -webkit-transition:all ease 0.3s;
+	-moz-transition:all ease 0.3s;
+	-o-transition:all ease 0.3s;
+	transition:all ease 0.3s;
+}
+.banner .carousel-indicators li:last-child{
+	border-right:0;
+}
+.banner .carousel-indicators li.active {
+  background: #ea011e;
+  border-radius: 0;
+  height: 9px;
+  width: 20%;
+}
+
+.myBox{
+	padding:10px;
+	float:left;
+	width:100%;
+	margin-bottom: 10px;
+}
+.myBox h2{		
+	color:#fff;
+	border-bottom:1px solid #fff;
+	padding-bottom:10px;
+}
+.myBox h5{
+	margin-bottom:2px;
+}
+.myBox ul li{
+	margin-bottom:16px;
+}
+.myBox ul li:last-child , .myBox ul li:last-child p , .myBox p:last-of-type{
+	margin-bottom:0;
+}
+.myBox ul li , .myBox ul li a , .myBox p{
+	color:#edf9f5;
+}
+.ceo img {
+  float: left;
+  margin-right: 20px;
+  width: 156px;
+}
+.kContact > ul > li {
+  float: left;
+  min-height: 100px;
+  text-align: center;
+  width: 33%;
+  text-align:center;
+}
+.kContact ul ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.socialTab {
+  min-height: 314px;
+  padding: 0;
+}
+.socialTab .nav li {
+  text-align: center;
+  width: 33.33%;
+  margin-bottom:0;
+}
+.socialTab .nav-tabs {
+  border-bottom-color: #fff;
+}
+.socialTab a {
+	color:#edf9f5 !important;
+}
+.socialTab .nav-tabs a {
+  background: #d5486a;
+  border: 0 none !important;
+  border-radius: 0 !important;
+  margin:0 !important;
+  color:#fff !important;
+  font-size:20px;
+  padding:8px 15px !important;
+ font-weight:600;  
+}
+.socialTab .nav-tabs li.active a , .socialTab .nav-tabs li a:hover{
+	background:#ec6989 !important;	
+}
+.socialTab .tab-content .socialTabPost{
+	position:relative;
+	padding-left:72px;
+	border-bottom:1px solid #f97d9a;
+	padding-bottom:16px;
+	margin-bottom:16px;
+}
+.socialTab .tab-content .socialTabPost:last-child{
+	padding-bottom:0;
+	margin-bottom:0;
+	border-bottom:0;
+}
+.socialTab .tab-content img{
+	width:62px;
+	height:62px;
+	border-radius:50%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.socialTab .tab-content a:hover{
+	color:#fff !important;
+}
+.socialTab .tab-content {
+  padding: 20px 15px;
+}
+.socialTabPost h5 a{
+	float:right;
+}
+.webLink ul li {
+  float: left;
+  width: 50%;
+}
+.webLink ul li:nth-of-type(9){
+	margin-bottom:0;
+}
+.aLink ul li a{
+	-webkit-transition:all ease 0.3s;
+	-moz-transition:all ease 0.3s;
+	-o-transition:all ease 0.3s;
+	transition:all ease 0.3s;
+}
+.aLink ul li::before{
+	content:'\e258';
+	font-family:'Glyphicons Halflings';
+	font-size: 8px;
+    margin-right: 6px;	
+}
+.aLink ul li a:hover{
+	color:#fff;
+}
+.bForm ul li{
+	display:inline-block;
+	margin:0 10px;
+	text-transform:uppercase;
+}
+.bForm ul li i{
+	margin-right:6px;
+}
+.bForm table{
+	color:#fff;
+}
+.bForm table {
+  margin-bottom: 0;
+}
+.bForm .table-responsive {
+  background: #e5518b;
+  padding: 6px;
+  margin-top: 6px;
+}
+.bForm table th{
+	font-weight:400;
+	font-size: 13px;
+	padding: 3px 0 !important;
+}
+.bForm table i{
+	margin-right:3px;
+}
+.bRow .myBox {
+  min-height: 240px;
+}
+.bForm td {
+  font-size: 12px;
+  padding: 3px 0 !important;
+}
+.bForm th, .bForm td {
+  border: 0 none !important;
+}
+.bForm table th:nth-child(2) , .bForm table td:nth-child(2) {
+  border-left: 1px solid #ffffff !important;
+  border-right: 1px solid #ffffff !important;
+  padding: 0 5px !important;
+}
+.bForm table th:nth-child(3) , .bForm table td:nth-child(3) {
+  border-right: 1px solid #ffffff !important;
+  padding-left:5px !important;
+}
+.bForm table th:nth-child(4) , .bForm table td:nth-child(4){
+	padding-left:5px !important;
+}
+.calBox{
+	background:#89ad7f;
+	border-radius:2px;
+	width:100%;
+	float:left;
+	padding:7px 0px 3px 5px; 
+}
+.calBox .calDate li:hover{
+	background:#ECEDDD;
+}
+.calDay li {
+  background: #f46d7c;
+  float: left;
+  font-size: 11px;
+  margin: 0 1%;
+  text-align: center;
+  width: 12%;
+  border-radius: 2px;
+  padding: 2px;
+  margin-bottom:10px !important;
+}
+.calDate li {
+  border-radius: 2px;
+  float: left;
+  margin: 0 1%;
+  padding: 2px;
+  width: 12%;
+  background: #fff;
+  min-height: 29px;
+  text-align: right;
+  margin-bottom:8px !important;
+}
+.calDate li a{
+	width: 100%;
+	color:#333 !important;
+	padding-right: 6px;
+}
+.emptyDay{
+	opacity:0.5;
+	color:transparent;
+}
+.calCheck{
+	padding-top:10px;
+}
+.calCheck li {
+  float: left;
+  text-align: center;
+  width: 33%;
+  font-size: 11px;
+}
+.calCheck span{
+	width:12px;
+	height:12px;
+	border:1px solid #fff;
+	display:inline-block;
+	border-radius:2px;
+	margin-right: 6px;
+}
+.calCheck li {
+  margin-bottom: 0 !important;
+}
+
+
+
+/* Media Query */
+
+@media(max-width:1200px){
+	
+	.socialTab .nav-tabs a {
+		font-size: 16px;
+	}
+	.sHRow .col-md-6:first-child .myBox {
+	  min-height: 315px;
+	}
+	.ceo img{
+		margin-bottom:10px;
+	}
+}
+
+@media(max-width:991px){
+	.sHRow .col-md-6:first-child .myBox {
+	  min-height: auto;
+	}	
+	
+	
+}
+
+@media(max-width:966px){
+	
+	.bRow .col-md-4{
+		width:100%;
+	}
+}
+
+@media (max-width:900px){
+	
+	.cRow .col-md-4{
+		width:100%;
+	}
+	.socialTab {
+	  min-height: auto;
+	  padding-bottom:10px;
+	}
+	.calDate li {
+	  min-height: 48px;
+	}
+	.calDay li {
+	  min-height: 30px;
+	  padding-top: 6px;
+	}
+	
+}
+
+@media(max-width:800px){
+	.mainToggle {
+		display:block;
+	}
+	.mainNav {
+	  left: 0;
+	  position: absolute;
+	  top: 100%;
+	  width: 100%;
+	  z-index: 99;
+	  background:#fff;
+	  display:none;
+	}
+	.mainNav li {
+	  width: 100%;
+	  border-bottom:1px solid #ddd;
+	}
+	.mainNav li:last-child {
+		border-bottom:0;
+	}
+	.mainNav li a {
+	  display: block;
+	}
+	.mainNav li ul {
+	  position: static;
+	  visibility: visible;
+	  width: 100%;
+	}
+	.mainNav li ul li a {
+	  color: #000;
+	  display: block;
+	}
+	.mainNav li ul li a::before {
+	  content: "-";
+	  margin: 0 10px;
+	}
+}
+
+	
+@media(max-width:630px){
+	
+	.tCLNav {
+	  background: #303030;
+	  left: 15px;
+	  position: absolute;
+	  top: 57px;
+	  width: 130px;
+	  z-index: 9;
+	  display:none;
+	}
+	.tCLNav li {
+	  border-bottom: 1px solid #5f5f5f;
+	  border-right: 0 none;
+	  display: block;
+	  width: 100%;	  
+	}
+	.tCLNav li:last-child {
+		border-bottom:0;
+	}
+	.tCLNav li a {
+	  color: #cecece;
+	  display: block;
+	  padding: 10px ;
+	}
+	.topUser {
+	  padding: 8px 10px 8px 8px;
+	  width: 120px;
+	}
+	.topToggle{
+		display:block;
+	}
+	.tCGreyHeader ul li a {
+	  font-size: 13px;
+	  padding: 10px 0;
+	}
+		
+}
+
+@media(max-width:420px){
+	
+	.tCRNav li a {
+	  color: #f0ffff;
+	  display: inline-block;
+	  padding: 18px 13px;
+	  transition: all 0.3s ease 0s;
+	}
+	.topToggle{
+		left:24px;
+	}
+	
+}	
+
+
+@media(max-width:380px){
+		
+	.calDate li {
+	  min-height: 28px;
+	}
+	.calDay li {
+	  min-height: 20px;
+	  padding-top: 2px;
+	}
+	.ceo img {
+	  margin: 0 17px 7px 0;
+	}
+}
+
+/* Media Query End*/
+
+
+

@@ -68,6 +68,26 @@
         };
     </script>
     <!-- End Google Analytics -->
+	<!-- Google Tag Manager (noscript) -->
+      <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPGZ63"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+<script>
+
+        $(document).ready(function () {
+            $.ajax({
+                url: "http://spjedi-visitors.azurewebsites.net/Spjedi_Vs.asmx/SaveVistorDetails",
+                type: "POST",
+                contentType: "application/json",
+                dataType: "jsonp",
+                success: function (result) {
+                },
+            });
+        });
+
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
