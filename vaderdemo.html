@@ -4,46 +4,29 @@
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="vader.css" type="text/css">
-<link rel="stylesheet" href="style.css" type="text/css">
-<link rel="stylesheet" href="reset.css" type="text/css">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="vader.css">
+<link rel="stylesheet" href="style.css">
+
 <script src="assets/js/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 <title>Vader</title>
 </head>
 <body>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h4 class="head-title"><i></i><span>Response Within 2 Hours</span><i></i></h4>
-                    <div class="email_filed">
-                        <input type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address">
-                        <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
-                    </div>
-                    <button type="button" class="btn full-btn remove-radi" id="btnSeeDemo">See Demo Site</button>
-                    <!--onclick=" window.open('http://spjedi.com/PM','_blank')"-->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left remove-radi" data-dismiss="modal">Close</button>
+
+    <!-- Top Header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showModal">See Full <span>Site</span></button>
                 </div>
             </div>
-
         </div>
-    </div>
-    <!-- Top Header -->
-
-    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="topHeader">
-                   
-                    <div class="seedbtn">
-                        <button type="button" class="btn-seedemo full-btn-square remove-radi" data-toggle="modal" data-target="#myModal">See Full <span>Site</span></button>
-                    </div>
                     <div class="tCkHeader text-center">
                         <i class="glyphicon glyphicon-menu-down"></i>
                     </div>
@@ -143,9 +126,6 @@
         </div>
 
     </div>
-
-
-
 
 
     <div class="container">
@@ -305,8 +285,6 @@
     </div>
 
 
-
-
     <div class="container">
         <footer>
             <div class="row">
@@ -336,34 +314,94 @@
         </footer>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade in" id="showModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <form class="sendUserMail modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Response Within 2 Hours</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtSiteDemoEmail" class="hidden">Please supply your email address</label>
+                        <input class="form-control" type="email" name="email" id="txtSiteDemoEmail" placeholder="Please supply your email address" required>
+                        <div class="email-icon">
+                            <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-primary pull-left" id="btnSeeDemo">See Demo Site</button>
+                    </div>
+                </div>
+            </form>
 
+        </div>
+    </div>
+    <!-- Modal for displaying the messages -->
+    <div class="modal fade bs-example-modal" id="messageModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body bg-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!-- The messages container -->
+                    <p>Your message was successfully sent!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for displaying the error messages -->
+    <div class="modal fade bs-example-modal" id="messageModalError" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body bg-danger">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!-- The messages container -->
+                    <p class="pb-0">Please supply your email address! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/sendusermail.js"></script>
+    <script type="text/javascript">
+//        function ShowDemoSite() {
+//            if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
+//                window.open('http://spjedi.com/project-management.html', '_blank');
+//            }
+//            return false;
+//        }
+//        $('#btnSeeDemo').on('click', function () {
+//            ShowDemoSite();
+//        })
+    </script>
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+        //var slideIndex = 1;
+        //showDivs(slideIndex);
+        //function plusDivs(n) {
+        //    showDivs(slideIndex += n);
+        //}
+        //function currentDiv(n) {
+        //    showDivs(slideIndex = n);
+        //}
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-red", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-red";
-        }
+        //function showDivs(n) {
+        //    var i;
+        //    var x = document.getElementsByClassName("mySlides");
+        //    var dots = document.getElementsByClassName("demo");
+        //    if (n > x.length) { slideIndex = 1 }
+        //    if (n < 1) { slideIndex = x.length }
+        //    for (i = 0; i < x.length; i++) {
+        //        x[i].style.display = "none";
+        //    }
+        //    for (i = 0; i < dots.length; i++) {
+        //        dots[i].className = dots[i].className.replace(" w3-red", "");
+        //    }
+        //    x[slideIndex - 1].style.display = "block";
+        //    dots[slideIndex - 1].className += " w3-red";
+        //}
     </script>
 
 

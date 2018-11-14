@@ -621,25 +621,25 @@
         </div>
     </div>
 </footer>
-<div class="modal fade in" id="myModal2" role="dialog">
+<form class="modal fade in" id="myModal2" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-header"><h4 class="head-title">Get Immediate Access</h4></div>
+            <div class="modal-header">
+                <h4 class="head-title">Get Immediate Access</h4>
+            </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input class="form-control" type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address">
+                    <input class="form-control" type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address" required>
                     <div class="email-icon">
                         <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
                     </div>
                 </div>
                 <div class="btn-group btn-group-lg">
-                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo2"
-                            onclick="window.open('http://spjedi.com/vaderdemo.html')">
+                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo2">
                         Vader Demo Site
                     </button>
-                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo3"
-                            onclick="window.open('http://spjedi.com/swatch.html')">
+                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo3">
                         Modern Demo Site
                     </button>
                 </div>
@@ -649,10 +649,21 @@
             </div>
         </div>
     </div>
-</div>
+</form>
 <!-- All the scripts -->
 <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script type="text/javascript">
+    var siteDemoEmailVal = $("#txtSiteDemoEmail").val().indexOf("@");
+    $('#btnSeeDemo2').on('click', function () {
+        if ($(siteDemoEmailVal) > 0){
+            window.open('http://spjedi.com/vaderdemo.html', '_blank');
+        }
+    });
+    $('#btnSeeDemo3').on('click', function () {
+        if ($(siteDemoEmailVal) > 0){
+            window.open('http://spjedi.com/swatch.html', '_blank');
+        }
+    });
     $("#calculate").click(function () {
         $(".cost_calcu").hide();
         $("#webdesign-quote").show();

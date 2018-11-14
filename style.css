@@ -134,6 +134,10 @@ input:focus,
     border-color: #1BA492;
     outline: none;
 }
+.btn.disabled{
+    opacity: 0.1;
+    cursor: none;
+}
 .form-group .email-icon{
     position: absolute;
     right: 30px;
@@ -2472,6 +2476,17 @@ ul.nav li:hover > ul.dropdown-menu {
 .mfp-with-zoom.mfp-ready.mfp-bg {  opacity: 0.8;  }
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {  opacity: 0;  }
+/*modal styles*/
+.modal .modal-header .close{
+    margin-top: -28px;
+    background-color: transparent;
+    font-size: 30px;
+}
+.modal.in{
+    padding-right: 0 !important;
+}
+/*end of modal styles*/
+
 @media (max-width: 1199px) {
     .navbar-inverse .navbar-nav > li > a {  font-size: 14px;  }
     .navbar-inverse .navbar-nav > li > a { padding: 15px 10px;  }
