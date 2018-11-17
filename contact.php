@@ -1,6 +1,6 @@
 <?php
-    $recepient = "info@spjedi.com";
-//    $recepient = "yaroslavkryvda@gmail.com";
+    //$recepient = "info@spjedi.com";
+    $recepient = "yaroslavkryvda@gmail.com";
     $subject = trim($_POST["subject"]);
 
     $name = trim($_POST["name"]);
@@ -9,5 +9,5 @@
     $message = "Name: $name \nEmail: $email \nMessage: $text";
 
     $pagetitle = "Subject: \"$subject\"";
-    mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
+    mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $email");
 ?>

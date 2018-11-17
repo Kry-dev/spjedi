@@ -5,7 +5,7 @@ $(".sendUserMail").submit(function (e) { //устанавливаем событ
         url: "sendUserMail.php", //путь до php фаила отправителя
         data: $(this).serialize()
     }).done(function () {
-        $(this).find('input[type=email]').val();
+        $(this).find('input').val();
         $('#messageModal').modal('show');
         ShowDemoSite();
     });
