@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
     <title>SharePoint Branding Templates-Ready in 7 days</title>
-    <base href="http://spjedi.com/">
+    <!--<base href="http://spjedi.com/">-->
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <script src="assets/js/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!--Google Webmaster Tools -->
     <!-- Google Tag Manager -->
     <script async="" src="https://embed.tawk.to/55b166e7fbb9458908f65fde/default" charset="UTF-8" crossorigin="*"></script>
@@ -136,8 +135,8 @@
                         <div class="migration_banner_text">
                             <p>All templates are customized to fit yours corporate style guide within the cost of the template. We had add-ones such as Employee Directory, Reporting Tools, and many more collaboration webparts</p>
                         </div>
-                        <a type="button" class="btn btn_WEBSITES" data-toggle="modal" data-target="#myModal2"
-                           onclick="trackEventaction();">See Instant Demo Site</a>
+                        <!--<a type="button" class="btn btn_WEBSITES" data-toggle="modal" data-target="#myModal2" onclick="trackEventaction();">See Instant Demo Site</a>-->
+                        <a type="button" class="btn btn_WEBSITES" data-toggle="modal" data-target="#myModal2">See Instant Demo Site</a>
                     </div>
                     <div class="col-sm-4 col-xs-4 home_right_img">
                         <img class="img-responsive" src="assets/img/Leya.png">
@@ -502,47 +501,78 @@
     <div class="modal fade in" id="myModal2" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header"><h4 class="head-title">Get Immediate Access</h4></div>
+            <form class="sendUserMail modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Get Immediate Access</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <input class="form-control" type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address">
+                        <input class="form-control" type="email" name="email" id="txtSiteDemoEmail" value="" placeholder="Email address">
                         <div class="email-icon">
                             <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
                         </div>
                     </div>
-                    <div class="btn-group btn-group-lg">
-                        <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo2"
-                                onclick="window.open('http://spjedi.com/vaderdemo.html')">
-                            Vader Demo Site
-                        </button>
-                        <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo3"
-                                onclick="window.open('http://spjedi.com/swatch.html')">
-                            Modern Demo Site
-                        </button>
-                    </div>
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    <div class="btn-group">
+                        <a class="btn btn-primary btnSeeDemo" id="btnSeeDemo2"
+                                href="/vaderdemo.html">
+                            Vader Demo Site
+                        </a>
+                        <a class="btn btn-primary btnSeeDemo" id="btnSeeDemo3"
+                                href="/swatch.html">
+                            Modern Demo Site
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal for displaying the messages -->
+    <div class="modal fade bs-example-modal" id="messageModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body bg-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!-- The messages container -->
+                    <p>Your message was successfully sent! Thank you we will contact you shortly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for displaying the error messages -->
+    <div class="modal fade bs-example-modal" id="messageModalError" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body bg-danger">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!-- The messages container -->
+                    <p class="pb-0">Please supply your email address! </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- All the scripts -->
+
+    <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/sendusermail.js"></script>
     <script type="text/javascript">
-        function trackEventaction() {
-            console.log('test');
-            _gaq.push(['_trackEvent', 'Intranet', 'Click', 'http://spjedi.com/Intranet/', 1, true]);
-        }
+        //function trackEventaction() {
+        //    console.log('test');
+        //    _gaq.push(['_trackEvent', 'Intranet', 'Click', 'http://spjedi.com/Intranet/', 1, true]);
+        //}
     </script>
     <script type="text/javascript">
-        function ShowDemoSite() {
-            if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
-                window.open('http://spjedi.com/PM', '_blank');
-            }
-            return false;
-        }
+        //function ShowDemoSite() {
+        //    if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
+        //        window.open('http://spjedi.com/PM', '_blank');
+        //    }
+        //    return false;
+        //}
         function getItemByID(id) {
             var result = $.grep(imgContents, function (e) {
                 return e.id == id;
@@ -557,77 +587,77 @@
         }
     </script>
     <script>
-        $("#btnSeeDemo2").click(function () {
-            var $email = $("#txtSiteDemoEmail");
-            if ($email.val().indexOf("@") > 0) {
-                $.ajax({
-                    type: "POST",
-                    url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                    data: {
-                        'key': 'qUnNKSqipOc7_rXIySQLFw',
-                        'message': {
-                            'from_email': 'info@spjedi.com',
-                            'from_name': $email.val(),
-                            'headers': {
-                                'Reply-To': $email.val()
-                            },
-                            'subject': 'Branding Vader Demo Site',
-                            'text': 'Text- I got instant access to the slim site  From Email : ' + $email.val(),
-                            'to': [
-                                {
-                                    'email': 'info@spjedi.com',
-                                    'name': 'Jed Elliott',
-                                    'type': 'to'
-                                }
-                            ]
-                        }
-                    }
-                })
-                $email.val('');
-                $('.status-message').addClass('hidden');
-                $('.status-message.text-success').removeClass('hidden');
-            } else {
-                $('.status-message').addClass('hidden');
-                $('.status-message.text-danger').removeClass('hidden');
-            }
-        });
+//        $("#btnSeeDemo2").click(function () {
+//            var $email = $("#txtSiteDemoEmail");
+//            if ($email.val().indexOf("@") > 0) {
+//                $.ajax({
+//                    type: "POST",
+//                    url: "https://mandrillapp.com/api/1.0/messages/send.json",
+//                    data: {
+//                        'key': 'qUnNKSqipOc7_rXIySQLFw',
+//                        'message': {
+//                            'from_email': 'info@spjedi.com',
+//                            'from_name': $email.val(),
+//                            'headers': {
+//                                'Reply-To': $email.val()
+//                            },
+//                            'subject': 'Branding Vader Demo Site',
+//                            'text': 'Text- I got instant access to the slim site  From Email : ' + $email.val(),
+//                            'to': [
+//                                {
+//                                    'email': 'info@spjedi.com',
+//                                    'name': 'Jed Elliott',
+//                                    'type': 'to'
+//                                }
+//                            ]
+//                        }
+//                    }
+//                })
+//                $email.val('');
+//                $('.status-message').addClass('hidden');
+//                $('.status-message.text-success').removeClass('hidden');
+//            } else {
+//                $('.status-message').addClass('hidden');
+//                $('.status-message.text-danger').removeClass('hidden');
+//            }
+//        });
     </script>
     <script>
-        $("#btnSeeDemo3").click(function () {
-            var $email = $("#txtSiteDemoEmail");
-            $.ajax({
-                type: "POST",
-                url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                data: {
-                    'key': 'qUnNKSqipOc7_rXIySQLFw',
-                    'message': {
-                        'from_email': 'info@spjedi.com',
-                        'from_name': $email.val(),
-                        'headers': {
-                            'Reply-To': $email.val()
-                        },
-                        'subject': 'Branding Modern Demo Site',
-                        'text': 'Text- I got instant access to the slim site  From Email : ' + $email.val(),
-                        'to': [
-                            {
-                                'email': 'info@spjedi.com',
-                                'name': 'Jed Elliott',
-                                'type': 'to'
-                            }
-                        ]
-                    }
-                }
-            })
-            .done(function (response) {
-                $email.val('');
-                $('.status-message').addClass('hidden');
-                $('.status-message.text-success').removeClass('hidden');
-            })
-            .fail(function (response) {
-                $('.status-message').addClass('hidden');
-                $('.status-message.text-danger').removeClass('hidden');
-            });
-        });
+        //$("#btnSeeDemo3").click(function () {
+        //    var $email = $("#txtSiteDemoEmail");
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        //        data: {
+        //            'key': 'qUnNKSqipOc7_rXIySQLFw',
+        //            'message': {
+        //                'from_email': 'info@spjedi.com',
+        //                'from_name': $email.val(),
+        //                'headers': {
+        //                    'Reply-To': $email.val()
+        //                },
+        //                'subject': 'Branding Modern Demo Site',
+        //                'text': 'Text- I got instant access to the slim site  From Email : ' + $email.val(),
+        //                'to': [
+        //                    {
+        //                        'email': 'info@spjedi.com',
+        //                        'name': 'Jed Elliott',
+        //                        'type': 'to'
+        //                    }
+        //                ]
+        //            }
+        //        }
+        //    })
+        //    .done(function (response) {
+        //        $email.val('');
+        //        $('.status-message').addClass('hidden');
+        //        $('.status-message.text-success').removeClass('hidden');
+        //    })
+        //    .fail(function (response) {
+        //        $('.status-message').addClass('hidden');
+        //        $('.status-message.text-danger').removeClass('hidden');
+        //    });
+        //});
     </script>
     <script type="text/javascript">
         $(function () {

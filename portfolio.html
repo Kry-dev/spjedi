@@ -626,7 +626,8 @@
         <!-- Modal content-->
         <form class="sendUserMail modal-content">
             <div class="modal-header">
-                <h4 class="head-title">Get Immediate Access</h4>
+                <h4 class="modal-title">Get Immediate Access</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
@@ -635,7 +636,9 @@
                         <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
                     </div>
                 </div>
-                <div class="btn-group btn-group-lg">
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
                     <button type="submit" class="btn btn-primary pull-left" id="btnSeeDemo2">
                         Vader Demo Site
                     </button>
@@ -644,36 +647,10 @@
                     </button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-            </div>
         </form>
     </div>
 </div>
-<!-- Modal for displaying the messages -->
-<div class="modal fade bs-example-modal" id="messageModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body bg-success">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <!-- The messages container -->
-                <p>Your message was successfully sent! Thank you we will contact you shortly.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal for displaying the error messages -->
-<div class="modal fade bs-example-modal" id="messageModalError" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body bg-danger">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <!-- The messages container -->
-                <p class="pb-0">Please supply your email address! </p>
-            </div>
-        </div>
-    </div>
-</div>
+
 <script src="assets/js/sendusermail.js"></script>
 <!-- All the scripts -->
 <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
