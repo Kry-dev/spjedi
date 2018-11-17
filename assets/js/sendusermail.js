@@ -6,7 +6,6 @@ $(".sendUserMail").submit(function (e) { //устанавливаем событ
         data: $(this).serialize()
     }).done(function () {
         $(this).find('input[type=email]').val();
-        console.log($(this).find("input[type=email]").val());
         $('#messageModal').modal('show');
         ShowDemoSite();
     });

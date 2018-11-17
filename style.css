@@ -2567,6 +2567,7 @@ ul.nav li:hover > ul.dropdown-menu {
         padding-left: 30px;
     }
     header .btn {
+        height: 34px;
         margin: 20px 5px 20px 0;
     }
     header .btn_MICROSOFT {
@@ -2583,6 +2584,7 @@ ul.nav li:hover > ul.dropdown-menu {
     .home_bg {
         padding-top: 130px;
     }
+    .mb-0{  margin-bottom: 0;}
     /* New css */
     .navbar-inverse .navbar-nav > li > a {
         font-size: 11px;

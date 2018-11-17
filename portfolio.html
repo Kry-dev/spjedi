@@ -621,10 +621,10 @@
         </div>
     </div>
 </footer>
-<form class="modal fade in" id="myModal2" role="dialog">
+<div class="modal fade in" id="myModal2" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
-        <div class="modal-content">
+        <form class="sendUserMail modal-content">
             <div class="modal-header">
                 <h4 class="head-title">Get Immediate Access</h4>
             </div>
@@ -636,10 +636,10 @@
                     </div>
                 </div>
                 <div class="btn-group btn-group-lg">
-                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo2">
+                    <button type="submit" class="btn btn-primary pull-left" id="btnSeeDemo2">
                         Vader Demo Site
                     </button>
-                    <button type="button" class="btn btn-primary pull-left" id="btnSeeDemo3">
+                    <button type="submit" class="btn btn-primary pull-left" id="btnSeeDemo3">
                         Modern Demo Site
                     </button>
                 </div>
@@ -647,23 +647,48 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
             </div>
+        </form>
+    </div>
+</div>
+<!-- Modal for displaying the messages -->
+<div class="modal fade bs-example-modal" id="messageModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body bg-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- The messages container -->
+                <p>Your message was successfully sent!</p>
+            </div>
         </div>
     </div>
-</form>
+</div>
+<!-- Modal for displaying the error messages -->
+<div class="modal fade bs-example-modal" id="messageModalError" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body bg-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- The messages container -->
+                <p class="pb-0">Please supply your email address! </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/sendusermail.js"></script>
 <!-- All the scripts -->
 <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script type="text/javascript">
-    var siteDemoEmailVal = $("#txtSiteDemoEmail").val().indexOf("@");
-    $('#btnSeeDemo2').on('click', function () {
-        if ($(siteDemoEmailVal) > 0){
-            window.open('http://spjedi.com/vaderdemo.html', '_blank');
-        }
-    });
-    $('#btnSeeDemo3').on('click', function () {
-        if ($(siteDemoEmailVal) > 0){
-            window.open('http://spjedi.com/swatch.html', '_blank');
-        }
-    });
+    //var siteDemoEmailVal = $("#txtSiteDemoEmail").val().indexOf("@");
+   // $('#btnSeeDemo2').on('click', function () {
+        //if ($(siteDemoEmailVal) > 0){
+            //window.open('http://spjedi.com/vaderdemo.html', '_blank');
+        //}
+    //});
+    //$('#btnSeeDemo3').on('click', function () {
+        //if ($(siteDemoEmailVal) > 0){
+            //window.open('http://spjedi.com/swatch.html', '_blank');
+        //}
+    //});
     $("#calculate").click(function () {
         $(".cost_calcu").hide();
         $("#webdesign-quote").show();

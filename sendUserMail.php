@@ -1,14 +1,16 @@
-
 <?php
     $to = 'yaroslavkryvda@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
     $subject = 'User\'s email from portfolio pages spjedi.com'; //Загаловок сообщения
     $email = trim($_POST["email"]);
+    //$page = $_SERVER['REQUEST_URI'];
+    $page = $_SERVER['HTTP_REFERER'];
     $message = '
         <html>
             <head>
                 <title>'.$subject.'</title>
             </head>
             <body>
+                <p>From page: '.$page.'</p>
                 <p>User Email is: '.$email.'</p>
             </body>
         </html>'; //Текст нащего сообщения можно использовать HTML теги

@@ -142,8 +142,11 @@
 				<div class="head_hr_bord"><hr/></div>
 				<div class="migration_banner_text">
 					<p>Never miss another deadline. Our SharePoint Project Management solution streamlines the way project managers set up and run their projects. Access relevant files, manage assigned tasks, and track your time, even when you are away from your desk. With automatic project status updates simplify reporting, you can focus on moving projects forward.</p>
+					<p class="mb-0">
+						<button class="btn btn_WEBSITES" type="button" data-toggle="modal" data-target="#myModal" onclick="trackEventaction();">See Instant Demo Site</button>
+					</p>
 				</div>
-				<button class="btn btn_WEBSITES" type="button" data-toggle="modal" data-target="#myModal" onclick="trackEventaction();">See Instant Demo Site</button>
+
 			</div>
 			<div class="home_right_img col-sm-4 col-xs-4 ">
 				<img class="img-responsive" src="assets/img/Yoda_icon.png">
@@ -441,7 +444,6 @@
 	</div>
 </section>
 
-
 <section class="cu-about">
 	<div class="container">
 		<div class="row">
@@ -530,38 +532,64 @@
 		</div>
 	</div>
 </footer>
-<div class="modal fade in" id="myModal" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade in" id="myModal" role="dialog">
+		<div class="modal-dialog">
 		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header"><h4 class="head-title">Get Immediate Access</h4></div>
-			<div class="modal-body">
-				<div class="form-group">
-					<input class="form-control" type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address">
-					<div class="email-icon">
-						<i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
+			<form class="sendUserMail modal-content">
+				<div class="modal-header">
+					<h4 class="head-title">Get Immediate Access</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<input class="form-control" type="email" name="email" id="txtSiteDemoEmail" value="" placeholder="Please supply your email address" required>
+						<div class="email-icon">
+							<i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
+						</div>
 					</div>
 				</div>
-				<div class="btn-group btn-group-lg">
-					<button type="button" class="btn btn-primary pull-left" id="btnSeeDemo" onclick="ShowDemoSite();">See Demo Site</button>
+				<div class="modal-footer">
+					<div class="btn-group">
+						<button type="submit" class="btn btn-primary pull-left" id="btnSeeDemo">See Demo Site</button>
+					</div>
 				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+			</form>
+		</div>
+	</div>
+<!-- Modal for displaying the messages -->
+<div class="modal fade bs-example-modal" id="messageModal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body bg-success">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<!-- The messages container -->
+				<p>Your message was successfully sent!</p>
 			</div>
 		</div>
-
+	</div>
+</div>
+<!-- Modal for displaying the error messages -->
+<div class="modal fade bs-example-modal" id="messageModalError" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body bg-danger">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<!-- The messages container -->
+				<p class="pb-0">Please supply your email address! </p>
+			</div>
+		</div>
 	</div>
 </div>
 	<!-- All the scripts -->
+	<script src="assets/js/sendusermail.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		function ShowDemoSite() {
-			if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
-				window.open('http://spjedi.com/PM', '_blank');
-			}
-			return false;
-		}
+		//function ShowDemoSite() {
+		//	if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
+		//		window.open('http://spjedi.com/PM', '_blank');
+		//	}
+		//	return false;
+		//}
 		function getItemByID(id) {
 			var result = $.grep(imgContents, function (e) { return e.id == id; });
 			if (result.length == 0) {
