@@ -784,6 +784,9 @@
         var scrollToPorfolio = $('.block_get').position().top;
         if(scroll>= (scrollToPorfolio)){
             $('#myModal2').show();
+            if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
+                $('#myModal2').hide();
+            }
         }
         if(scroll>= (scrollToPorfolio + porfolioHeight)){
             $('#myModal2').hide();

@@ -5,16 +5,19 @@ $(".sendUserMail").submit(function (e) { //устанавливаем событ
         url: "sendUserMail.php", //путь до php фаила отправителя
         data: $(this).serialize()
     }).done(function () {
-        $(this).find('input').val();
+        var form = $('.sendUserMail');
+        form.find('input').val();
         $('#messageModal').modal('show');
-        ShowDemoSite();
+        setTimeout(function() {form.closest('.modal').modal('hide');}, 500);
+        setTimeout(function() {$('#messageModal').modal('hide');}, 2000);
+        setTimeout(function() { ShowDemoSite();}, 2500);
     });
     return false;
 });
 function ShowDemoSite() {
     if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
         window.open('http://spjedi.com/project-management.html', '_blank');
-    }else {
+    } else {
         $('#messageModalError').modal('show');
         return false;
     }
