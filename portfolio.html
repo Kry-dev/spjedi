@@ -639,15 +639,39 @@
             </div>
             <div class="modal-footer">
                 <div class="btn-group">
-                    <button type="submit" class="btn btn-primary pull-left" id="btnSeeDemo2">
+                    <a href="/vaderdemo.html" class="btn btn-primary btnSeeDemo" id="btnSeeDemo2">
                         Vader Demo Site
-                    </button>
-                    <button type="submit" class="btn btn-primary pull-left" id="btnSeeDemo3">
+                    </a>
+                    <a href="/swatch.html" class="btn btn-primary btnSeeDemo" id="btnSeeDemo3">
                         Modern Demo Site
-                    </button>
+                    </a>
                 </div>
             </div>
         </form>
+    </div>
+</div>
+<!-- Modal for displaying the messages -->
+<div class="modal fade bs-example-modal" id="messageModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body bg-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- The messages container -->
+                <p>Your message was successfully sent! Thank you we will contact you shortly.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for displaying the error messages -->
+<div class="modal fade bs-example-modal" id="messageModalError" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body bg-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- The messages container -->
+                <p class="pb-0">Please supply your email address! </p>
+            </div>
+        </div>
     </div>
 </div>
 
