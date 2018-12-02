@@ -1,8 +1,8 @@
-$(".sendUserMail").submit(function (e) { //устанавливаем событие отправки для формы
+$(".sendUserMail").submit(function (e) { //event for sending form
     e.preventDefault();
     $.ajax({
-        type: "POST", //Метод отправки
-        url: "sendUserMail.php", //путь до php фаила отправителя
+        type: "POST", //sending method
+        url: "sendUserMail.php", //way to php file of sender
         data: $(this).serialize()
     }).done(function () {
         var form = $('.sendUserMail');
