@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /blog/
+title: SharePoint & Office 365 Developer Help Blog
+description: Get best information about our SharePoint configuration services, migration services and installation services.
+keywords: SharePoint blog, custom SharePoint Development blog, migration services blog, SharePoint migration services blog, SharePoint Development solutions blog
+robots: all, index, follow
+---
+<style> .body {color:black;}
+    .p {
+        color: black;
+    }
+</style>
+<div class="blog-page header-position">
+	<div class="blog-header">
+		<h1 class="text-center">SharePoint Blog</h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+				
+				{% for post in site.posts %}
+					<div class="blog-posts">
+						<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+						<article>{{ post.excerpt }}</article>
+
+						<a href="{{ post.url }}">Continue reading <i class="fa fa-long-arrow-right"></i></a>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

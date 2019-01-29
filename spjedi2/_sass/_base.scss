@@ -1,0 +1,126 @@
+/*** Reset some basic elements ***/
+    body, h1, h2, h3, h4, h5, h6,
+    p, blockquote, pre, hr,
+    dl, dd, ol, ul, figure {
+        margin: 0;
+        padding: 0;
+        border: 0;
+		color:black;
+    }
+
+/*** Basic styling ***/
+    html, body {
+      height: 100%;
+    }
+    body {
+        font-size: $font-size-base;
+        font-weight: 300;
+        color: $text-color;
+        -webkit-text-size-adjust: 100%;
+    }
+    * {
+        font-family: 'Varela Round', sans-serif;
+    }
+
+/*** Typography ***/
+
+    h1, h2, h3, h4, h5, h6, {
+        font-family: $font-family-heading;
+        font-weight: 400;
+    }
+    h1 {
+        font-size: $font-size-h1;
+        @media #{$xs} {
+            font-size: $font-size-h1-mobile;
+        }
+    }
+    h2 {
+        margin: 60px 0;
+        text-align: center;
+    }
+    h4 {
+        margin: 20px 0;
+    }
+    .text-stroke {
+        -webkit-text-stroke: 1px $yellow-color;
+    }
+    .heading-white {
+        color: #fff;
+    }
+
+/****** Links ****/
+    a {
+        color: $link-color;
+        text-decoration: none;
+    }
+
+/*** Images ***/
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+/*** Lists ***/
+    ul, ol {
+        margin-left: 0;
+    }
+
+    li {
+        > ul,
+        > ol {
+             margin-bottom: 0;
+        }
+    }
+
+/*** Buttons ***/
+    .btn {
+        border-radius: 20px;
+        transition: all 0.3s ease-in;
+        width: 230px;
+    }
+    .blue-round-button {
+        color: $blue-color;
+        border: 2px solid $blue-color;
+        &:hover {
+            border-color: $dark-purple-color;
+            color: $dark-purple-color;
+        }
+    }
+    .orange-round-button {
+        color: $orange-color;
+        border: 2px solid $orange-color;
+        &:hover {
+            border-color: $green-color;
+            color: $green-color;
+        }
+    }
+    .buttons-group {
+        margin-top: 30px;
+        .btn {
+            margin: 0 15px;
+            @media #{$xs} {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+
+/*** Styles ***/
+    .green-color {
+        color: $green-color;
+    }
+    .purple-color {
+        color: $purple-color;
+    }
+    .blue-color {
+        color: $blue-color;
+    }
+    .yellow-color {
+        color: $yellow-color;
+    }
+    .dark-purple-color {
+        color: $dark-purple-color;
+    }
+    .z-index {
+        z-index: 100;
+    }

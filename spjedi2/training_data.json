@@ -1,0 +1,15 @@
+---
+---
+
+[
+  {% for training in site.data.training %}
+    {
+      "title": "{{ training.title }}",
+      "date": "{{ training.date }}",
+      "time": "{{ training.time }}",
+      "description": "{{ training.description }}",
+      "video": "{{ training.video }}",
+      "document": "{{ training.document }}"
+    }{% if forloop.last != true %},{% endif %}
+  {% endfor %}
+]

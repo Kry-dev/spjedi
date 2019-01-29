@@ -1,0 +1,99 @@
+- name: SharePoint Online
+  questions:
+  - name: How long does it take to move from On-Premise to Online?
+    answer: > 
+     Generally a non-heavily customized environment the migration should take about 4-6 weeks including testing. 
+     If you are in a SharePoint 2013 environment the migration can be even faster. 
+     Google Apps migration is actually about the same amount of time as SharePoint to SharePoint with our team. 
+
+  - name: What is the normal cost to migrate from On-Premise?
+    answer: > 
+     Migrations start out around $4,500. Many companies start out migrations around $10,000 but the reality is
+     they overcharge and take up more of the companies time talking in large groups. We have a team that is a 
+     3 person contact approach: 1. Business Analyst/PM 2. Lead Developer 3. Testing Coordinator. We provide a 
+     project portal so you are able to see all tasks at all times to avoid multiple weekly meetings unless requested. 
+
+  - name: Can I have a custom login page and Single Sign-On like On-Premise?
+    answer: > 
+     Absolutely! Having a custom login page is around 1 hour of work. <a href="https://blogs.office.com/2015/02/17/sign-page-branding-cloud-user-self-service-password-reset-office-365/" title="UserGuide">User Guide</a>
+     Single Sign-On is a bit harder, but still under two days of work. This alleviates user frustration while 
+     using the site and encouraging adoption of the platform 
+
+  - name: Are there templates out there to make SharePoint look better?
+    answer: > 
+     Of course!!! There are plenty of templates that you can customize until you are blue in the face.
+     Our Five levls of templates come to you customized after we provide you a sheet for your must have and 
+     do the customizations for you. Our <a href="http://spjedi.com/Intranet" title="Branding">Branding</a> packages range
+     From Mobile Ready to Fully Customized for Large Enterprise we can provide the files within 10 days max.
+
+- name: SharePoint On-Premise
+  questions:
+  - name: Why should I upgrade?
+    answer: > 
+     The support for older versions becomes lower and lower each day. Security patches are what helps keep your
+     environment safe from attacks and older versions have smaller patches or larger holes for malware. Each release 
+     comes with more tools to help with user adoption and integration into SQL BI Reporting, Office Suite, and third 
+     party tools. Why is the easy answer; when is sometimes the harder. 
+
+  - name: When should I upgrade?
+    answer: > 
+     If you are on an older version 2003 (impressive if you are) 2007/2010 the best time to upgrade is now 
+     SharePoint 2016 won't be out until Q3 of 2016. It will also offer an in place upgrade with zero downtime. 
+     Making the move now won't slow that down and provide you access instantly to tools your department didn't have 
+     before. 2013 had a 32% higher adoption rate than any of the past versions. The time is now to upgrade.
+     A common misconception is that you can't move from one version without going to the other. If you approach the 
+     move with content then customizations then you can jump 2010. You also have the ability to move directly from any 
+     On-Premise version to Office 365.
+
+  - name: Is it better to install SharePoint by Powershell or the GUI?
+    answer: > 
+     SharePoint Wizards are no way as good as SharePoint Jedi's.It is always recommended to complete this by Powershell. You have more control on the outcome through Powershell such 
+     as database naming conventions. You can install all servers in multiple tiers a lot faster and with less irregularities. 
+     We have all Powershell scripts for each type of install. Please reach out if you need any assistance. 
+
+  - name: Is it safe to do a two server installation?
+    answer: > 
+     Doing a two server instance is safe for a very small company. The recommended structure is a Three Tier system. Our <a href="http://spjedi.com/blog" title="blog">blog</a>
+     covers this process. If your company grows or even a server goes down it is hard to make your environment grow in this type
+     of setup. IIS is the hardest portion of this setup. We offer free assistance on installs if you have any questions. Our chat
+     team are our developers. They are all United States based and can help get SharePoint underway. 
+
+- name: Technology Assistance
+  questions:
+  - name: What are the best ways to keep technology costs down?
+    answer: > 
+     In General you should have someone in place that can break down your cost of each user (computer, desk, software assigned, payroll, etc.)
+     This is usually a non-technical person to avoid too biasness. The easiest way to have this is an Asset Management solution that captures
+     computer, the software, and who it is assigned to. On average a company of 200 people spends over $8,000 on redundant licenses that each user
+     is not always using. Asset management allows an inventory to inquire on the use of each software as it relates to the user and their role.
+
+  - name: What is the difference between User Cals and Device Cals?
+    answer: > 
+     Per Device means you have a license/CAL per device connecting to a Microsoft Windows Server/Application.
+     Per User means that for example even if you have 20 devices and 300 users, you still would need 300 CALs if you were going to do Per User and each user had their own account. 
+     For example, if I have 50 office PCs connected to a server and I have 100 users working two shifts and sharing use of the 50 PCs then all I need is 50 device CALS. 
+     But if the reverse was true and I had 100 PCs and I had only one shift of 50 workers using those 100 computers then all I need is 50 user CALS. 
+     
+  - name: Do I need to put every patch released in place right away?
+    answer: > 
+     It is always recommended by Microsoft to put them in place immediately, but it is even more important to understand what is in that release. 
+     Always check microsofts update site first. 
+     
+- name: Migration
+  questions:
+  - name: What is the average cost to Migrate Exchange to 365?
+    answer: > 
+     Coming Soon
+
+  - name: Do alias accounts need licenses for Exchange?
+    answer: > 
+     Coming Soon
+
+  - name: What is the best product to use for migration?
+    answer: > 
+     Coming Soon
+
+  - name: Do I need a Subject Matter Expert to migrate?
+    answer: > 
+     Coming Soon
+

@@ -1,0 +1,67 @@
+---
+layout: default
+permalink: /training/
+title: Training center
+---
+<div class="training-page header-position">
+  <div class="training-background">
+    <h1 class="text-center" data-sr="wait 0.1s, scale up 50%, over 0.6s" style="font-size: 40pt;">Microsoft Training Center</h1>
+      <h1 class="text-center" data-sr="wait 0.1s, scale up 50%, over 0.6s">Weekly Free SharePoint Training</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-8 col-xs-12" id="week-container"></div>
+        <h4 style="color: #F68E55; text-align: center;"> Each week we will hold a training session covering the best practices and examples of SharePoint. This is not going to be a deep technical review and everyone is welcome. </h4>
+      {% raw %}
+      <script type="text/x-jsrender" id="week-training-template">
+        <div class="week-training">
+          <h2>{{:heading}}</h2>
+          <p>Date: <small>{{:title}}</small></p>
+          <p>Date: <small>{{:date}}</small></p>  
+          <p>Time: <small>{{:time}}</small></p>
+          <p>{{:description}}</p>
+        </div>
+      </script>
+      {% endraw %}
+
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div><a class="blue-button button-styles btn" href="mailto:info@spjedi.com?Subject=SharePoint%20Training%20Schedule&body=I would like to sign up for the free training at Wednesday at 11AM EST">Get Invite For<br>This Weeks Trainings</a></div>
+           ﻿<iframe src="http://files.quizsnack.com/iframe/embed.html?hash=qhplgi9h&width=250&height=370&wmode=transparent&t=1456524075&width=400px&height=370" width="100%" height="370" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+    </div>
+
+    <div class="previous-events" id="previous-events-container">
+      <h2 class="text-center">Previous Training with Document</h2>
+      <div class="header-line"></div>
+    </div>
+
+    {% raw %}
+    <script type="text/x-jsrender" id="previous-events-template">
+      <div class="row">
+        {{if video}}
+        <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="{{:video}}"></iframe>
+          </div>
+        </div>
+        {{/if}}
+
+        <div class="col-md-7 col-sm-7 col-xs-12">
+          <div class="week-training">
+            <h3>{{:title}}</h3>
+            <p>Date: <small>{{:date}}</small></p>  
+            <p>Time: <small>{{:time}}</small></p>
+            <p>{{:description}}</p>
+            {{if document}}
+              <a href="{{:document}}" target="_blank">The Training Notes</a>
+            {{/if}}
+          </div>
+        </div>
+      </div>      
+    </script>
+    {% endraw %}
+
+  </div>
+
+
+</div>

@@ -1,0 +1,27 @@
+# Site settings
+title: SPJedi Elevating Expectations
+email: info@spjedi.com
+description: SP Jedi's provides SharePoint builds, Top-Notch Websites, Operational Improvement, and SharePoint Migration. Office 365 Installation and Migration
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://spjedi.com" # the base hostname & protocol for your site
+
+# Payments
+paymentsServer: https://boiling-waters-2615.herokuapp.com
+defaultImage: //spjedi.com/img/logo.png
+# stripePublicKey: pk_test_5ewmvLjavRkbQK9vQdto4GB9 # this one is for testing
+stripePublicKey: pk_live_ImQYcokePItZe0N1YeaHu9eB # this one is for live payments
+
+# Build settings
+markdown: kramdown
+gems: ["jekyll-sitemap"]
+
+collections:
+  portfolio:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio

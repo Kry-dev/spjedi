@@ -1,0 +1,67 @@
+﻿<head>
+<head>
+    <meta charset="utf-8">
+    <meta name="msvalidate.01" content="6A47F5EAB911EE2F84C1F8F5FBF2448C" />
+    <!--Google Webmaster Tools -->
+    <!-- Google Tag Manager -->
+    <script>
+(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KDPGZ63');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="google-site-verification" content="VQta2HbHMMdP9TAS8pX_q9cZ7rrLCdmYI7h0A9llQ-0" />
+    <meta http-equiv=" x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+
+    {% if page.url %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+
+    <title>{{ page.title }}</title>
+    <link type="img/x-icon" rel="shortcut icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/css/immersive-slider.css">
+    <link rel="stylesheet" href="/css/cost-slider.css">
+    <link rel="stylesheet" href="/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="/css/bootstrap-vertical-tabs.css">
+    <link href='/css/immersive-slider.css' rel='stylesheet' >
+    <link href='/css/owl.carousel.css' rel='stylesheet' type='text/css'>
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-59720216-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script>
+        var paymentSettings = {
+            STRIPE_PUBLIC_KEY: '{{ site.stripePublicKey }}',
+            DEFAULT_IMAGE_URL: '{{ site.defaultImage }}',
+            HEROKU_SERVER_URL: '{{ site.paymentsServer }}'
+        };
+    </script>
+    <!-- End Google Analytics -->
+   
+</head>

@@ -1,0 +1,12 @@
+- image: /img/iplogo.PNG
+  description: Interior Plantscapes
+  sku: 031
+  price: 6650
+- image: /img/clubquarters.png
+  description: ClubQuarters
+  sku: 035
+  price: 6650
+- image: /img/ndcp.png
+  description: Project Portal
+  sku: 015
+  price: 3500

@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow: 
+User-agent: MSNBot
+Disallow: 
+User-agent: Slurp
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: http://spjedi.com/sitemap.xml

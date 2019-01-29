@@ -1,0 +1,253 @@
+
+
+
+@media screen and (max-width: 1166px) and (min-width: 1024px) {
+
+	#banner{ height: 247px; min-height: auto; }
+	
+	#banner .nav-menu nav li a{ font-size: 12px; padding: 10px 6px;}
+
+#banner .logo{ width: 133px; margin-top: 50px;}
+#banner .logo a img{ width: 100%;}
+
+
+	.slider_site{ padding: 10px; }
+	.slider_site .slider_text p{ font-size: 12px; line-height: 16px; }
+
+.slider_site .w3-center{ margin-bottom: 8px; }
+.slider_site .w3-center button{ padding: 2px 6px;}
+.slider_site .slider_text h2{ margin: 10px 0 2px; }
+
+ 
+
+	.people_finder{ padding: 18px 10px }
+	.peopel_service{ padding:5px; }
+	.peopel_service ul li{ width: 32%; }
+	.peopel_service ul li span{ font-size: 11px; }
+	.peopel_service ul li:last-child{ margin-: 0; }
+	
+.survey_box .survey_detail p{ font-size: 12px }
+
+
+.social_list li .social_user_img{ width: 51px; }
+.social_list li .social_user_comm{ width: 75%; }
+.with-nav-tabs.panel-primary .nav-tabs > li > a, .with-nav-tabs.panel-primary .nav-tabs > li > a:hover, .with-nav-tabs.panel-primary .nav-tabs > li > a:focus{ font-size: 11px; font-weight: 600; }
+.survey_events_3box .nav>li>a{ padding: 10px 12px;}
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 854px) {
+
+#banner .logo{ margin:25px 0 0 35px;  width: 95px;}
+#banner .logo a img{ width: 100%; }
+
+#banner .nav-menu nav li a{ padding: 4px; font-size: 12px; }
+#banner .nav-menu nav li a:hover{ background: none; }
+#banner .nav-menu nav li ul.sub a{ font-size: 11px; padding: 5px 10px; }
+
+#banner .navbar-form{ width: 90px; }
+.navbar-form .form-control{ width: 100%; }
+
+.people_finder{ padding: 18px 10px}
+.people_finder .people_detail span{ font-size: 18px;}
+
+
+.peopel_service ul li{ width: 100%; margin-bottom: 5px; }
+.peopelser_icon{ width: 25px; float: left; margin-right: 15px; }
+.peopelser_icon img{ width: 100%; }
+
+
+.peopel_service ul li span{ text-align: left; }
+
+.survey_detail ul{ margin-bottom: 20px; }
+.survey_box .survey_detail .survey_img{ margin:25px auto; display: table; width: 80%; }
+.survey_box .survey_detail .survey_img img{ width: 100%}
+
+
+.tab_social .nav-tabs li{ width: auto; }
+.tab_social .nav-tabs li a{ font-size: 11px; font-weight: 600; padding: 10px 2px;}
+
+.social_list li:last-child{ display: none; }
+
+.social_list li .social_user_img{ width: 50px; }
+.social_list li .social_user_comm{ width: 100%; margin: 0 }
+
+}
+
+
+
+@media screen and (max-width: 853px) and (min-width: 768px) {
+#banner .logo{ margin:15px 0 0 35px; width: 75px; }
+#banner .logo a img{ width: 100%; }
+
+
+#banner .nav-menu nav li a{ font-size: 11px; padding: 10px 5px}
+#banner .nav-menu nav li a:hover{ background: none; }
+#banner .nav-menu nav li ul.sub a{ padding: 5px 10px; }
+
+
+
+#banner .navbar-form{ width: 90px; }
+.navbar-form .form-control{ width: 100%; }
+
+
+.people_finder .people_detail span{ font-size: 18px; }
+
+.people_finder{ padding: 15px 10px }
+
+
+
+.peopel_service ul li{ width: 100%; margin-bottom: 5px; }
+.peopelser_icon{ width: 25px; float: left; margin-right: 15px; }
+.peopelser_icon img{ width: 100%; }
+
+.peopel_service ul li span{ text-align: left; }
+
+
+.survey_box .survey_detail .survey_img{ margin:25px auto; display: table; width: 80%; }
+.survey_box .survey_detail .survey_img img{ width: 100%}
+
+.survey_detail ul{ margin-bottom: 20px; }
+
+.social_list li .social_user_img{ width: 50px; margin-bottom: 22px}
+.social_list li .social_user_comm{ width: 100%; margin: 0 }
+.social_list li:last-child{ display: none; }
+
+.tab_social .nav-tabs li{ width: auto; }
+.tab_social .nav-tabs li a{ font-size: 11px; font-weight: 600; padding: 2px; background:none;}
+
+.with-nav-tabs.panel-primary .nav-tabs > li > a, .with-nav-tabs.panel-primary .nav-tabs > li > a:hover, .with-nav-tabs.panel-primary .nav-tabs > li > a:focus{ background: none; }
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a, .with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover, .with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus{ background: none; color: #333; }
+}
+
+
+
+@media screen and (max-width: 767px) and (min-width: 640px) {
+#banner .nav-menu{ position: absolute; right: 0; top: 0; z-index: 999}
+#banner .nav-menu nav li ul.sub{ z-index: 999; background: #23556b }
+
+.peopel_service{ width: 100%; }
+.peopel_service ul li{ width: 33%; margin-right: 0.50% }
+.peopel_service ul li:last-child{ margin: 0; }
+
+.social_list li .social_user_img{ width: 50px; }
+.social_list li .social_user_comm{ width: 80%;}
+}
+
+
+
+@media screen and (max-width: 639px) and (min-width: 480px) {
+
+#banner .logo{ margin:50px 0 0 35px; width: 90px; }
+#banner .logo a img{ width: 100%; }
+
+#banner .nav-menu{ position: absolute; right: 0; top: 0; z-index: 999}
+#banner .nav-menu nav li ul.sub{ z-index: 999; background: #23556b }
+
+
+.peopel_service{ width: 100%; }
+.peopel_service ul li{ width: 33%; margin-right: 0.50% }
+.peopel_service ul li:last-child{ margin: 0; }
+
+.social_list li .social_user_img{ width: 50px; }
+.social_list li .social_user_comm{ width: 80%;}
+
+
+}
+
+
+@media screen and (max-width: 470px) and (min-width: 320px) {
+
+#banner{ height: 113px; min-height: 100%; }
+#banner .logo{ margin:7px 0 0 25px; width: 75px; }
+#banner .logo a img{ width: 100%; }
+
+#banner .nav-menu{ position: absolute; right: 0; top: 0; z-index: 999}
+#banner .nav-menu nav li ul.sub{ z-index: 999; background: #23556b;  }
+
+
+#slider h3{ font-size: 18px; }
+
+.peopel_service ul li span{ font-size: 11px; }
+
+.tab_social .nav-tabs li{ width: auto; }
+.tab_social .nav > li > a {text-align: center; font-size: 12px; padding: 10px 10px; }
+
+
+	.footer_help ul { width: 50%; display:table; margin: 0 auto }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen (min-width: 992px) and (max-width: 1199px) {
+	header .nav-menu nav li a { padding: 10px 12px; font-size: 13px; }
+	.peopel_service ul li { width: 32.1%; padding: 4px; }
+	.nav-tabs > li > a { padding: 10px 10px; text-align: center; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	header .logo { width: 20%; }
+	header .logo img { width: 100%; }
+	header .nav-menu { width: 80%; }
+	header .nav-menu nav li a { padding: 10px 7px; font-size: 13px; }
+	header .nav-menu .navbar-collapse { padding-right: 6px; padding-left: 6px; }
+	header .nav-menu nav .navbar-form { width: 23%; }
+	header .nav-menu nav .navbar-form input { width: 100%; }
+	.people_finder .people_icon { width: 30%; }
+	.people_finder .people_detail { width: 65%; }
+
+
+
+	footer { padding: 15px; }
+	.slider_site .slider_img { height: 90px; }
+
+}
+
+@media screen and (max-width: 767px) {
+	header .logo { float: none; margin: 0 auto; text-align: center; }
+	.navbar-toggle .icon-bar { background-color: #fff; }
+	header .nav-menu nav { background-color: transparent; z-index: 9;}
+	header .nav-menu { width: 95%; position: absolute; top: 10px; }
+	header .nav-menu nav .navbar-form { width: 100%; }
+	header .nav-menu nav li a::before, header .nav-menu nav li a::after { display: none; }
+	header .nav-menu nav li ul.sub { display: block; position: relative; }
+	header .nav-menu nav .navbar-toggle { background-color: #194d64; }
+	header .nav-menu nav .navbar-collapse { background-color: #194d64; border-radius: 5px; border: 0 none; }
+	.slider_site .slider_text, .slider_site .slider_img { height: auto; }
+	.people_finder .people_icon { width: 15%; }
+	.people_finder .people_detail { width: 81%; }
+	.peopel_service ul { width: 100%; }
+
+	.footer_help, .footer_stock { text-align: center; }
+
+	footer .footer_help li { width: 100%; }
+	
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+	.people_finder .people_detail { width: 70%;}
+	.people_finder .people_icon { width: 25%;}
+}
+
+@media screen and (max-width: 360px) {
+	.peopel_service ul li { width: 32.1%;}
+	.social_list li .social_user_comm { width: 76%; margin-left: 4%; }
+	.tab_social .panel-body .tab-content { padding: 15px; }
+}

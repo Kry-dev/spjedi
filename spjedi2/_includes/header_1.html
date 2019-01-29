@@ -1,0 +1,112 @@
+<header class="site-header site-header-1">
+
+<!-- 	<div class="top-header hidden-xs">
+		<div class="clearfix container-fluid">
+			<div class="pull-left top-info">
+				<a href="mailto:info@spjedi.com">Email : info@spjedi.com</a>
+				<a href="tel:(602)463-4645"> Call Us : (602) 463-4645</a>
+			</div>
+			<div class="social-icons pull-right">
+				<ul>
+	               <a href="#" title="Facebook"><li><i class="fa fa-facebook"></i></li></a>
+	               <a href="#" title="Twitter"><li><i class="fa fa-twitter"></i></li></a>
+	               <a href="#" title="Dribble"><li><i class="fa fa-dribbble"></i></li></a>
+	               <a href="#" title="LinkedIn"><li><i class="fa fa-linkedin"></i></li></a>
+	               <a href="#" title="Rss"><li><i class="fa fa-rss"></i></li></a>
+	            </ul>
+			</div>
+		</div>
+	</div> -->
+
+
+	<div class="main-header main-header-1">
+		<div class="container-fluid">
+			<!-- Logo and menu -->
+			<div class="header-2">
+				<nav role="navigation" class="navbar navbar-fixed-top row">
+					<div class="col-md-3 col-sm-3">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand navbar-left logo-img img-responsive" href="/" alt="pixma"><img src="/img/logo.png" class="img-responsive"></a>
+						</div>
+					</div>
+
+					<div class="col-md-9 col-sm-9"> 
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right main-menu visible-xs">
+                                <li><a href="/portfolio">Website Development</a></li>
+                                <li><a href="/HR">HR Portal</a></li>
+                                <li><a href="/Intranet">Branding/Intranet</a></li>
+                                <li><a href="/project">Project Management</a></li>
+                                <li><a href="/remote_support">Remote Support</a></li>
+                                <li><a href="/migration">Migration Services</a></li>
+                                <li><a href="/six_sigma">Operations Assistance</a></li>
+                                <li><a href="/about">About us</a></li>
+                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/training">Training Center</a></li>
+                                <li><a href="/payment-portal">Payment Portal</a></li>
+                                <li><a href="/contact">Contact us</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right main-menu clearfix hidden-xs">
+                                <li>
+                                    <a>SharePoint Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/migration">Migration Services</a></li>
+                                        <li><a href="/remote_support">Remote Support</a></li>
+                                        <!--<li><a href="/custom">Custom Work</a></li>-->
+                                        <li><a href="/project">Project Management</a></li>
+                                        <li><a href="/Intranet">Branding Hub</a></li>
+                                        <li><a href="/HR">HR Portal</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/portfolio">Website Development</a>
+                                </li>
+                                <li>
+                                    <a href="/six_sigma">Operations Assistance</a>
+                                </li>
+                                <li>
+                                    <a>Resource Center</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/training">Training Center</a></li>
+                                        <li><a href="/faq">Frequently Asked Questions</a></li>
+                                        <li><a href="/blog">Articles</a></li>
+                                        <li><a href="/payment-portal">Payment Portal</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/about">About us</a>
+                                </li>
+                                <li>
+                                    <a href="/contact">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+				</nav>
+			</div>  
+			<!-- End of menu bar -->
+		</div> <!-- End of container-fluid -->
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $.ajax({
+                url: "http://spjedi-visitors.azurewebsites.net/Spjedi_Vs.asmx/SaveVistorDetails",
+                type: "POST",
+                contentType: "application/json",
+                dataType: "jsonp",
+                success: function (result) {
+                },
+            });
+        });
+
+    </script>
+</header>

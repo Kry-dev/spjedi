@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class=" header-position portfolio-post">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center">
+				<h1 class="post-title">{{ page.title }}</h1>
+				<article class="post-content">
+					{{ content }}
+				</article>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="portfolio-image">
+	<div><img src="{{ page.image }}"></div>
+	{% if page.website %}<div><a href="http://{{ page.website}}"  target="_blank" class="btn blue-button">View Website</a></div>{% endif %}
+</div> 

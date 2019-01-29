@@ -1,0 +1,24 @@
+- image: /img/jedi-logo.png
+  description: Branding Package 1
+  price: 750
+  sku: sku_002
+- image: /img/jedi-logo.png
+  description: Branding Package 2
+  price: 1050
+  sku: sku_003
+- image: /img/jedi-logo.png
+  description: Bootstrap Package 1
+  price: 1650
+  sku: sku_004
+- image: /img/jedi-logo.png
+  description: Bootstrap Package 2
+  price: 2050
+  sku: sku_005
+- image: /img/jedi-logo.png
+  description: Project Portal (base option only)
+  price: 2050
+  sku: sku_006
+- image: /img/jedi-logo.png
+  description: HR Portal (base option only)
+  price: 1450
+  sku: sku_007

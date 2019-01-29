@@ -1,6 +1,5 @@
 <?php
-    /*$to = "yaroslavkryvda@gmail.com"; // this is your Email address*/
-    $to = "info@spjedi.com"; // this is your Email address
+    $to = "info@spjedi.com"; // this is your Email address*/
     $email = $_POST['email'];// this is the sender's Email address
     $from = $email; // this is the sender's Email address
     $page = $_SERVER["HTTP_REFERER"];

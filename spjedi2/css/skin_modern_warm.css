@@ -1,0 +1,22 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;	
+}
+
+/* CSS Document */
+
+/* -------- lighbox description window  ---------- */
+
+
+.comboboxSelectorText{
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:13px !important;
+	padding: 6px !important;
+}
+
+.comboboxButtonText{
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:13px !important;
+	padding: 6px !important;
+}

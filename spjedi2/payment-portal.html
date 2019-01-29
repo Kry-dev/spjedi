@@ -1,0 +1,57 @@
+---
+layout: default
+permalink: /payment-portal/
+title: Payment Portal
+---
+<div class="payment-portal header-position">
+    <div class="payment-background">
+        <h1 class="text-center" data-sr="wait 0.1s, scale up 50%, over 0.6s">Welcome to the Payment Portal<br>A document will be immediately emaild to you for customization</h1>
+    </div>
+
+    <div class="container box-shadow">
+        <div class="row">
+            {% for payment in site.data.payment %}
+            <div class="col-md-4 col-sm-6 col-xs-12 payment-box">
+                <div class="text-center">
+                    <img src="{{ payment.image | prepend: site.baseurl }}">
+                    <p>{{ payment.description }}</p>
+                    <button class="paymentButton btn btn-primary"
+                            data-name="Packages"
+                            data-image="/img/jedi.png"
+                            data-sku="{{ payment.sku }}"
+                            data-amount="{{ payment.price | times: 100 }}"
+                            data-description="Base Product Package">
+                        Buy now {{ payment.price}}$
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="text-center invoice-heading payment-background ">
+        <h2>Customer Invoices</h2>
+        <h3>Existing Customers Only </h3>
+    </div>
+
+    <div class="container box-shadow">
+        <div class="row">
+            {% for invoice in site.data.invoice %}
+            <div class="col-md-4 col-sm-6 col-xs-12 payment-box">
+                <div class="text-center">
+                    <img src="{{ invoice.image | prepend: site.baseurl }}">
+                    <p>{{ invoice.description }}</p>
+                    <button class="paymentButton btn btn-primary"
+                            data-name="Customer Invoice"
+                            data-image="/img/jedi.png"
+                            data-sku="{{ invoice.sku }}"
+                            data-amount="{{ invoice.price | times: 100 }}"
+                            data-description="Customer Invoice">
+                        Pay Now
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

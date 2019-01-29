@@ -1,0 +1,64 @@
+---
+layout: default
+permalink: /faq/
+title: FAQ
+description: Get your SharePoint On-premise, migration, technology assistance by visiting our FAQ page. 
+keywords: SharePoint Online, SharePoint On-premise, migration, technology assistance, FAQ , SharePoint FAQ
+robots: all, index, follow
+---
+<div class="faq-page header-position">
+	<div class="faq-background">
+		<h1 class="text-center" data-sr="wait 0.1s, scale up 50%, over 0.6s">Frequently Asked Questions</h1>
+	</div>
+	
+	<div class="container">
+		<div class="faq-box row">
+			<div class="col-md-4 col-sm-5 col-xs-12">
+				<div class="faq-headers">
+					<h4>Helps & FAQs</h4>
+					<ul class="nav nav-stacked" role="tablist">
+						{% for heading in site.data.faq %}
+							<li role="presentation" class="{% if forloop.index == 1  %} active {% endif %}">
+								<a href="#heading-{{ forloop.index }}" aria-controls="heading-{{ forloop.index }}" role="tab" data-toggle="tab">
+									<h5>{{ heading.name }}</h5>
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-8 col-sm-7  col-xs-12">
+				<div class="panel-heading">
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						{% for heading in site.data.faq %}
+
+							{% assign hid = forloop.index %}
+
+							<div role="tabpanel" class="tab-pane {% if forloop.index == 1  %} active {% endif %}" id="heading-{{ forloop.index }}">
+								<h3>{{ heading.name }}</h3>
+								<ol>
+									{% for question in heading.questions %}
+										<li><a href="#h{{ hid }}qa{{ forloop.index }}"><h4 class="panel-title">{{ question.name }}</h4></a></li>
+									{% endfor %}
+								</ol>
+								<div class="row">
+									{% for question in heading.questions %}
+										<div id="h{{ hid }}qa{{ forloop.index }}">
+											<h5 class="panel-title">{{ question.name }}</h5>
+											<div class="panel-body">
+												{{ question.answer }}
+											</div>
+										</div>
+									{% endfor %}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,350 @@
+---
+layout: default
+permalink: /project/
+title: SharePoint Project Portal | SharePoint Invoice | SharePoint Custom | Office 365
+description: Never miss another deadline. Our SharePoint Project Management solution streamlines the way project managers set up and run their projects. Access relevant files, manage assigned tasks, and track your time, even when you are away from your desk.
+keywords: Office 365 Migration, SharePoint project portal, SharePoint Templates, SharePoint Design, SharePoint Branding, SharePoint solution, SharePoint Team site Template, SharePoint Development phoenix, SharePoint phoenix, Microsoft Project,
+robots: all, index, follow
+---
+<style type="text/css">
+    .is-bg-overflow.bounce .is-background {
+        display: none !important;
+    }
+
+    .slider .site_slider {
+        position: relative;
+    }
+
+    .site_slider .slider_center {
+        position: absolute;
+        top: 1%;
+    }
+
+    .slider_center .heading_slider {
+        margin: 20px auto 10px;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/pmmain.css">
+<link rel="shortcut icon" type="image/x-icon" href="/images/project-management.png" />
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <h4 class="head-title"><i></i><span>Get Immediate Access</span><i></i></h4>
+                <div class="email_filed">
+                    <input type="email" name="" id="txtSiteDemoEmail" value="" placeholder="Email address">
+                    <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
+                </div>
+                <button type="button" class="btn full-btn" id="btnSeeDemo" onclick="ShowDemoSite();">See Demo Site</button>
+                <!--onclick=" window.open('http://spjedi.com/PM','_blank')"-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left remove-radi" data-dismiss="modal">Close</button>
+                 </div>
+        </div>
+
+    </div>
+</div>
+<section class="slider header-position">
+    <div class="site_slider">
+        <img src="/images/slider4.png" style="min-height:400px;">
+        <div class="caption header slider_center" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+            <h1 style="color:white;">Project Management HUB</h1>
+            <hr class="heading_slider" />
+            <div class="caption slider_sub slider_text" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">Never miss another deadline. Our SharePoint Project Management solution streamlines the way project managers set up and run their projects. Access relevant files, manage assigned tasks, and track your time, even when you are away from your desk. With automatic project status updates simplify reporting, you can focus on moving projects forward. </div>
+        </div>
+        <script type="text/javascript">
+            function trackEventaction() {
+                _gaq.push(['_trackEvent', 'Project', 'Click', 'http://spjedi.com/project/', 2, true]);
+            }
+        </script>
+        <div class="seedemo_btn">
+            <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"><button type="button" class="btn-seedemo" data-toggle="modal" data-target="#myModal" onclick="trackEventaction();">See Instant Demo <span>Site</span></button></div>
+            <!--<div class="caption sub slider_center" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"><a href="mailto:info@spjedi.com?subject=Branding%20Mockup%20Request&body =During business hours we respond within two hours">Demo Site Access</a></div>
+        --></div>
+    </div>
+</section>
+<section style="background-color:black;">
+    <script type="text/javascript">
+       
+        function ShowDemoSite() {
+            if ($("#txtSiteDemoEmail").val().indexOf("@") > 0) {
+                 window.open('http://spjedi.com/PM', '_blank');
+            }
+            return false;
+        }
+
+        function getItemByID(id) {
+            var result = $.grep(imgContents, function (e) { return e.id == id; });
+            if (result.length == 0) {
+
+            } else if (result.length == 1) {
+                return result[0].description;
+            } else {
+                return result[0].description;
+            }
+        }
+
+
+    </script>
+    </head>
+    <script>
+
+        $("#btnSeeDemo").click(function (e) {
+
+
+
+
+            var $email = $("#txtSiteDemoEmail");
+
+
+
+
+            $.ajax({
+                type: "POST",
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                data: {
+                    'key': 'qUnNKSqipOc7_rXIySQLFw',
+                    'message': {
+                        'from_email': 'info@spjedi.com',
+                        'from_name': $email.val(),
+                        'headers': {
+                            'Reply-To': $email.val()
+                        },
+                        'subject': 'Project Portal Demo Site',
+                        'text': 'Text- I got instant access to the slim site  From Email : ' + $email.val(),
+                        'to': [
+                            {
+                                'email': 'info@spjedi.com',
+                                'name': 'Jed Elliott',
+                                'type': 'to'
+                            }
+                        ]
+                    }
+                }
+            })
+            .done(function (response) {
+
+
+                $email.val('');
+
+
+                $('.status-message').addClass('hidden');
+                $('.status-message.text-success').removeClass('hidden');
+            })
+            .fail(function (response) {
+                $('.status-message').addClass('hidden');
+                $('.status-message.text-danger').removeClass('hidden');
+            });
+        });
+
+    </script>
+    <link rel="stylesheet" href="/css/productstyle.css" type="text/css" media="screen">
+    <script type="text/javascript">
+
+        function SetFirstImg(ent) {
+            //var scroll_pos = (200);
+            //$('html, body').animate({ scrollTop: (scroll_pos) }, '6000');
+            // $("html, body").animate({ scrollTop: 0 }, "slow");
+            // var img = $("#" + ent).find(".img_sub").eq(0).attr('src');
+
+            //  $(".mainImg").attr('src', img);
+
+        }
+
+
+        $(function () {
+            $('.img_sub').click(function () {
+                var img = $(this).attr('src');
+                var id = $(this).attr('id');
+                $('.big' + id).attr('src', img);
+                $('.sub_right_img').removeClass("myClass");
+                $(this).closest('div').addClass("myClass");
+                //$('.img_sub').find('.sub_right_img').addClass("myClass");
+            });
+            $('.ui-tabs-nav-item').click(function () {
+
+                $('.ui-tabs-nav-item').removeClass("ui-tabs-selected");
+                $(this).closest('li').addClass("ui-tabs-selected");
+
+            });
+
+
+        });
+
+
+
+    </script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery2-ui.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#featured").tabs({ fx: { opacity: "toggle" } }).tabs("rotate", 5000, true);
+            $("#featured").hover(
+            function () {
+                $("#featured").tabs("rotate", 0, true);
+            },
+            function () {
+                $("#featured").tabs("rotate", 80000000, true);
+            }
+            );
+
+
+        });
+    </script>
+    <section id="content">
+        <div class="bg-top">
+            <div class="bg-top-2">
+                <div class="bg">
+                    <div class="bg-top-shadow">
+                        <div class="main">
+                            <div class="gallery p3">
+                                <div class="wrapper indent-bot">
+                                    <div id="gallery" class="content">
+                                        <div class="wrapper">
+                                            <div class="slideshow-container">
+                                                <div id="slideshow" class="slideshow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="thumbs" class="navigation">
+                                        <ul class="thumbs noscript">
+                                            <li>
+                                                <a class="thumb" href="/images/project/Project_Full.jpg" title=""> <img src="/images/project/Project_thumbnail.jpg" alt="" /><span></span> </a>
+                                            </li>
+                                            <li>
+                                                <a class="thumb" href="/images/project/Proj Starter_Full.jpg" title=""> <img src="/images/project/Proj Starter_Thumbnail.jpg" alt="" /> <span></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="thumb" href="/images/project/Mellon Farm_Full.jpg" title=""> <img src="/images/project/Mellon Farm_Thumbnail.jpg" alt="" /> <span></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="thumb" href="/images/project/Premise One_Full.jpg" title=""> <img src="/images/project/Premise One_Thumbnail.jpg" alt="" /> <span></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="thumb" href="/images/project/Premise One Team_Full.jpg" title=""> <img src="/images/project/Premise One Team_Thumbnail.jpg" alt="" /> <span></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="thumb" href="/images/project/RM_Full.jpg" title=""> <img src="/images/project/RM_Thumbnail.jpg" alt="" /> <span></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="thumb" href="/images/project/Procurement Req_Full.jpg" title=""> <img src="/images/project/Procurement_thumbnail.jpg" alt="" /> <span></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="thumb" href="/images/project/Procurement Req_Full.jpg" title=""> <img src="/images/project/Procurement_thumbnail.jpg" alt="" /> <span></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        $(window).load(function () {
+            // We only want these styles applied when javascript is enabled
+            $('div.navigation').css({ 'width': '320px', 'float': 'right' });
+            $('div.content').css('display', 'block');
+
+            // Initially set opacity on thumbs and add
+            // additional styling for hover effect on thumbs
+            var onMouseOutOpacity = 0.5;
+            $('#thumbs ul.thumbs li span').opacityrollover({
+                mouseOutOpacity: onMouseOutOpacity,
+                mouseOverOpacity: 0.0,
+                fadeSpeed: 'fast',
+                exemptionSelector: '.selected'
+            });
+
+            // Initialize Advanced Galleriffic Gallery
+            var gallery = $('#thumbs').galleriffic({
+                delay: 7000,
+                numThumbs: 12,
+                preloadAhead: 6,
+                enableTopPager: false,
+                enableBottomPager: false,
+                imageContainerSel: '#slideshow',
+                controlsContainerSel: '',
+                captionContainerSel: '',
+                loadingContainerSel: '',
+                renderSSControls: true,
+                renderNavControls: true,
+                playLinkText: 'Play Slideshow',
+                pauseLinkText: 'Pause Slideshow',
+                prevLinkText: 'Prev',
+                nextLinkText: 'Next',
+                nextPageLinkText: 'Next',
+                prevPageLinkText: 'Prev',
+                enableHistory: true,
+                autoStart: 7000,
+                syncTransitions: true,
+                defaultTransitionDuration: 900,
+                onSlideChange: function (prevIndex, nextIndex) {
+                    // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                    this.find('ul.thumbs li span')
+                        .css({ opacity: 0.5 })
+                },
+                onPageTransitionOut: function (callback) {
+                    this.find('ul.thumbs li span').css({ display: 'block' });
+                },
+                onPageTransitionIn: function () {
+                    this.find('ul.thumbs li span').css({ display: 'none' });
+                }
+            });
+        });
+    </script>
+<script>
+
+    var _gaq = [['_setAccount', 'UA-11278966-1'], ['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;
+        g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+<!--
+    <div class="related-applications">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <a class="mask-box" href="/img/project_portal_1.jpg" id="single_image" data-sr='vFactor 1.0'>
+                        <img src="/img/Technology_Center.jpg" alt="">
+                        <h4 class="text-center">Asset Management</h4>
+                        <p class="text-center">Three way Inventory System (example: software/hardware/user)</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <a class="mask-box" href="/img/Intranet_Portal.jpg" id="single_image" data-sr='vFactor 1.0'>
+                        <img src="/img/Intranet_Portal.jpg" alt="">
+                        <h4 class="text-center">Intranet/Branding Hub</h4>
+                        <p class="text-center">Mobile-Friendly Intranet Site. Step your SharePoint Game Up!</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <a class="mask-box" href="/img/hr_6.jpg" id="single_image" data-sr='vFactor 1.0'>
+                        <img src="/img/HR.jpg" alt="">
+                        <h4 class="text-center">Human Resources Portal</h4>
+                        <p class="text-center">Internal Hub for Employees and HR</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12">
+                    <a class="mask-box" href="/img/help_desk_2.jpg" id="single_image" data-sr='vFactor 1.0'>
+                        <img src="/img/Technology_Center.jpg" alt="">
+                        <h4 class="text-center">Help Desk</h4>
+                        <p class="text-center">Manage All Tickets and Tasks For Technology</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->

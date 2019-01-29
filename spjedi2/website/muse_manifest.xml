@@ -1,0 +1,278 @@
+<manifest alg="2" build="2015.0.1.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="spjedi.com/migration" resolutions="1x" timestamp="1442552353537">
+  <folder name="css">
+    <file name="site_global.css" crc="4090963256"/>
+    <file name="index.css" crc="58431217" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <folder name="60daya">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442551849000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442551849000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="168494578" mt="1442551849000"/>
+        <file name="Migration Process-52.png" crc="280152076" mt="1442551849000"/>
+        <file name="Poster2.png" crc="168494578" mt="1442551849000"/>
+      </folder>
+      <file name="60daya_edge.js" crc="135538124" mt="1442551849000"/>
+      <file name="60daya_edgeActions.js" crc="80988673" mt="1442551849000"/>
+      <file name="60daya_edgePreload.js" crc="133884666" mt="1442551849000"/>
+      <file name="60daya.html" crc="442892805" mt="1442551849000"/>
+    </folder>
+    <folder name="screen">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442551813000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442551813000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="305114419" mt="1442551813000"/>
+        <file name="Migration Process-53.png" crc="3858487934" mt="1442551813000"/>
+        <file name="Poster.png" crc="305114419" mt="1442551813000"/>
+      </folder>
+      <file name="screen_edge.js" crc="3907009138" mt="1442551813000"/>
+      <file name="screen_edgeActions.js" crc="130674379" mt="1442551813000"/>
+      <file name="screen_edgePreload.js" crc="4168989456" mt="1442551813000"/>
+      <file name="screen.html" crc="3839735452" mt="1442551813000"/>
+    </folder>
+    <folder name="mauthb">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442215935000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442215935000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="198962964" mt="1442215935000"/>
+        <file name="Poster.png" crc="198962964" mt="1442215935000"/>
+        <file name="Poster2.png" crc="4023958820" mt="1442215935000"/>
+      </folder>
+      <file name="mauthB_edge.js" crc="96096010" mt="1442215935000"/>
+      <file name="mauthB_edgeActions.js" crc="247200142" mt="1442215935000"/>
+      <file name="mauthB_edgePreload.js" crc="4151189351" mt="1442215935000"/>
+      <file name="mauthB.html" crc="4011592366" mt="1442215935000"/>
+    </folder>
+    <folder name="officeb">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442218999000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442218999000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="4025788543" mt="1442218999000"/>
+        <file name="Migration Process-20.png" crc="4250226439" mt="1442218999000"/>
+        <file name="Poster.png" crc="222031401" mt="1442218999000"/>
+        <file name="Poster2.png" crc="487851200" mt="1442218999000"/>
+        <file name="Poster3.png" crc="4025788543" mt="1442218999000"/>
+      </folder>
+      <file name="officeB_edge.js" crc="3855463724" mt="1442218999000"/>
+      <file name="officeB_edgeActions.js" crc="325752220" mt="1442218999000"/>
+      <file name="officeB_edgePreload.js" crc="90795635" mt="1442218999000"/>
+      <file name="officeB.html" crc="3878380160" mt="1442218999000"/>
+    </folder>
+    <folder name="arowb">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442218768000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442218768000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="142714471" mt="1442218768000"/>
+        <file name="Migration hm-29.png" crc="143890102" mt="1442218768000"/>
+        <file name="Poster.png" crc="142714471" mt="1442218768000"/>
+      </folder>
+      <file name="arowB_edge.js" crc="3766740877" mt="1442218768000"/>
+      <file name="arowB_edgeActions.js" crc="317324415" mt="1442218768000"/>
+      <file name="arowB_edgePreload.js" crc="404508408" mt="1442218768000"/>
+      <file name="arowB.html" crc="408026624" mt="1442218768000"/>
+    </folder>
+    <folder name="screenb">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442214817000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442214817000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="211634694" mt="1442214817000"/>
+        <file name="Migration Process-53.png" crc="3858487934" mt="1442214817000"/>
+        <file name="Poster.png" crc="211634694" mt="1442214817000"/>
+      </folder>
+      <file name="screenB_edge.js" crc="57492793" mt="1442214817000"/>
+      <file name="screenB_edgeActions.js" crc="130674379" mt="1442214817000"/>
+      <file name="screenB_edgePreload.js" crc="4186399933" mt="1442214817000"/>
+      <file name="screenB.html" crc="3954883997" mt="1442214817000"/>
+    </folder>
+    <folder name="60dayab">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442215285000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442215285000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="101522243" mt="1442215285000"/>
+        <file name="Migration Process-52.png" crc="280152076" mt="1442215285000"/>
+        <file name="Poster.png" crc="101522243" mt="1442215285000"/>
+      </folder>
+      <file name="60dayaB_edge.js" crc="4000603806" mt="1442215285000"/>
+      <file name="60dayaB_edgeActions.js" crc="80988673" mt="1442215285000"/>
+      <file name="60dayaB_edgePreload.js" crc="326232422" mt="1442215285000"/>
+      <file name="60dayaB.html" crc="3964529572" mt="1442215285000"/>
+    </folder>
+    <folder name="bulbb">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442212375000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442212375000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="78607118" mt="1442212375000"/>
+        <file name="Migration ProcessP-17.png" crc="312051842" mt="1442212375000"/>
+        <file name="Poster.png" crc="78607118" mt="1442212375000"/>
+      </folder>
+      <file name="bulbB_edge.js" crc="87193533" mt="1442212375000"/>
+      <file name="bulbB_edgeActions.js" crc="4136881881" mt="1442212375000"/>
+      <file name="bulbB_edgePreload.js" crc="451274434" mt="1442212375000"/>
+      <file name="bulbB.html" crc="366669925" mt="1442212375000"/>
+    </folder>
+    <folder name="mauth">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442039122000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442039122000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="3997882874" mt="1442039122000"/>
+        <file name="Poster.png" crc="3997882874" mt="1442039122000"/>
+        <file name="Poster2.png" crc="4023958820" mt="1442039122000"/>
+      </folder>
+      <file name="mauth_edge.js" crc="68468063" mt="1442039122000"/>
+      <file name="mauth_edgeActions.js" crc="247200142" mt="1442039122000"/>
+      <file name="mauth_edgePreload.js" crc="317450778" mt="1442039122000"/>
+      <file name="mauth.html" crc="404032411" mt="1442039122000"/>
+    </folder>
+    <folder name="smoke">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1441947666000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1441947666000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="234126085" mt="1441947666000"/>
+        <file name="Migration Process-06.png" crc="240164149" mt="1441947666000"/>
+        <file name="Poster.png" crc="234126085" mt="1441947666000"/>
+      </folder>
+      <file name="smoke_edge.js" crc="3922717834" mt="1441947666000"/>
+      <file name="smoke_edgeActions.js" crc="132497762" mt="1441947666000"/>
+      <file name="smoke_edgePreload.js" crc="3768326766" mt="1441947666000"/>
+      <file name="smoke.html" crc="21132216" mt="1441947666000"/>
+    </folder>
+    <folder name="bulb">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1441947647000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1441947647000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="285904416" mt="1441947647000"/>
+        <file name="Migration ProcessP-17.png" crc="312051842" mt="1441947647000"/>
+        <file name="Migration ProcessP-18.png" crc="415806178" mt="1441947647000"/>
+        <file name="Poster.png" crc="285904416" mt="1441947647000"/>
+      </folder>
+      <file name="bulb_edge.js" crc="3984539976" mt="1441947647000"/>
+      <file name="bulb_edgeActions.js" crc="4136881881" mt="1441947647000"/>
+      <file name="bulb_edgePreload.js" crc="288562264" mt="1441947647000"/>
+      <file name="bulb.html" crc="40714626" mt="1441947647000"/>
+    </folder>
+    <folder name="arow">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1441947624000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1441947624000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="4019099015" mt="1441947624000"/>
+        <file name="Migration hm-29.png" crc="143890102" mt="1441947624000"/>
+        <file name="Poster.png" crc="4019099015" mt="1441947624000"/>
+      </folder>
+      <file name="arow_edge.js" crc="4201659294" mt="1441947624000"/>
+      <file name="arow_edgeActions.js" crc="4144986594" mt="1441947624000"/>
+      <file name="arow_edgePreload.js" crc="3796020520" mt="1441947624000"/>
+      <file name="arow.html" crc="36569260" mt="1441947624000"/>
+    </folder>
+    <folder name="office">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1441947637000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1441947637000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="412973753" mt="1441947637000"/>
+        <file name="Migration Process-20.png" crc="4250226439" mt="1441947637000"/>
+        <file name="Poster.png" crc="412973753" mt="1441947637000"/>
+      </folder>
+      <file name="office_edge.js" crc="87262905" mt="1441947637000"/>
+      <file name="office_edgeActions.js" crc="135848927" mt="1441947637000"/>
+      <file name="office_edgePreload.js" crc="3926197869" mt="1441947637000"/>
+      <file name="office.html" crc="4155344536" mt="1441947637000"/>
+    </folder>
+    <folder name="money-flying">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442042860000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442042860000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="22468836" mt="1442042860000"/>
+        <file name="Migration Process-03.png" crc="4069775358" mt="1442042860000"/>
+        <file name="Migration Process-04.png" crc="3930736808" mt="1442042860000"/>
+        <file name="Migration Process-05.png" crc="3833421877" mt="1442042860000"/>
+        <file name="Poster.png" crc="22468836" mt="1442042860000"/>
+      </folder>
+      <file name="money flying_edge.js" crc="4116349364" mt="1442042860000"/>
+      <file name="money flying_edgeActions.js" crc="4188971794" mt="1442042860000"/>
+      <file name="money flying_edgePreload.js" crc="3845604741" mt="1442042860000"/>
+      <file name="money flying.html" crc="86874659" mt="1442042860000"/>
+    </folder>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4183747535" ref="phone>index:index"/>
+    <file name="museutils.js" crc="334180058" ref="phone>index:index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="35732776" ref="phone>index"/>
+    <file name="pie.js" crc="3827607177" ref="phone>index:index"/>
+    <file name="jquery.watch.js" crc="293013060" ref="phone>index:index"/>
+    <file name="jquery.scrolleffects.js" crc="3865564493" ref="phone>index:index"/>
+    <file name="museredirect.js" crc="390470276" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="migration process-02.png" crc="506533816" seo="true" ref="phone>index:index"/>
+    <file name="migration process-15.png" crc="3811657931" seo="true" ref="phone>index:index"/>
+    <file name="migration process-58.png" crc="3857496516" ref="phone>index"/>
+    <file name="migration hm-22.png" crc="494576789" seo="true" ref="phone>index:index"/>
+    <file name="migration process-08.png" crc="153307166" seo="true" ref="phone>index:index"/>
+    <file name="migration process-36.png" crc="278371910" seo="true" ref="phone>index:index"/>
+    <file name="migration pr-30.png" crc="302953452" seo="true" ref="phone>index:index"/>
+    <file name="migration hm-26.png" crc="269343491" seo="true" ref="phone>index:index"/>
+    <file name="migration process-34.png" crc="141000424" seo="true" ref="phone>index:index"/>
+    <file name="migration process-31.png" crc="4113340566" seo="true" ref="phone>index:index"/>
+    <file name="migration process-33.png" crc="3848426189" seo="true" ref="phone>index:index"/>
+    <file name="migration process-32.png" crc="3800911129" seo="true" ref="phone>index:index"/>
+    <file name="migration process-12.png" crc="130884404" seo="true" ref="phone>index:index"/>
+    <file name="man-51.png" crc="466381063" seo="true" ref="phone>index:index"/>
+    <file name="migration process-09.png" crc="126904571" seo="true" ref="phone>index:index"/>
+    <file name="migration process-18.png" crc="4091829048" seo="true" ref="phone>index:index"/>
+    <file name="migration process-55.png" crc="356990942" seo="true" ref="phone>index:index"/>
+    <file name="migration process-53.png" crc="447333770" seo="true" ref="phone>index:index"/>
+    <file name="migration process-54.png" crc="437845034" seo="true" ref="phone>index:index"/>
+    <file name="migration pro-30.png" crc="146725936" seo="true" ref="phone>index:index"/>
+    <file name="migration proces-17.png" crc="492965902" seo="true" ref="phone>index:index"/>
+    <file name="migration hm-24.png" crc="249111477" seo="true" ref="phone>index:index"/>
+    <file name="migration hm-25.png" crc="3957595307" seo="true" ref="phone>index:index"/>
+    <file name="migration hm-23.png" crc="4169506593" seo="true" ref="phone>index:index"/>
+    <file name="migration-59.png" crc="127112778" seo="true" ref="phone>index:index"/>
+    <file name="migration process-21.png" crc="4141887865" seo="true" ref="phone>index:index"/>
+    <file name="migration process-44.png" crc="3924909543" seo="true" ref="phone>index:index"/>
+    <file name="migration process-42.png" crc="536636322" seo="true" ref="phone>index:index"/>
+    <file name="migration process-43.png" crc="3948716557" seo="true" ref="phone>index:index"/>
+    <file name="migration process-47.png" crc="424430747" seo="true" ref="phone>index:index"/>
+    <file name="migration process-46.png" crc="3966856499" seo="true" ref="phone>index:index"/>
+    <file name="migration process-45.png" crc="3777436179" seo="true" ref="phone>index:index"/>
+    <file name="migration process-50.png" crc="256048001" seo="true" ref="phone>index:index"/>
+    <file name="migration process-13.png" crc="224452569" seo="true" ref="index"/>
+    <file name="migration process-56.png" crc="413512395" seo="true" ref="index"/>
+    <file name="migration hm-30.png" crc="242152741" seo="true" ref="index"/>
+    <file name="migration process-17.png" crc="4068950184" seo="true" ref="index"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="3909764359" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="135456817" seo="true" mt="1442552298974" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="30318008" seo="true" mt="1442552216173" redirect="true"/>
+</manifest>

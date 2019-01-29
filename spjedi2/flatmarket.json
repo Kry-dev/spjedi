@@ -1,0 +1,25 @@
+---
+---
+{
+  "info": {
+    "name": "SPJedi"
+  },
+  "products": {
+    {% for payment in site.data.payment %}
+      "{{ payment.sku }}": {
+        "amount": {{ payment.price | times: 100 }}
+      }{% if forloop.last != true or site.data.invoice.size > 0 %},{% endif %}
+    {% endfor %}
+    {% for invoice in site.data.invoice %}
+      "{{ invoice.sku }}": {
+        "amount": {{ invoice.price | times: 100 }}
+      }{% if forloop.last != true %},{% endif %}
+    {% endfor %}
+  },
+  "server": {
+    "host": "{{ site.paymentsServer }}"
+  },
+  "stripe": {
+    "publishableKey": "{{ site.stripePublicKey }}"
+  }
+}
