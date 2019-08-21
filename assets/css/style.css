@@ -2723,19 +2723,69 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 768px) {
+    #home .navbar-header {
+        display: block;
+    }
+    .home_bg {
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
     .navbar-brand > img {  margin-left:0;  }
     #header{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+    header .btn {
+        margin: 0 auto 1rem;
+        min-width: 50%;
+    }
     header#Home{
         min-height: 100%;
         background-attachment: scroll !important;
     }
     #Home.proj_management  .home_bg{  padding-top: 0;  }
+    
+    #Home .home_right_img img{
+        position: relative;
+        display: block;
+        width: 40%;
+        margin: auto;
+        bottom: 0;
+        right: 0;
+        max-height: initial;
+    }
+    .home_bg .home_row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .home_address {
+        width: 100%;
+        align-items: center;
+    }
+    
     header .header {  border-bottom: 1px solid white;  }
     header .icons {  text-align: left;  }
+    header .heading_text {
+        text-align: center;
+    }
+    header .home_socials {
+        margin: 0 auto 2rem;
+    }
+    header .home_socials_item a{
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+    header .home_socials_item a:hover,
+    header .home_socials_item a:focus {
+        border: 1px solid #1BA492;
+    }
+    header .home_socials_item + li {
+        margin-left: 1rem;
+    }
     .navbar.navbar-inverse .container{  padding: 0;  }
     .header .navbar-header {
         width: 100%;
@@ -2753,7 +2803,7 @@ ul.nav li:hover > ul.dropdown-menu {
         display: flex;
         background: #333333;
     }
-    .home_bg .row {  position: relative;  }
+    /*.home_bg .row {  position: relative;  }*/
     .home_bg .men_img {
         position: absolute;
         bottom: -70px;
@@ -2766,7 +2816,7 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     #home{  max-height: 100% !important;  }
     .home_bg{  height: 100%;  }
-    .home_bg .home_row{  align-items: flex-end;  }
+    /*.home_bg .home_row{  align-items: flex-end;  }*/
     .home_bottom_bg{  height: 100%;  }
     header .men_img img {  text-align: right;  }
     header .right::before {  margin-top: -60px;  }
@@ -2875,7 +2925,6 @@ ul.nav li:hover > ul.dropdown-menu {
         background-size: cover;
     }
 
-    .home_bg {  padding-top: 150px;  }
 
     .hr4-head {
         margin-bottom: 40px;
@@ -3004,15 +3053,19 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 640px) {
+    /*.home_bg {  padding-top: 75px;  }*/
     .home_bg .men_img {
         width: 40%;
     }
-    #Home .home_right_img img{
-        bottom: 0;
-        max-height: 500px;
-        width: auto;
-        right: 0;
+    .navbar-toggle {
+        margin-right: 30px;
     }
+    /*#Home .home_right_img img{*/
+    /*    bottom: 0;*/
+    /*    max-height: 500px;*/
+    /*    width: auto;*/
+    /*    right: 0;*/
+    /*}*/
     .cu_migration_serv .migration_serv {
         width: 49.5%;
     }
@@ -3025,7 +3078,9 @@ ul.nav li:hover > ul.dropdown-menu {
         background-size: cover;
         padding: 60px 0;
     }
-
+    header .icons {
+        margin-top: 0;
+    }
     header.sharepoint_branding .icons {
         width: 60%;
     }
