@@ -121,7 +121,7 @@
 				</div>
 				<a href="mailto:info@spjedi.com?Subject=Migration%20Guide%20Request&body=Please%20send%20me%20an%20example%20Migration%20Guide" class="btn btn_WEBSITES">Request Sample Guide</a>
 			</div>
-			
+
 		</div>
 	</div>
 	</div>
@@ -171,7 +171,7 @@
 						<div class="get_start_detail">
 						<h3 class="tt-up c-bl">We're with you every step of the way</h3>
 						<p>You will be assigned a dedicated point of contact that will stay with you throughout the process of setting up your SharePoint installation. Our detailed migration checklist will ensure that we cross every T and dot every I as we customize your SharePoint configuration.</p>
-						
+
 						</div>
 					</div>
 				</div>
@@ -289,7 +289,10 @@
 					<!--</iframe>-->
 				</div>
 			</div>
-			<img class="img-responsive" src="assets/img/migration.jpg" alt="">
+			<!--<img class="img-responsive" src="assets/img/infographic/migration-info.jpg" alt="">-->
+			<video class="migration_video" src="assets/video/migration.mp4" autoplay="autoplay" loop="true" muted>
+				<source src="assets/video/migration.mp4" type="video/mp4"  />
+			</video>
 		</div>
 	</div>
 </section>
@@ -373,7 +376,7 @@
 					</div>
 				</div>
 		</div>
-		
+
 		<div class="about_top_3">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-6">
@@ -449,22 +452,22 @@ $(function(){
   var $elems = $('.animateblock');
   var winheight = $(window).height();
   var fullheight = $(document).height();
-  
+
   $(window).scroll(function(){
     animate_elems();
   });
-  
+
   function animate_elems() {
     wintop = $(window).scrollTop(); // calculate distance from top of window
- 
+
     // loop through each item to check when it animates
     $elems.each(function(){
       $elm = $(this);
-      
+
       if($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
-      
+
       topcoords = $elm.offset().top; // element's distance from top of page in pixels
-      
+
       if(wintop > (topcoords - (winheight*.75))) {
         // animate when top of the window is 3/4 above the element
         $elm.addClass('animated');
@@ -473,7 +476,7 @@ $(function(){
   } // end animate_elems()
 });
 
-$(window).scroll(function() {    
+$(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 100) {
