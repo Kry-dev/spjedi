@@ -2709,14 +2709,24 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 768px) {
+    .head_hr_bord hr{
+        float: none;
+        text-align: center;
+        margin: 2rem auto;
+    }
     #home .navbar-header {
         display: block;
     }
     #home .home_bg,
-    #Home.contact_banne .home_bg{
+    #Home.contact_banne .home_bg,
+    #Home.mirgration_banne .home_bgheader#Home {
         height: 100% !important;
         padding-top: 70px;
         padding-bottom: 20px;
+    }
+    header#Home.mirgration_banne .migration_banner_text {
+        width: 100%;
+        margin-bottom: 2rem;
     }
     .navbar-brand > img {  margin-left:0;  }
     #header{
@@ -2729,7 +2739,7 @@ ul.nav li:hover > ul.dropdown-menu {
         min-width: 50%;
     }
     header#Home{
-        min-height: 100%;
+        min-height: 50% !important;
         background-attachment: scroll !important;
     }
     #Home.proj_management  .home_bg{  padding-top: 0;  }
@@ -2757,7 +2767,12 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     
     header .header {  border-bottom: 1px solid white;  }
-    header .icons {  text-align: center;  }
+    header .icons {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.34);
+        margin-top: 0;
+        padding: 20px 0;
+    }
     header .heading_text {
         text-align: center;
         width: 100%;
@@ -2804,7 +2819,7 @@ ul.nav li:hover > ul.dropdown-menu {
         flex-direction: column;
     }
     #home{  max-height: 100% !important;  }
-    .home_bg{  height: 100%;  }
+    .home_bg{  height: 100% !important;  }
     .home_bottom_bg{  height: 100%;  }
     header .men_img img {  text-align: right;  }
     header .right::before {  margin-top: -60px;  }
