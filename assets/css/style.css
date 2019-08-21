@@ -1857,10 +1857,6 @@ header.sharepoint_branding .icons {
   background: url("../img/hr-bg.jpg") repeat-x center center;
 }
 
-#Home.hr-assets_banner .home_right_img img {
-  width: 100%;
-}
-
 .hr-assets_banner .icons {
   margin-top: 100px;
   margin-bottom: 50px;
@@ -3553,7 +3549,7 @@ ul.nav li:hover > ul.dropdown-menu {
     text-align: center;
     background: rgba(0, 0, 0, 0.34);
     margin-top: 0;
-    padding: 20px 0;
+    padding: 20px 15px;
   }
   
   header .heading_text {
@@ -3878,20 +3874,11 @@ ul.nav li:hover > ul.dropdown-menu {
   #Home.sharepoint_branding {
     background: url("../img/1-TOP-BG.jpg") repeat-x top center
   }
-  header.sharepoint_branding .icons{
+  header.sharepoint_branding .icons,
+  .hr-assets_banner .icons{
     margin: 0;
   }
   
-  #Home.hr-assets_banner .home_bg {
-    padding-top: 0;
-  }
-  
-  #Home.hr-assets_banner .home_right_img img {
-    right: 0;
-    bottom: -15%;
-    width: 80%;
-  }
-}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #header {
