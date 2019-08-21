@@ -219,10 +219,7 @@ input:focus,
     justify-content: flex-start;
 }
 .home_contacts{
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    font-size: 16px;
 }
 .home_contacts + .home_contacts{
     margin-left: 35px;
@@ -1199,8 +1196,8 @@ header#Home.contact_banne .icons {
 
 .contact_banner_right {
     position: absolute;
+    padding-right: 0;
     right: 0;
-    width: 48%;
 }
 
 .contact_banner_right img {
@@ -2564,10 +2561,6 @@ ul.nav li:hover > ul.dropdown-menu {
         padding-right: 10px;
         padding-left: 10px;
     }
-    header .icons .fa-map-marker {
-        display: block;
-        margin-left: 0;
-    }
     .home_address{  flex-direction: column;  }
     .home_contacts + .home_contacts{  margin-left: 0;  }
 
@@ -2627,9 +2620,6 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     header#Home.contact_banne .icons {
         margin-bottom: 10px;
-    }
-    .contact_banner_right {
-        width: 45%;
     }
     .title-check-border .check-title-name {
         width: 95%;
@@ -2705,10 +2695,6 @@ ul.nav li:hover > ul.dropdown-menu {
         padding-left: 0;
         padding-right: 0;
     }
-    header .icons .fa-map-marker {
-        margin-left: 0;
-        display: block;
-    }
     header .btn_MICROSOFT {  margin-top: 20px;  }
     .home_bg .men_img {
         bottom: -20px;
@@ -2726,7 +2712,9 @@ ul.nav li:hover > ul.dropdown-menu {
     #home .navbar-header {
         display: block;
     }
-    .home_bg {
+    #home .home_bg,
+    #Home.contact_banne .home_bg{
+        height: 100% !important;
         padding-top: 70px;
         padding-bottom: 20px;
     }
@@ -2763,14 +2751,16 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     
     .home_address {
+        display: block;
         width: 100%;
-        align-items: center;
+        text-align: center;
     }
     
     header .header {  border-bottom: 1px solid white;  }
-    header .icons {  text-align: left;  }
+    header .icons {  text-align: center;  }
     header .heading_text {
         text-align: center;
+        width: 100%;
     }
     header .home_socials {
         margin: 0 auto 2rem;
@@ -2803,7 +2793,6 @@ ul.nav li:hover > ul.dropdown-menu {
         display: flex;
         background: #333333;
     }
-    /*.home_bg .row {  position: relative;  }*/
     .home_bg .men_img {
         position: absolute;
         bottom: -70px;
@@ -2816,11 +2805,18 @@ ul.nav li:hover > ul.dropdown-menu {
     }
     #home{  max-height: 100% !important;  }
     .home_bg{  height: 100%;  }
-    /*.home_bg .home_row{  align-items: flex-end;  }*/
     .home_bottom_bg{  height: 100%;  }
     header .men_img img {  text-align: right;  }
     header .right::before {  margin-top: -60px;  }
     .home_bottom_bg .line {  padding-left: 40px;  }
+    
+    
+    .contact_banner_right {
+        position: relative;
+        width: 75%;
+        margin-left: auto;
+    }
+    
     .get-started .block3-get .get_start_icon {
         margin-top: 0;
         height: auto;
@@ -2893,10 +2889,6 @@ ul.nav li:hover > ul.dropdown-menu {
     header .icons button.btn {
         display: block;
         margin: 20px 0;
-    }
-
-    header .icons .fa-phone {
-        display: block;
     }
     header#Home.mirgration_banne {
         background-size: cover;
@@ -3053,19 +3045,9 @@ ul.nav li:hover > ul.dropdown-menu {
 }
 
 @media (max-width: 640px) {
-    /*.home_bg {  padding-top: 75px;  }*/
     .home_bg .men_img {
         width: 40%;
     }
-    .navbar-toggle {
-        margin-right: 30px;
-    }
-    /*#Home .home_right_img img{*/
-    /*    bottom: 0;*/
-    /*    max-height: 500px;*/
-    /*    width: auto;*/
-    /*    right: 0;*/
-    /*}*/
     .cu_migration_serv .migration_serv {
         width: 49.5%;
     }
@@ -3073,13 +3055,23 @@ ul.nav li:hover > ul.dropdown-menu {
     .about_top_3 .cu_about_1 {
         width: 80%;
     }
-
+    .cu-contact {
+        padding-bottom: 0;
+    }
+    .cu-contact .cu-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cu-contact .cu-list .cu_list_icon,
+    .cu-contact .cu-list .cu_list_detail {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
     .cu-block6 {
         background-size: cover;
         padding: 60px 0;
-    }
-    header .icons {
-        margin-top: 0;
     }
     header.sharepoint_branding .icons {
         width: 60%;
@@ -3114,6 +3106,10 @@ ul.nav li:hover > ul.dropdown-menu {
     .cu_migration_serv .migration_serv .migra_serv_icon img{
         position: relative;
     }
+    .contact_email,
+    .head_info {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -3123,9 +3119,10 @@ ul.nav li:hover > ul.dropdown-menu {
         white-space: normal;
         font-size: 12px;
     }
-    header .btn_WEBSITES{
+    header .btn{
         padding-left: 15px;
         padding-right: 15px;
+        min-width: 100%;
     }
 
     .cu-block-title .cu-buss-box p {
@@ -3145,7 +3142,8 @@ ul.nav li:hover > ul.dropdown-menu {
     }
 
     header .heading_text {  font-size: 34px;  }
-    .title-check-border .check-title-name {  width: 85%;  }
+    .title-check-border .check-title-name,
+    .cu-contact .title-check-border .check-title-name {  width: 100%;  }
     .get-started .block3-get a {
         width: 200px;
         padding: 8px;
@@ -3165,14 +3163,13 @@ ul.nav li:hover > ul.dropdown-menu {
         height: auto;
         width: 65%;
     }
-    .cu_migration_our .title-check-border .check-title-name {  width: 87%;  }
+    .cu_migration_our .title-check-border .check-title-name {  width: 100%;  }
     .about_top_3 .col-xs-6 {
         width: 80%;
         float: none;
         margin: 0 auto 30px;
     }
     .contact_banner_right { top: 10%;  }
-    header#Home.contact_banne .icons { width: 60%;  }
     .remote_support_icon { height: 100%;  }
     #Home.sharepoint_branding { background-size: cover;  }
     .main_site_form .card-body input.form-control { width: 84%;  }
