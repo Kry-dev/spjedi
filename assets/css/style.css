@@ -3474,6 +3474,9 @@ ul.nav li:hover > ul.dropdown-menu {
     width: 100%;
     margin-bottom: 2rem;
   }
+  header.remote_support_banner .icons {
+    margin-bottom: 0;
+  }
   .home_bg {
     padding-top: 70px;
   }
