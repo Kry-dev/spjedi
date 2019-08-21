@@ -1772,7 +1772,8 @@ header.remote_support_banner .icons {
 }
 
 #Home.sharepoint_branding {
-  background: url("../img/1-TOP-BG.jpg") repeat-x center center
+  background: url("../img/1-TOP-BG.jpg") repeat-x center center;
+  background-size: cover;
 }
 
 #Home.sharepoint_branding .row {
@@ -3469,7 +3470,12 @@ ul.nav li:hover > ul.dropdown-menu {
     padding-top: 70px;
     padding-bottom: 20px;
   }
-  
+  #Home.proj_management {
+    background: url("../img/BG-top.jpg") repeat-x top center;
+  }
+  #Home.proj_management .icons {
+    margin: 0;
+  }
   header#Home.mirgration_banne .migration_banner_text {
     width: 100%;
     margin-bottom: 2rem;
@@ -3745,18 +3751,12 @@ ul.nav li:hover > ul.dropdown-menu {
   .cu-block-main .cu-list .cu_list_icon img {
     width: 100%;
   }
-  
-  header .icons button.btn {
-    display: block;
-    margin: 20px 0;
-  }
-  
   header#Home.mirgration_banne {
     background-size: cover;
   }
   
   #Home.proj_management .home_right_img img {
-    bottom: -90px;
+    bottom: -50px;
     right: 0;
   }
   
@@ -3875,10 +3875,11 @@ ul.nav li:hover > ul.dropdown-menu {
     right: 0;
   }
   
-  #Home.sharepoint_branding .home_right_img img {
-    right: 0;
-    width: 80%;
-    bottom: -15%;
+  #Home.sharepoint_branding {
+    background: url("../img/1-TOP-BG.jpg") repeat-x top center
+  }
+  header.sharepoint_branding .icons{
+    margin: 0;
   }
   
   #Home.hr-assets_banner .home_bg {
@@ -3971,9 +3972,6 @@ ul.nav li:hover > ul.dropdown-menu {
     padding: 60px 0;
   }
   
-  header.sharepoint_branding .icons {
-    width: 60%;
-  }
   
   .sharepoint_branding .proj_management_banner_icon {
     bottom: -90px;
@@ -4106,10 +4104,6 @@ ul.nav li:hover > ul.dropdown-menu {
   
   .remote_support_icon {
     height: 100%;
-  }
-  
-  #Home.sharepoint_branding {
-    background-size: cover;
   }
   
   .main_site_form .card-body input.form-control {
