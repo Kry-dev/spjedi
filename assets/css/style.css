@@ -1013,6 +1013,11 @@ header#Home.mirgration_banne .migration_banner_text {  width: 75%;  }
     height: 100%;
     display: block;
 }
+.cu_migration_pro .migration_video {
+    display: block;
+    min-width: 50%;
+    margin: 0 auto 1rem ;
+}
 
 #Home.contact_banne {
     background: url("../img/top-contact-bg.jpg") repeat-x center center;
