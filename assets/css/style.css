@@ -3464,24 +3464,33 @@ ul.nav li:hover > ul.dropdown-menu {
   #Home.mirgration_banne .home_bgheader#Home {
     height: 100% !important;
     padding-top: 70px;
-    padding-bottom: 20px;
   }
+  
+  .home_bg .container {
+    height: initial;
+  }
+  
   #Home.proj_management {
     background: url("../img/BG-top.jpg") repeat-x top center;
   }
+  
   #Home.proj_management .icons {
     margin: 0;
   }
+  
   header#Home.mirgration_banne .migration_banner_text {
     width: 100%;
     margin-bottom: 2rem;
   }
+  
   header.remote_support_banner .icons {
     margin-bottom: 0;
   }
+  
   .home_bg {
     padding-top: 70px;
   }
+  
   .navbar-brand > img {
     margin-left: 0;
   }
@@ -3509,6 +3518,10 @@ ul.nav li:hover > ul.dropdown-menu {
   
   #Home.proj_management .home_bg {
     padding-top: 0;
+  }
+  
+  #Home .home_right_img {
+    height: initial;
   }
   
   #Home .home_right_img img {
@@ -3550,6 +3563,7 @@ ul.nav li:hover > ul.dropdown-menu {
     background: rgba(0, 0, 0, 0.34);
     margin-top: 0;
     padding: 20px 15px;
+    height: initial;
   }
   
   header .heading_text {
@@ -3628,16 +3642,12 @@ ul.nav li:hover > ul.dropdown-menu {
     flex-direction: column;
   }
   
-  #home {
-    max-height: 100% !important;
-  }
-  
   .home_bg {
     height: 100% !important;
   }
   
   .home_bottom_bg {
-    height: 100%;
+    height: initial;
   }
   
   header .men_img img {
@@ -3747,6 +3757,7 @@ ul.nav li:hover > ul.dropdown-menu {
   .cu-block-main .cu-list .cu_list_icon img {
     width: 100%;
   }
+  
   header#Home.mirgration_banne {
     background-size: cover;
   }
@@ -3872,13 +3883,14 @@ ul.nav li:hover > ul.dropdown-menu {
   }
   
   #Home.sharepoint_branding {
-    background: url("../img/1-TOP-BG.jpg") repeat-x top center
-  }
-  header.sharepoint_branding .icons,
-  .hr-assets_banner .icons{
-    margin: 0;
+    background: url("../img/1-TOP-BG.jpg") repeat top center;
   }
   
+  header.sharepoint_branding .icons,
+  .hr-assets_banner .icons {
+    margin: 0;
+  }
+}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #header {
@@ -4146,10 +4158,6 @@ ul.nav li:hover > ul.dropdown-menu {
   .contact_email .email_submit {
     padding-left: 0;
     text-align: center;
-  }
-  
-  header.sharepoint_branding .icons {
-    width: 59%;
   }
   
   header.sharepoint_branding .icons button.btn {
